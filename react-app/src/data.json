@@ -1,0 +1,2626 @@
+[
+  {
+    "id": "PRM393_SP26_FE_Đ1",
+    "title": "SP26 · Đề 1",
+    "questions": [
+      {
+        "id": "1",
+        "question": "Which Dart feature supports object-oriented programming?",
+        "options": [
+          "Widgets",
+          "Classes and objects",
+          "Hot reload",
+          "Layout builders"
+        ],
+        "answer": "B",
+        "explanation": "Class và object là nền tảng hướng đối tượng; widget là phần tử UI, hot reload là công cụ, LayoutBuilder là widget bố cục.",
+        "ambiguous": false
+      },
+      {
+        "id": "2",
+        "question": "Which method retrieves data from SharedPreferences?",
+        "options": [
+          "get()",
+          "read()",
+          "fetch()",
+          "load()"
+        ],
+        "answer": "A",
+        "explanation": "API SharedPreferences cũ có get(key); read, fetch, load không phải tên getter của API đó. Các getter có kiểu như getString cũng thường được dùng.",
+        "ambiguous": false
+      },
+      {
+        "id": "3",
+        "question": "What is Flutter primarily used for?",
+        "options": [
+          "Designing databases for mobile apps",
+          "Creating native applications from a single codebase",
+          "Developing server-side applications only",
+          "Building operating systems for mobile devices"
+        ],
+        "answer": "B",
+        "explanation": "Flutter xây dựng ứng dụng đa nền tảng từ một codebase; A, C, D mô tả các mục đích khác, không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "4",
+        "question": "Why should state be kept as local as possible?",
+        "options": [
+          "Better animations",
+          "Reduce unnecessary rebuilds",
+          "Simplify UI",
+          "Improve navigation"
+        ],
+        "answer": "B",
+        "explanation": "State cục bộ giới hạn phạm vi cập nhật và có thể giảm rebuild; hoạt ảnh, giao diện và điều hướng không phải lý do chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "5",
+        "question": "Which command builds a release APK?",
+        "options": [
+          "flutter run",
+          "flutter build apk",
+          "flutter doctor",
+          "flutter clean"
+        ],
+        "answer": "B",
+        "explanation": "flutter build apk tạo APK release mặc định; run chạy app, doctor kiểm tra môi trường, clean xóa dữ liệu build.",
+        "ambiguous": false
+      },
+      {
+        "id": "6",
+        "question": "What happens after successful login?",
+        "options": [
+          "App closes",
+          "User session starts",
+          "Theme changes",
+          "Navigation resets"
+        ],
+        "answer": "B",
+        "explanation": "Đăng nhập thành công thường tạo phiên người dùng; đóng app, đổi theme hay reset điều hướng không mặc nhiên xảy ra.",
+        "ambiguous": false
+      },
+      {
+        "id": "7",
+        "question": "What is implicit animation?",
+        "options": [
+          "Manual animation control",
+          "Animation without controller",
+          "API animation",
+          "Navigation animation"
+        ],
+        "answer": "B",
+        "explanation": "Implicit animation tự nội suy khi thuộc tính đổi, không cần tự quản AnimationController; các lựa chọn còn lại không định nghĩa khái niệm.",
+        "ambiguous": false
+      },
+      {
+        "id": "8",
+        "question": "Which Flutter concept supports reactive UI updates?",
+        "options": [
+          "Manual refresh",
+          "Widget rebuilding",
+          "Hot restart",
+          "Native callbacks"
+        ],
+        "answer": "B",
+        "explanation": "Flutter cập nhật UI bằng rebuild khi state thay đổi; refresh thủ công, hot restart và native callback không phải cơ chế reactive chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "9",
+        "question": "Why is clean architecture beneficial?",
+        "options": [
+          "Fewer files",
+          "Easier maintenance and testing",
+          "Better UI",
+          "Faster builds"
+        ],
+        "answer": "B",
+        "explanation": "Tách trách nhiệm giúp bảo trì và kiểm thử; ít file, UI đẹp hay build nhanh không được đảm bảo.",
+        "ambiguous": false
+      },
+      {
+        "id": "10",
+        "question": "What is Dart primarily designed for in the Flutter ecosystem?",
+        "options": [
+          "Database management",
+          "User interface development",
+          "General-purpose programming with UI focus",
+          "Network security"
+        ],
+        "answer": "C",
+        "explanation": "Dart là ngôn ngữ đa dụng được dùng để xây dựng UI Flutter; A và D không mô tả mục đích chính, B quá hẹp vì Dart không chỉ dành cho UI.",
+        "ambiguous": false
+      },
+      {
+        "id": "11",
+        "question": "What is the benefit of composing widgets in Flutter?",
+        "options": [
+          "Faster compilation",
+          "Better code reuse and UI consistency",
+          "Reduced memory usage",
+          "Automatic navigation"
+        ],
+        "answer": "B",
+        "explanation": "Ghép widget nhỏ giúp tái sử dụng và thống nhất UI; không tự đảm bảo biên dịch nhanh, giảm bộ nhớ hay điều hướng.",
+        "ambiguous": false
+      },
+      {
+        "id": "12",
+        "question": "Which Flutter test focuses on UI components?",
+        "options": [
+          "Unit test",
+          "Widget test",
+          "Integration test",
+          "Load test"
+        ],
+        "answer": "B",
+        "explanation": "Widget test kiểm tra thành phần UI; unit test kiểm tra đơn vị logic, integration test kiểm tra luồng tổng thể, load test kiểm tra tải.",
+        "ambiguous": false
+      },
+      {
+        "id": "13",
+        "question": "Why are const widgets recommended?",
+        "options": [
+          "They improve readability",
+          "They reduce rebuild cost",
+          "They add state",
+          "They handle navigation"
+        ],
+        "answer": "B",
+        "explanation": "Widget const có thể được tái sử dụng và giảm công việc rebuild; không tự thêm state hoặc xử lý navigation, dễ đọc không phải lợi ích chính ở đây.",
+        "ambiguous": false
+      },
+      {
+        "id": "14",
+        "question": "What happens if a non-nullable variable is not initialized in Dart?",
+        "options": [
+          "The app runs normally",
+          "A runtime exception occurs",
+          "A compile-time error occurs",
+          "The value becomes null automatically"
+        ],
+        "answer": "C",
+        "explanation": "Thông thường biến non-nullable phải được bảo đảm khởi tạo trước khi dùng, nếu không sẽ lỗi phân tích/biên dịch; không tự thành null. Ngoại lệ: biến late đọc trước khi gán gây lỗi lúc chạy.",
+        "ambiguous": false
+      },
+      {
+        "id": "15",
+        "question": "What is the main risk of improper state management?",
+        "options": [
+          "UI inconsistency",
+          "Longer compile time",
+          "Package conflicts",
+          "Build errors"
+        ],
+        "answer": "A",
+        "explanation": "State sai dễ khiến UI hiển thị không nhất quán; thời gian compile, xung đột package và lỗi build không phải hệ quả chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "16",
+        "question": "What is technical debt?",
+        "options": [
+          "UI lag",
+          "Future cost of poor design decisions",
+          "Memory usage",
+          "API limit"
+        ],
+        "answer": "B",
+        "explanation": "Technical debt là chi phí tương lai do giải pháp thiết kế hoặc triển khai kém; không đồng nghĩa UI lag, bộ nhớ hay giới hạn API.",
+        "ambiguous": false
+      },
+      {
+        "id": "17",
+        "question": "What does golden testing verify?",
+        "options": [
+          "API responses",
+          "UI appearance consistency",
+          "Database state",
+          "Authentication"
+        ],
+        "answer": "B",
+        "explanation": "Golden test so sánh hình ảnh UI với mẫu chuẩn; không trực tiếp kiểm tra API, database hay xác thực.",
+        "ambiguous": false
+      },
+      {
+        "id": "18",
+        "question": "Which Flutter tool helps debug network requests?",
+        "options": [
+          "DevTools",
+          "Inspector",
+          "Emulator",
+          "Hot reload"
+        ],
+        "answer": "A",
+        "explanation": "Flutter DevTools có công cụ theo dõi mạng; Inspector xem cây widget, emulator chạy app, hot reload cập nhật mã.",
+        "ambiguous": false
+      },
+      {
+        "id": "19",
+        "question": "Which platforms can Flutter applications target using a single codebase?",
+        "options": [
+          "Android only",
+          "iOS only",
+          "Android, iOS, web, and desktop",
+          "Web servers only"
+        ],
+        "answer": "C",
+        "explanation": "Flutter hỗ trợ Android, iOS, web và desktop; A và B quá hẹp, D không phải danh sách nền tảng UI Flutter.",
+        "ambiguous": false
+      },
+      {
+        "id": "20",
+        "question": "Which widget reacts to async data from local storage?",
+        "options": [
+          "FutureBuilder",
+          "StreamBuilder",
+          "ListView",
+          "Provider"
+        ],
+        "answer": "A",
+        "explanation": "FutureBuilder phù hợp kết quả Future đọc dữ liệu một lần; StreamBuilder phù hợp stream, ListView hiển thị danh sách, Provider quản lý/chia sẻ state.",
+        "ambiguous": false
+      },
+      {
+        "id": "21",
+        "question": "Why are widgets lightweight in Flutter?",
+        "options": [
+          "They manage system resources",
+          "They are immutable descriptions",
+          "They store UI state",
+          "They handle rendering directly"
+        ],
+        "answer": "B",
+        "explanation": "Widget là mô tả cấu hình bất biến; resource và state thường do đối tượng khác quản lý, widget không trực tiếp tự render.",
+        "ambiguous": false
+      },
+      {
+        "id": "22",
+        "question": "Which approach helps reduce unnecessary widget rebuilds?",
+        "options": [
+          "Using global variables",
+          "Fine-grained state updates",
+          "Hot restart",
+          "Large widgets"
+        ],
+        "answer": "B",
+        "explanation": "Cập nhật state theo phạm vi nhỏ giúp giới hạn rebuild; biến global, hot restart và widget lớn không giải quyết trực tiếp.",
+        "ambiguous": false
+      },
+      {
+        "id": "23",
+        "question": "Which action best demonstrates Flutter's reactive UI model?",
+        "options": [
+          "Manually updating UI elements",
+          "Rebuilding UI in response to state changes",
+          "Editing layout XML",
+          "Calling native APIs"
+        ],
+        "answer": "B",
+        "explanation": "UI được xây dựng lại khi state đổi; cập nhật thủ công, XML và native API không mô tả mô hình reactive Flutter.",
+        "ambiguous": false
+      },
+      {
+        "id": "24",
+        "question": "Which package supports BLoC architecture?",
+        "options": [
+          "provider",
+          "flutter_bloc",
+          "sqlflite",
+          "http"
+        ],
+        "answer": "B",
+        "explanation": "flutter_bloc cung cấp tích hợp BLoC cho Flutter; provider là giải pháp state khác, sqlflite viết sai tên sqflite, http dùng cho mạng.",
+        "ambiguous": false
+      },
+      {
+        "id": "25",
+        "question": "Which widget can hide user input text when configured for password entry?",
+        "options": [
+          "TextField",
+          "ObscureText",
+          "SecureInput",
+          "PasswordField"
+        ],
+        "answer": "A",
+        "explanation": "TextField có thuộc tính obscureText để che chữ; các tên còn lại không phải widget Flutter chuẩn cho chức năng này.",
+        "ambiguous": false
+      },
+      {
+        "id": "26",
+        "question": "What is the purpose of SliverAppBar?",
+        "options": [
+          "Static app bar",
+          "Scrollable flexible app bar",
+          "Bottom navigation",
+          "Drawer control"
+        ],
+        "answer": "B",
+        "explanation": "SliverAppBar kết hợp thanh app với hiệu ứng khi cuộn; không chỉ là thanh tĩnh, bottom navigation hay drawer.",
+        "ambiguous": false
+      },
+      {
+        "id": "27",
+        "question": "Which method resets all form fields?",
+        "options": [
+          "clear()",
+          "reset()",
+          "dispose()",
+          "remove()"
+        ],
+        "answer": "B",
+        "explanation": "FormState.reset() đặt các field về giá trị ban đầu; clear, dispose, remove không phải phương thức reset toàn form.",
+        "ambiguous": false
+      },
+      {
+        "id": "28",
+        "question": "Why is secure authentication critical in mobile apps?",
+        "options": [
+          "UI quality",
+          "Protect user data",
+          "Reduce code",
+          "Improve speed"
+        ],
+        "answer": "B",
+        "explanation": "Xác thực an toàn bảo vệ tài khoản và dữ liệu; UI, số dòng mã hay tốc độ không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "29",
+        "question": "Which HTTP method is typically used to retrieve data?",
+        "options": [
+          "POST",
+          "PUT",
+          "GET",
+          "DELETE"
+        ],
+        "answer": "C",
+        "explanation": "GET thường dùng lấy tài nguyên; POST tạo/gửi dữ liệu, PUT cập nhật/thay thế, DELETE xóa.",
+        "ambiguous": false
+      },
+      {
+        "id": "30",
+        "question": "Why is Chapter 13 considered optional (Plus)?",
+        "options": [
+          "It replaces core concepts",
+          "Apps can work without deep optimization",
+          "It manages navigation",
+          "It handles authentication"
+        ],
+        "answer": "B",
+        "explanation": "Theo cách phân loại trong đề, tối ưu sâu là nội dung bổ sung vì app vẫn có thể hoạt động; nó không thay thế kiến thức cốt lõi hay phụ trách navigation/auth. Còn tùy giáo trình cụ thể.",
+        "ambiguous": false
+      },
+      {
+        "id": "31",
+        "question": "Why should authentication state be centralized?",
+        "options": [
+          "Reduce UI code",
+          "Ensure consistent access control",
+          "Improve animations",
+          "Simplify layout"
+        ],
+        "answer": "B",
+        "explanation": "Một nguồn state xác thực giúp các màn hình kiểm tra quyền nhất quán; giảm code, animation và layout không phải lý do chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "32",
+        "question": "Which Dart keyword is used to define a constant value at compile time?",
+        "options": [
+          "final",
+          "static",
+          "const",
+          "var"
+        ],
+        "answer": "C",
+        "explanation": "const tạo hằng số tại compile time; final chỉ gán một lần, static thuộc lớp, var suy luận kiểu.",
+        "ambiguous": false
+      },
+      {
+        "id": "33",
+        "question": "Which status code indicates server error?",
+        "options": [
+          "200",
+          "301",
+          "404",
+          "500"
+        ],
+        "answer": "D",
+        "explanation": "500 biểu thị lỗi máy chủ; 200 thành công, 301 chuyển hướng, 404 không tìm thấy.",
+        "ambiguous": false
+      },
+      {
+        "id": "34",
+        "question": "What is the role of events in BLoC?",
+        "options": [
+          "Store UI",
+          "Trigger state changes",
+          "Render widgets",
+          "Handle layout"
+        ],
+        "answer": "B",
+        "explanation": "Event biểu diễn đầu vào kích hoạt BLoC xử lý và phát state; không lưu UI, render hay bố trí.",
+        "ambiguous": false
+      },
+      {
+        "id": "35",
+        "question": "Which widget allows overlapping of its child widgets?",
+        "options": [
+          "Column",
+          "Row",
+          "Stack",
+          "Expanded"
+        ],
+        "answer": "C",
+        "explanation": "Stack xếp chồng con; Column và Row xếp theo trục, Expanded phân bổ không gian.",
+        "ambiguous": false
+      },
+      {
+        "id": "36",
+        "question": "What does CurvedAnimation provide?",
+        "options": [
+          "Layout control",
+          "Animation curve behavior",
+          "State updates",
+          "Navigation"
+        ],
+        "answer": "B",
+        "explanation": "CurvedAnimation áp dụng đường cong thời gian cho animation; không quản lý layout, state hay navigation.",
+        "ambiguous": false
+      },
+      {
+        "id": "37",
+        "question": "Which type of test checks individual functions or classes?",
+        "options": [
+          "Widget test",
+          "Integration test",
+          "Unit test",
+          "System test"
+        ],
+        "answer": "C",
+        "explanation": "Unit test kiểm tra hàm/lớp độc lập; widget và integration test có phạm vi lớn hơn, system test kiểm tra hệ thống.",
+        "ambiguous": false
+      },
+      {
+        "id": "38",
+        "question": "What is the main purpose of hot reload in Flutter?",
+        "options": [
+          "Improve runtime performance",
+          "Instantly reflect code changes in UI",
+          "Publish apps faster",
+          "Reduce memory usage"
+        ],
+        "answer": "B",
+        "explanation": "Hot reload nạp thay đổi mã và dựng lại UI nhanh, thường giữ state; không tự tối ưu runtime, xuất bản hay giảm bộ nhớ.",
+        "ambiguous": false
+      },
+      {
+        "id": "39",
+        "question": "Which phase involves gathering requirements?",
+        "options": [
+          "Implementation",
+          "Design",
+          "Analysis",
+          "Testing"
+        ],
+        "answer": "C",
+        "explanation": "Analysis thu thập và phân tích yêu cầu; design thiết kế, implementation lập trình, testing kiểm thử.",
+        "ambiguous": false
+      },
+      {
+        "id": "40",
+        "question": "Why are forms important in mobile applications?",
+        "options": [
+          "UI decoration",
+          "User data collection",
+          "State management",
+          "Navigation"
+        ],
+        "answer": "B",
+        "explanation": "Form thu thập và xác thực dữ liệu người dùng; trang trí, state và navigation không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "41",
+        "question": "Why should database operations be asynchronous?",
+        "options": [
+          "Simplify syntax",
+          "Avoid blocking UI thread",
+          "Reduce code",
+          "Improve theme"
+        ],
+        "answer": "B",
+        "explanation": "I/O bất đồng bộ giúp tránh chặn UI trong lúc chờ; không nhất thiết giảm mã, đơn giản cú pháp hay cải thiện theme.",
+        "ambiguous": false
+      },
+      {
+        "id": "42",
+        "question": "Which widget applies a theme to an entire Flutter application?",
+        "options": [
+          "Scaffold",
+          "Theme",
+          "MaterialApp",
+          "Container"
+        ],
+        "answer": "C",
+        "explanation": "MaterialApp.theme đặt theme mặc định toàn app; Theme áp dụng cho một cây con, Scaffold và Container không đặt theme toàn app.",
+        "ambiguous": false
+      },
+      {
+        "id": "43",
+        "question": "What is the purpose of parsing JSON?",
+        "options": [
+          "Encrypt data",
+          "Convert JSON into Dart objects",
+          "Send requests",
+          "Cache responses"
+        ],
+        "answer": "B",
+        "explanation": "Parsing chuyển JSON thành cấu trúc dữ liệu/Dart object; không mã hóa, gửi request hay cache.",
+        "ambiguous": false
+      },
+      {
+        "id": "44",
+        "question": "How can data be passed to a new screen?",
+        "options": [
+          "Using global variables",
+          "Via constructor arguments",
+          "Using ThemeData",
+          "Using Scaffold"
+        ],
+        "answer": "B",
+        "explanation": "Truyền đối số qua constructor là cách phổ biến; global có thể dùng nhưng gây phụ thuộc, ThemeData và Scaffold không phải cơ chế truyền dữ liệu màn hình thông thường.",
+        "ambiguous": false
+      },
+      {
+        "id": "45",
+        "question": "What is the main benefit of Flutter's widget-based architecture?",
+        "options": [
+          "Widgets are only used for layout design",
+          "Widgets allow code reuse across platforms",
+          "Widgets automatically manage databases",
+          "Widgets replace backend services"
+        ],
+        "answer": "B",
+        "explanation": "Widget có thể kết hợp và tái sử dụng trên các nền tảng; chúng không chỉ dùng bố cục, không tự quản database hay thay backend.",
+        "ambiguous": false
+      },
+      {
+        "id": "46",
+        "question": "Which Dart data structure is best suited for storing an ordered collection of items?",
+        "options": [
+          "Set",
+          "Map",
+          "List",
+          "Queue"
+        ],
+        "answer": "C",
+        "explanation": "List là tập hợp có thứ tự và truy cập theo chỉ số; Set chủ yếu biểu diễn phần tử duy nhất, Map là cặp khóa-giá trị, Queue tối ưu thao tác hàng đợi.",
+        "ambiguous": false
+      },
+      {
+        "id": "47",
+        "question": "Which Flutter widget reacts to authentication state changes?",
+        "options": [
+          "FutureBuilder",
+          "StreamBuilder",
+          "ListView",
+          "Form"
+        ],
+        "answer": "B",
+        "explanation": "StreamBuilder theo dõi stream thay đổi trạng thái xác thực; FutureBuilder xử lý một Future, ListView hiển thị danh sách, Form nhập liệu.",
+        "ambiguous": false
+      },
+      {
+        "id": "48",
+        "question": "Why should animations be disposed properly?",
+        "options": [
+          "Improve UI",
+          "Prevent memory leaks",
+          "Speed up builds",
+          "Fix layout"
+        ],
+        "answer": "B",
+        "explanation": "Dispose AnimationController giải phóng ticker và tránh rò rỉ; không nhằm tăng tốc build, sửa layout hay trang trí UI.",
+        "ambiguous": false
+      },
+      {
+        "id": "49",
+        "question": "Which widget is best used to add fixed empty space?",
+        "options": [
+          "Padding",
+          "Expanded",
+          "SizedBox",
+          "Container"
+        ],
+        "answer": "C",
+        "explanation": "SizedBox cho khoảng trống kích thước cố định; Padding thêm khoảng đệm, Expanded chia không gian, Container đa năng nhưng không chuyên cho khoảng trống.",
+        "ambiguous": false
+      },
+      {
+        "id": "50",
+        "question": "Which step is required before running a Flutter app for the first time?",
+        "options": [
+          "Publishing the app",
+          "Setting up the Flutter SDK",
+          "Configuring a database",
+          "Writing backend APIs"
+        ],
+        "answer": "B",
+        "explanation": "Cần cài Flutter SDK để chạy ứng dụng Flutter; publish, database và backend không bắt buộc cho app đầu tiên.",
+        "ambiguous": false
+      }
+    ]
+  },
+  {
+    "id": "PRM393_SP26_FE_Đ3",
+    "title": "SP26 · Đề 3",
+    "questions": [
+      {
+        "id": "1",
+        "question": "What is the purpose of JWT?",
+        "options": [
+          "Encrypt UI",
+          "Represent user session",
+          "Store images",
+          "Manage navigation"
+        ],
+        "answer": "B",
+        "explanation": "JWT chứa claims, thường dùng cho phiên; không mã hóa UI, lưu ảnh hoặc điều hướng. JWT có chữ ký không mặc nhiên được mã hóa.",
+        "ambiguous": false
+      },
+      {
+        "id": "2",
+        "question": "What type of data is SharedPreferences best suited for?",
+        "options": [
+          "Large datasets",
+          "Simple primitive values",
+          "Images",
+          "Complex objects"
+        ],
+        "answer": "B",
+        "explanation": "SharedPreferences lưu giá trị đơn giản; dữ liệu lớn, ảnh và object phức tạp cần giải pháp khác.",
+        "ambiguous": false
+      },
+      {
+        "id": "3",
+        "question": "Which concept helps test business logic easily?",
+        "options": [
+          "UI testing",
+          "Separation of logic",
+          "Hot reload",
+          "Layouts"
+        ],
+        "answer": "B",
+        "explanation": "Tách logic khỏi UI giúp kiểm thử độc lập; UI test, hot reload, layout không tạo sự tách biệt này.",
+        "ambiguous": false
+      },
+      {
+        "id": "4",
+        "question": "Which pattern separates storage logic from UI?",
+        "options": [
+          "MVC",
+          "Repository pattern",
+          "Singleton",
+          "Factory"
+        ],
+        "answer": "B",
+        "explanation": "Repository trừu tượng hóa truy cập dữ liệu; MVC là kiến trúc tổng quát, Singleton quản lý instance, Factory tạo object.",
+        "ambiguous": false
+      },
+      {
+        "id": "5",
+        "question": "What is the purpose of building a release version of a Flutter app?",
+        "options": [
+          "Debug code",
+          "Prepare app for distribution",
+          "Test UI",
+          "Change theme"
+        ],
+        "answer": "B",
+        "explanation": "Release build chuẩn bị phân phối; debug, test UI và đổi theme có mục đích khác.",
+        "ambiguous": false
+      },
+      {
+        "id": "6",
+        "question": "Why is logout functionality important?",
+        "options": [
+          "Free memory",
+          "End user session securely",
+          "Improve UI",
+          "Change theme"
+        ],
+        "answer": "B",
+        "explanation": "Logout kết thúc phiên an toàn; không chủ yếu để giải phóng bộ nhớ, đổi UI hoặc theme.",
+        "ambiguous": false
+      },
+      {
+        "id": "7",
+        "question": "Which widget is an example of implicit animation?",
+        "options": [
+          "AnimatedContainer",
+          "AnimationController",
+          "Tween",
+          "Ticker"
+        ],
+        "answer": "A",
+        "explanation": "AnimatedContainer tự animate khi thuộc tính thay đổi; Controller điều khiển tường minh, Tween nội suy, Ticker phát nhịp.",
+        "ambiguous": false
+      },
+      {
+        "id": "8",
+        "question": "Which scenario best fits local state management?",
+        "options": [
+          "User authentication",
+          "Theme selection",
+          "TextField input",
+          "API token storage"
+        ],
+        "answer": "C",
+        "explanation": "Input của TextField thường thuộc state cục bộ; auth, theme toàn app và token thường cần phạm vi rộng hơn tùy thiết kế.",
+        "ambiguous": false
+      },
+      {
+        "id": "9",
+        "question": "Which programming language is used to develop Flutter applications?",
+        "options": [
+          "Kotlin",
+          "Swift",
+          "Dart",
+          "JavaScript"
+        ],
+        "answer": "C",
+        "explanation": "Flutter dùng Dart; Kotlin, Swift, JavaScript không phải ngôn ngữ chính của Flutter.",
+        "ambiguous": false
+      },
+      {
+        "id": "10",
+        "question": "Why is the widget tree considered immutable?",
+        "options": [
+          "Widgets cannot be removed",
+          "Widgets are recreated instead of modified",
+          "Widgets are stored permanently",
+          "Widgets cannot contain data"
+        ],
+        "answer": "B",
+        "explanation": "Widget là cấu hình bất biến và được tạo lại; cây vẫn thay đổi, widget có dữ liệu và không tồn tại vĩnh viễn.",
+        "ambiguous": false
+      },
+      {
+        "id": "11",
+        "question": "Which widget is suitable for displaying items in a grid layout?",
+        "options": [
+          "ListView",
+          "Column",
+          "GridView",
+          "Stack"
+        ],
+        "answer": "C",
+        "explanation": "GridView tạo lưới; ListView tạo danh sách, Column xếp dọc, Stack xếp chồng.",
+        "ambiguous": false
+      },
+      {
+        "id": "12",
+        "question": "What causes unnecessary widget rebuilds?",
+        "options": [
+          "State changes",
+          "Overusing setState()",
+          "Using Provider",
+          "Using const widgets"
+        ],
+        "answer": "B",
+        "explanation": "Lạm dụng setState có thể rebuild không cần thiết; thay đổi state đôi khi cần rebuild, Provider và const không mặc nhiên gây lỗi.",
+        "ambiguous": false
+      },
+      {
+        "id": "13",
+        "question": "Which feature of Dart helps prevent null reference errors at compile time?",
+        "options": [
+          "Dynamic typing",
+          "Hot reload",
+          "Null safety",
+          "Asynchronous execution"
+        ],
+        "answer": "C",
+        "explanation": "Null safety dùng hệ kiểu hạn chế lỗi null; dynamic, hot reload và async không cung cấp bảo đảm đó.",
+        "ambiguous": false
+      },
+      {
+        "id": "14",
+        "question": "When should you prefer Provider over setState()?",
+        "options": [
+          "For simple UI updates",
+          "For global or shared state",
+          "For animations",
+          "For navigation"
+        ],
+        "answer": "B",
+        "explanation": "Provider phù hợp state chia sẻ; cập nhật đơn giản có thể dùng setState, animation và navigation không phải lý do mặc định.",
+        "ambiguous": false
+      },
+      {
+        "id": "15",
+        "question": "Which practice reduces technical debt?",
+        "options": [
+          "Quick fixes",
+          "Consistent refactoring",
+          "Ignoring tests",
+          "Skipping reviews"
+        ],
+        "answer": "B",
+        "explanation": "Refactor thường xuyên và có kiểm soát giảm nợ kỹ thuật; quick fix, bỏ test và review có thể tăng nợ.",
+        "ambiguous": false
+      },
+      {
+        "id": "16",
+        "question": "What is authentication primarily used for?",
+        "options": [
+          "Data storage",
+          "User identity verification",
+          "UI rendering",
+          "Navigation"
+        ],
+        "answer": "B",
+        "explanation": "Authentication xác minh danh tính; lưu dữ liệu, render và navigation là chức năng khác.",
+        "ambiguous": false
+      },
+      {
+        "id": "17",
+        "question": "Why are different build flavors useful?",
+        "options": [
+          "UI themes",
+          "Multiple app configurations",
+          "Faster rendering",
+          "Simpler navigation"
+        ],
+        "answer": "B",
+        "explanation": "Flavors cho nhiều cấu hình như dev và production; không chủ yếu nhằm đổi theme, render nhanh hay navigation.",
+        "ambiguous": false
+      },
+      {
+        "id": "18",
+        "question": "What advantage does a single codebase provide in Flutter development?",
+        "options": [
+          "Higher memory usage",
+          "Simpler UI customization",
+          "Reduced development and maintenance effort",
+          "Automatic database synchronization"
+        ],
+        "answer": "C",
+        "explanation": "Một codebase có thể giảm công phát triển và bảo trì; không tự đồng bộ database hoặc đảm bảo các lợi ích còn lại.",
+        "ambiguous": false
+      },
+      {
+        "id": "19",
+        "question": "What is the primary role of widgets in Flutter?",
+        "options": [
+          "Managing databases",
+          "Describing the user interface",
+          "Handling network requests",
+          "Compiling Dart code"
+        ],
+        "answer": "B",
+        "explanation": "Widget mô tả UI; database, mạng và biên dịch thuộc các thành phần khác.",
+        "ambiguous": false
+      },
+      {
+        "id": "20",
+        "question": "Why is user feedback valuable?",
+        "options": [
+          "Delay project",
+          "Improve product usability",
+          "Change architecture",
+          "Reduce scope"
+        ],
+        "answer": "B",
+        "explanation": "Phản hồi giúp cải thiện khả dụng; trì hoãn, đổi kiến trúc và giảm phạm vi không phải mục tiêu mặc định.",
+        "ambiguous": false
+      },
+      {
+        "id": "21",
+        "question": "What problem does state hoisting address?",
+        "options": [
+          "API delay",
+          "State duplication",
+          "Theme conflict",
+          "Navigation error"
+        ],
+        "answer": "B",
+        "explanation": "Hoisting đưa state lên tổ tiên chung để tránh bản sao khó đồng bộ; không trực tiếp xử lý API, theme hay navigation.",
+        "ambiguous": false
+      },
+      {
+        "id": "22",
+        "question": "What happens when setState() is called in a StatefulWidget?",
+        "options": [
+          "The app restarts",
+          "The widget tree is rebuilt",
+          "Data is saved permanently",
+          "Navigation occurs"
+        ],
+        "answer": "B",
+        "explanation": "setState lên lịch build lại State; không khởi động lại, tự lưu hay điều hướng; không phải toàn bộ app luôn rebuild.",
+        "ambiguous": false
+      },
+      {
+        "id": "23",
+        "question": "Which pattern is commonly used for scalable state management?",
+        "options": [
+          "MVC",
+          "BLoC",
+          "Singleton",
+          "Factory"
+        ],
+        "answer": "B",
+        "explanation": "BLoC hỗ trợ quản lý state có thể mở rộng; MVC tổng quát, Singleton quản lý instance, Factory tạo object.",
+        "ambiguous": false
+      },
+      {
+        "id": "24",
+        "question": "Which input type improves user experience for emails?",
+        "options": [
+          "TextInputType.number",
+          "TextInputType.emailAddress",
+          "TextInputType.text",
+          "TextInputType.url"
+        ],
+        "answer": "B",
+        "explanation": "emailAddress gợi ý bàn phím email; number, text và url dành cho kiểu nhập khác.",
+        "ambiguous": false
+      },
+      {
+        "id": "25",
+        "question": "Which sliver is commonly used to display a scrolling list?",
+        "options": [
+          "SliverGrid",
+          "SliverList",
+          "SliverAppBar",
+          "SliverFillRemaining"
+        ],
+        "answer": "B",
+        "explanation": "SliverList hiển thị danh sách cuộn; SliverGrid là lưới, SliverAppBar là thanh app, SliverFillRemaining lấp phần còn lại.",
+        "ambiguous": false
+      },
+      {
+        "id": "26",
+        "question": "Which method validates all form fields?",
+        "options": [
+          "validate()",
+          "check()",
+          "verify()",
+          "submit()"
+        ],
+        "answer": "A",
+        "explanation": "FormState.validate chạy validator các field; check, verify, submit không phải phương thức chuẩn tương ứng.",
+        "ambiguous": false
+      },
+      {
+        "id": "27",
+        "question": "Which HTTP method is used to send new data to a server?",
+        "options": [
+          "GET",
+          "DELETE",
+          "POST",
+          "HEAD"
+        ],
+        "answer": "C",
+        "explanation": "POST thường gửi dữ liệu mới; GET đọc, DELETE xóa, HEAD lấy metadata.",
+        "ambiguous": false
+      },
+      {
+        "id": "28",
+        "question": "What is the main goal of performance optimization in Flutter apps?",
+        "options": [
+          "Improve UI colors",
+          "Ensure smooth and responsive UI",
+          "Reduce code size",
+          "Add features"
+        ],
+        "answer": "B",
+        "explanation": "Tối ưu nhằm UI mượt và phản hồi nhanh; màu sắc, ít code hay thêm tính năng không phải mục tiêu chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "29",
+        "question": "What is dependency injection used for?",
+        "options": [
+          "UI updates",
+          "Manage object dependencies",
+          "Theme control",
+          "Navigation"
+        ],
+        "answer": "B",
+        "explanation": "Dependency injection cung cấp phụ thuộc từ bên ngoài; UI, theme, navigation không phải mục đích cốt lõi.",
+        "ambiguous": false
+      },
+      {
+        "id": "30",
+        "question": "Which layer should handle authentication logic?",
+        "options": [
+          "UI layer",
+          "Data layer",
+          "Service layer",
+          "Theme layer"
+        ],
+        "answer": "C",
+        "explanation": "Service layer thường xử lý nghiệp vụ xác thực trong kiến trúc của đề; UI trình bày, data truy cập dữ liệu, theme định kiểu. Cách chia layer tùy kiến trúc.",
+        "ambiguous": false
+      },
+      {
+        "id": "31",
+        "question": "What does the final keyword indicate in Dart?",
+        "options": [
+          "The variable can be reassigned later",
+          "The variable value is fixed after assignment",
+          "The variable is global",
+          "The variable is private"
+        ],
+        "answer": "B",
+        "explanation": "final cho phép gán một lần; không có nghĩa global, private hoặc có thể gán lại. Object vẫn có thể mutable.",
+        "ambiguous": false
+      },
+      {
+        "id": "32",
+        "question": "Which status code indicates resource not found?",
+        "options": [
+          "200",
+          "301",
+          "404",
+          "500"
+        ],
+        "answer": "C",
+        "explanation": "404 là không tìm thấy; 200 thành công, 301 chuyển hướng, 500 lỗi server.",
+        "ambiguous": false
+      },
+      {
+        "id": "33",
+        "question": "What represents the output of a BLoC?",
+        "options": [
+          "Events",
+          "Widgets",
+          "States",
+          "Controllers"
+        ],
+        "answer": "C",
+        "explanation": "BLoC phát state; event là đầu vào, widget là UI, controller không phải đầu ra.",
+        "ambiguous": false
+      },
+      {
+        "id": "34",
+        "question": "Which widget arranges its children horizontally?",
+        "options": [
+          "Column",
+          "Stack",
+          "Row",
+          "Align"
+        ],
+        "answer": "C",
+        "explanation": "Row xếp ngang; Column xếp dọc, Stack xếp chồng, Align căn chỉnh.",
+        "ambiguous": false
+      },
+      {
+        "id": "35",
+        "question": "What is the role of vsync?",
+        "options": [
+          "Sync data",
+          "Optimize animation resources",
+          "Control layout",
+          "Handle navigation"
+        ],
+        "answer": "B",
+        "explanation": "vsync đồng bộ ticker với frame và giảm hoạt động không cần thiết; không đồng bộ dữ liệu, layout hay navigation.",
+        "ambiguous": false
+      },
+      {
+        "id": "36",
+        "question": "Which test runs fastest?",
+        "options": [
+          "Integration test",
+          "Widget test",
+          "Unit test",
+          "Manual test"
+        ],
+        "answer": "C",
+        "explanation": "Unit test thường nhanh nhất do phạm vi nhỏ; widget, integration và kiểm thử thủ công thường tốn hơn.",
+        "ambiguous": false
+      },
+      {
+        "id": "37",
+        "question": "Why is understanding the widget lifecycle important?",
+        "options": [
+          "Improve API performance",
+          "Manage UI updates correctly",
+          "Deploy apps faster",
+          "Reduce file size"
+        ],
+        "answer": "B",
+        "explanation": "Lifecycle giúp quản lý khởi tạo, cập nhật và giải phóng tài nguyên; không trực tiếp tăng API, deploy hay giảm kích thước.",
+        "ambiguous": false
+      },
+      {
+        "id": "38",
+        "question": "Why are real-world requirements important?",
+        "options": [
+          "Increase complexity",
+          "Reflect actual user needs",
+          "Change theme",
+          "Slow development"
+        ],
+        "answer": "B",
+        "explanation": "Yêu cầu thực tế phản ánh nhu cầu người dùng; tăng phức tạp, đổi theme hay làm chậm không phải mục đích.",
+        "ambiguous": false
+      },
+      {
+        "id": "39",
+        "question": "Which protocol is commonly used for secure authentication?",
+        "options": [
+          "HTTP",
+          "FTP",
+          "OAuth 2.0",
+          "SMTP"
+        ],
+        "answer": "C",
+        "explanation": "OAuth 2.0 là framework ủy quyền dùng trong hệ thống đăng nhập; HTTP, FTP, SMTP không phải giải pháp tương ứng. Xác thực danh tính thường dùng OpenID Connect trên OAuth 2.0.",
+        "ambiguous": false
+      },
+      {
+        "id": "40",
+        "question": "What design principle improves form usability?",
+        "options": [
+          "Long forms",
+          "Minimal validation",
+          "Clear labels and feedback",
+          "Hidden errors"
+        ],
+        "answer": "C",
+        "explanation": "Nhãn rõ và phản hồi giúp dùng form; form dài, thiếu validation và giấu lỗi gây khó khăn.",
+        "ambiguous": false
+      },
+      {
+        "id": "41",
+        "question": "Which database is commonly used for structured local data?",
+        "options": [
+          "Firebase",
+          "SQLite",
+          "MongoDB",
+          "MySQL"
+        ],
+        "answer": "B",
+        "explanation": "SQLite là database quan hệ nhúng; Firebase, MongoDB và MySQL thường dùng theo mô hình khác.",
+        "ambiguous": false
+      },
+      {
+        "id": "42",
+        "question": "Why is Chapter 5 often considered optional or plus content?",
+        "options": [
+          "It replaces layout widgets",
+          "Themes are not required for functionality",
+          "It manages navigation",
+          "It handles state"
+        ],
+        "answer": "B",
+        "explanation": "Theo giả định đề, app vẫn hoạt động với theme mặc định; theme không thay layout hay xử lý navigation/state. Còn tùy giáo trình.",
+        "ambiguous": false
+      },
+      {
+        "id": "43",
+        "question": "What format is most commonly used in REST APIs?",
+        "options": [
+          "XML",
+          "CSV",
+          "JSON",
+          "Binary"
+        ],
+        "answer": "C",
+        "explanation": "JSON phổ biến trong REST API; XML, CSV và binary cũng có thể dùng nhưng không phải lựa chọn phổ biến nhất ở đây.",
+        "ambiguous": false
+      },
+      {
+        "id": "44",
+        "question": "Why is passing context important in navigation?",
+        "options": [
+          "Access theme",
+          "Access Navigator",
+          "Access state",
+          "Access layout"
+        ],
+        "answer": "B",
+        "explanation": "BuildContext giúp Navigator.of(context) tìm Navigator; context cũng truy cập theme và state nhưng không phải lý do navigation trong câu này.",
+        "ambiguous": false
+      },
+      {
+        "id": "45",
+        "question": "Which component is responsible for rendering UI in Flutter?",
+        "options": [
+          "Native UI components",
+          "The Flutter engine",
+          "The operating system",
+          "The backend server"
+        ],
+        "answer": "B",
+        "explanation": "Flutter engine đảm nhiệm render; native UI, OS và backend không trực tiếp render cây Flutter theo cách đề hỏi.",
+        "ambiguous": false
+      },
+      {
+        "id": "46",
+        "question": "Which Dart feature allows defining reusable, type-safe components?",
+        "options": [
+          "Mixins",
+          "Generics",
+          "Futures",
+          "Streams"
+        ],
+        "answer": "B",
+        "explanation": "Generics hỗ trợ tái sử dụng và kiểm tra kiểu; mixin chia sẻ hành vi, Future và Stream xử lý async.",
+        "ambiguous": false
+      },
+      {
+        "id": "47",
+        "question": "Which Flutter service simplifies authentication implementation?",
+        "options": [
+          "sqflite",
+          "Firebase Authentication",
+          "Provider",
+          "http"
+        ],
+        "answer": "B",
+        "explanation": "Firebase Authentication cung cấp dịch vụ xác thực; sqflite lưu SQLite, Provider quản lý state, http gửi request.",
+        "ambiguous": false
+      },
+      {
+        "id": "48",
+        "question": "Which widget rebuilds automatically during animation?",
+        "options": [
+          "AnimatedBuilder",
+          "FutureBuilder",
+          "StreamBuilder",
+          "LayoutBuilder"
+        ],
+        "answer": "A",
+        "explanation": "AnimatedBuilder theo dõi animation và rebuild; FutureBuilder/StreamBuilder theo dõi dữ liệu async, LayoutBuilder theo ràng buộc.",
+        "ambiguous": false
+      },
+      {
+        "id": "49",
+        "question": "What does the Padding widget do?",
+        "options": [
+          "Adds space inside a widget",
+          "Adds space between widgets",
+          "Aligns widgets",
+          "Controls widget size"
+        ],
+        "answer": "A",
+        "explanation": "Padding thêm đệm giữa child và ranh giới; có thể tạo khoảng cách giữa widget nhưng B kém chính xác hơn; C/D không phải vai trò chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "50",
+        "question": "What is the purpose of the Flutter SDK?",
+        "options": [
+          "To store application data permanently",
+          "To provide tools and libraries for Flutter development",
+          "To deploy applications directly to app stores",
+          "To replace the operating system of a device"
+        ],
+        "answer": "B",
+        "explanation": "Flutter SDK cung cấp thư viện và công cụ; không tự lưu dữ liệu, thay OS hay tự xuất bản store.",
+        "ambiguous": false
+      }
+    ]
+  },
+  {
+    "id": "PRM393_SU26_FE",
+    "title": "SU26 · Đề 1",
+    "questions": [
+      {
+        "id": "1",
+        "question": "Which Dart feature supports object-oriented programming?",
+        "options": [
+          "Widgets",
+          "Classes and objects",
+          "Hot reload",
+          "Layout builders"
+        ],
+        "answer": "B",
+        "explanation": "Class và object là nền tảng hướng đối tượng; widget là phần tử UI, hot reload là công cụ, LayoutBuilder là widget bố cục.",
+        "ambiguous": false
+      },
+      {
+        "id": "2",
+        "question": "Which platforms can Flutter applications target using a single codebase?",
+        "options": [
+          "Android only",
+          "iOS only",
+          "Android, iOS, web, and desktop",
+          "Web servers only"
+        ],
+        "answer": "C",
+        "explanation": "Flutter hỗ trợ Android, iOS, web và desktop; A và B quá hẹp, D không phải danh sách nền tảng UI Flutter.",
+        "ambiguous": false
+      },
+      {
+        "id": "3",
+        "question": "Which Dart data structure is best suited for storing an ordered collection of items?",
+        "options": [
+          "Set",
+          "Map",
+          "List",
+          "Queue"
+        ],
+        "answer": "C",
+        "explanation": "List là tập hợp có thứ tự và truy cập theo chỉ số; Set chủ yếu biểu diễn phần tử duy nhất, Map là cặp khóa-giá trị, Queue tối ưu thao tác hàng đợi.",
+        "ambiguous": false
+      },
+      {
+        "id": "4",
+        "question": "What is the primary responsibility of the setState() method?",
+        "options": [
+          "Persist data",
+          "Trigger widget rebuild",
+          "Navigate screens",
+          "Handle async tasks"
+        ],
+        "answer": "B",
+        "explanation": "setState thông báo thay đổi và lên lịch rebuild; không tự lưu, điều hướng hay xử lý async.",
+        "ambiguous": false
+      },
+      {
+        "id": "5",
+        "question": "What is the role of vsync in Flutter?",
+        "options": [
+          "Sync data",
+          "Optimize animation resources",
+          "Control layout",
+          "Handle navigation"
+        ],
+        "answer": "B",
+        "explanation": "vsync đồng bộ ticker với frame; không đồng bộ dữ liệu, layout hay navigation.",
+        "ambiguous": false
+      },
+      {
+        "id": "6",
+        "question": "Why is immutability important in BLoC states?",
+        "options": [
+          "UI speed",
+          "Predictable state changes",
+          "Memory usage",
+          "Theme control"
+        ],
+        "answer": "B",
+        "explanation": "State bất biến giúp theo dõi và so sánh thay đổi dễ dự đoán; tốc độ UI, bộ nhớ và theme không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "7",
+        "question": "What does golden testing verify?",
+        "options": [
+          "API responses",
+          "UI appearance consistency",
+          "Database state",
+          "Authentication"
+        ],
+        "answer": "B",
+        "explanation": "Golden test so sánh hình ảnh UI với mẫu chuẩn; không trực tiếp kiểm tra API, database hay xác thực.",
+        "ambiguous": false
+      },
+      {
+        "id": "8",
+        "question": "What causes unnecessary widget rebuilds?",
+        "options": [
+          "State changes",
+          "Overusing setState()",
+          "Using Provider",
+          "Using const widgets"
+        ],
+        "answer": "B",
+        "explanation": "Lạm dụng setState có thể rebuild không cần thiết; thay đổi state đôi khi cần rebuild, Provider và const không mặc nhiên gây lỗi.",
+        "ambiguous": false
+      },
+      {
+        "id": "9",
+        "question": "Which widget reacts to async data from local storage?",
+        "options": [
+          "FutureBuilder",
+          "StreamBuilder",
+          "ListView",
+          "Provider"
+        ],
+        "answer": "A",
+        "explanation": "FutureBuilder phù hợp kết quả Future đọc dữ liệu một lần; StreamBuilder phù hợp stream, ListView hiển thị danh sách, Provider quản lý/chia sẻ state.",
+        "ambiguous": false
+      },
+      {
+        "id": "10",
+        "question": "Which method resets all form fields?",
+        "options": [
+          "clear()",
+          "reset()",
+          "dispose()",
+          "remove()"
+        ],
+        "answer": "B",
+        "explanation": "FormState.reset() đặt các field về giá trị ban đầu; clear, dispose, remove không phải phương thức reset toàn form.",
+        "ambiguous": false
+      },
+      {
+        "id": "11",
+        "question": "Which method retrieves data from SharedPreferences?",
+        "options": [
+          "get()",
+          "read()",
+          "fetch()",
+          "load()"
+        ],
+        "answer": "A",
+        "explanation": "API SharedPreferences cũ có get(key); read, fetch, load không phải tên getter của API đó. Các getter có kiểu như getString cũng thường được dùng.",
+        "ambiguous": false
+      },
+      {
+        "id": "12",
+        "question": "What is the main purpose of the Container widget?",
+        "options": [
+          "Navigation",
+          "Layout, styling, and positioning",
+          "State management",
+          "Network requests"
+        ],
+        "answer": "B",
+        "explanation": "Container kết hợp bố cục, trang trí và định vị; không chủ yếu quản lý navigation, state hay mạng.",
+        "ambiguous": false
+      },
+      {
+        "id": "13",
+        "question": "What is the main benefit of Flutter's widget-based architecture?",
+        "options": [
+          "Widgets are only used for layout design",
+          "Widgets allow code reuse across platforms",
+          "Widgets automatically manage databases",
+          "Widgets replace backend services"
+        ],
+        "answer": "B",
+        "explanation": "Widget có thể kết hợp và tái sử dụng trên các nền tảng; chúng không chỉ dùng bố cục, không tự quản database hay thay backend.",
+        "ambiguous": false
+      },
+      {
+        "id": "14",
+        "question": "What does status code 200 indicate?",
+        "options": [
+          "Client error",
+          "Server error",
+          "Success",
+          "Redirect"
+        ],
+        "answer": "C",
+        "explanation": "HTTP 200 là thành công; không phải lỗi client, lỗi server hay chuyển hướng.",
+        "ambiguous": false
+      },
+      {
+        "id": "15",
+        "question": "Why should architecture be decided early?",
+        "options": [
+          "Avoid UI work",
+          "Reduce refactoring cost",
+          "Improve animations",
+          "Change theme"
+        ],
+        "answer": "B",
+        "explanation": "Quyết định kiến trúc sớm giảm chi phí tái cấu trúc; không loại bỏ UI hay tự cải thiện animation/theme.",
+        "ambiguous": false
+      },
+      {
+        "id": "16",
+        "question": "Why is secure authentication critical in mobile apps?",
+        "options": [
+          "UI quality",
+          "Protect user data",
+          "Reduce code",
+          "Improve speed"
+        ],
+        "answer": "B",
+        "explanation": "Xác thực an toàn bảo vệ tài khoản và dữ liệu; UI, số dòng mã hay tốc độ không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "17",
+        "question": "What happens if a non-nullable variable is not initialized in Dart?",
+        "options": [
+          "The app runs normally",
+          "A runtime exception occurs",
+          "A compile-time error occurs",
+          "The value becomes null automatically"
+        ],
+        "answer": "C",
+        "explanation": "Thông thường biến non-nullable phải được bảo đảm khởi tạo trước khi dùng, nếu không sẽ lỗi phân tích/biên dịch; không tự thành null. Ngoại lệ: biến late đọc trước khi gán gây lỗi lúc chạy.",
+        "ambiguous": false
+      },
+      {
+        "id": "18",
+        "question": "Which HTTP method is used to send new data to a server?",
+        "options": [
+          "GET",
+          "DELETE",
+          "POST",
+          "HEAD"
+        ],
+        "answer": "C",
+        "explanation": "POST thường gửi dữ liệu mới; GET đọc, DELETE xóa, HEAD lấy metadata.",
+        "ambiguous": false
+      },
+      {
+        "id": "19",
+        "question": "Which step is required before running a Flutter app for the first time?",
+        "options": [
+          "Publishing the app",
+          "Setting up the Flutter SDK",
+          "Configuring a database",
+          "Writing backend APIs"
+        ],
+        "answer": "B",
+        "explanation": "Cần cài Flutter SDK để chạy ứng dụng Flutter; publish, database và backend không bắt buộc cho app đầu tiên.",
+        "ambiguous": false
+      },
+      {
+        "id": "20",
+        "question": "Which widget allows both scrolling and app bars to interact?",
+        "options": [
+          "ListView",
+          "CustomScrollView",
+          "GridView",
+          "Stack"
+        ],
+        "answer": "B",
+        "explanation": "CustomScrollView kết hợp sliver như SliverAppBar với nội dung cuộn; ListView/GridView là loại cuộn cụ thể, Stack xếp chồng. NestedScrollView cũng có thể phù hợp nhưng không có trong đề.",
+        "ambiguous": false
+      },
+      {
+        "id": "21",
+        "question": "Which practice improves API security?",
+        "options": [
+          "Hardcoding keys",
+          "Using HTTPS",
+          "Ignoring errors",
+          "Using globals"
+        ],
+        "answer": "B",
+        "explanation": "HTTPS mã hóa dữ liệu khi truyền; hardcode key, bỏ qua lỗi và biến global không đảm bảo bảo mật.",
+        "ambiguous": false
+      },
+      {
+        "id": "22",
+        "question": "What is Dart primarily designed for in the Flutter ecosystem?",
+        "options": [
+          "Database management",
+          "User interface development",
+          "General-purpose programming with UI focus",
+          "Network security"
+        ],
+        "answer": "C",
+        "explanation": "Dart là ngôn ngữ đa dụng được dùng để xây dựng UI Flutter; A và D không mô tả mục đích chính, B quá hẹp vì Dart không chỉ dành cho UI.",
+        "ambiguous": false
+      },
+      {
+        "id": "23",
+        "question": "What does crossAxisAlignment control?",
+        "options": [
+          "Vertical alignment in Column",
+          "Horizontal alignment in Column",
+          "Child order",
+          "Widget size"
+        ],
+        "answer": "B",
+        "explanation": "Trong Column cross axis là ngang; căn dọc thuộc main axis, không quyết định thứ tự hay kích thước trực tiếp.",
+        "ambiguous": false
+      },
+      {
+        "id": "24",
+        "question": "Which command builds a release APK?",
+        "options": [
+          "flutter run",
+          "flutter build apk",
+          "flutter doctor",
+          "flutter clean"
+        ],
+        "answer": "B",
+        "explanation": "flutter build apk tạo APK release mặc định; run chạy app, doctor kiểm tra môi trường, clean xóa dữ liệu build.",
+        "ambiguous": false
+      },
+      {
+        "id": "25",
+        "question": "Which pattern is commonly used for scalable state management?",
+        "options": [
+          "MVC",
+          "BLoC",
+          "Singleton",
+          "Factory"
+        ],
+        "answer": "B",
+        "explanation": "BLoC hỗ trợ quản lý state có thể mở rộng; MVC tổng quát, Singleton quản lý instance, Factory tạo object.",
+        "ambiguous": false
+      },
+      {
+        "id": "26",
+        "question": "What happens after successful login?",
+        "options": [
+          "App closes",
+          "User session starts",
+          "Theme changes",
+          "Navigation resets"
+        ],
+        "answer": "B",
+        "explanation": "Đăng nhập thành công thường tạo phiên người dùng; đóng app, đổi theme hay reset điều hướng không mặc nhiên xảy ra.",
+        "ambiguous": false
+      },
+      {
+        "id": "27",
+        "question": "Which widget is an example of implicit animation?",
+        "options": [
+          "AnimatedContainer",
+          "AnimationController",
+          "Tween",
+          "Ticker"
+        ],
+        "answer": "A",
+        "explanation": "AnimatedContainer tự animate khi thuộc tính thay đổi; Controller điều khiển tường minh, Tween nội suy, Ticker phát nhịp.",
+        "ambiguous": false
+      },
+      {
+        "id": "28",
+        "question": "Which widget pattern protects authenticated routes?",
+        "options": [
+          "Navigator",
+          "Guard",
+          "Route protection",
+          "Middleware"
+        ],
+        "answer": "B",
+        "explanation": "Route guard kiểm tra điều kiện truy cập; Navigator điều hướng, route protection là mục tiêu chung, middleware là khái niệm rộng hơn. Cách gọi widget pattern chưa chuẩn.",
+        "ambiguous": false
+      },
+      {
+        "id": "29",
+        "question": "Which Flutter tool helps debug network requests?",
+        "options": [
+          "DevTools",
+          "Inspector",
+          "Emulator",
+          "Hot reload"
+        ],
+        "answer": "A",
+        "explanation": "Flutter DevTools có công cụ theo dõi mạng; Inspector xem cây widget, emulator chạy app, hot reload cập nhật mã.",
+        "ambiguous": false
+      },
+      {
+        "id": "30",
+        "question": "What is the main goal of testing in Flutter apps?",
+        "options": [
+          "Improve UI design",
+          "Ensure app quality and correctness",
+          "Speed up builds",
+          "Manage state"
+        ],
+        "answer": "B",
+        "explanation": "Testing xác minh hành vi và phát hiện lỗi; thiết kế UI, tốc độ build, quản lý state không phải mục tiêu tổng quát.",
+        "ambiguous": false
+      },
+      {
+        "id": "31",
+        "question": "What is the main goal of performance optimization in Flutter apps?",
+        "options": [
+          "Improve UI colors",
+          "Ensure smooth and responsive UI",
+          "Reduce code size",
+          "Add features"
+        ],
+        "answer": "B",
+        "explanation": "Tối ưu nhằm UI mượt và phản hồi nhanh; màu sắc, ít code hay thêm tính năng không phải mục tiêu chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "32",
+        "question": "Why is understanding the widget lifecycle important?",
+        "options": [
+          "Improve API performance",
+          "Manage UI updates correctly",
+          "Deploy apps faster",
+          "Reduce file size"
+        ],
+        "answer": "B",
+        "explanation": "Lifecycle giúp quản lý khởi tạo, cập nhật và giải phóng tài nguyên; không trực tiếp tăng API, deploy hay giảm kích thước.",
+        "ambiguous": false
+      },
+      {
+        "id": "33",
+        "question": "What happens when setState() is called in a StatefulWidget?",
+        "options": [
+          "The app restarts",
+          "The widget tree is rebuilt",
+          "Data is saved permanently",
+          "Navigation occurs"
+        ],
+        "answer": "B",
+        "explanation": "setState lên lịch build lại State; không khởi động lại, tự lưu hay điều hướng; không phải toàn bộ app luôn rebuild.",
+        "ambiguous": false
+      },
+      {
+        "id": "34",
+        "question": "When is it most appropriate to customize themes in a Flutter app?",
+        "options": [
+          "After API integration",
+          "During UI/UX design phase",
+          "Only at deployment",
+          "Only for testing"
+        ],
+        "answer": "B",
+        "explanation": "Giai đoạn thiết kế UI/UX phù hợp xác định theme; không cần đợi API, deployment hay testing, và vẫn có thể chỉnh sau.",
+        "ambiguous": false
+      },
+      {
+        "id": "35",
+        "question": "Why is separating UI and state logic recommended?",
+        "options": [
+          "Reduce code size",
+          "Improve maintainability",
+          "Faster execution",
+          "Better animations"
+        ],
+        "answer": "B",
+        "explanation": "Tách UI và logic state giúp bảo trì, kiểm thử; không bảo đảm ít mã, chạy nhanh hay animation đẹp.",
+        "ambiguous": false
+      },
+      {
+        "id": "36",
+        "question": "Why are widgets lightweight in Flutter?",
+        "options": [
+          "They manage system resources",
+          "They are immutable descriptions",
+          "They store UI state",
+          "They handle rendering directly"
+        ],
+        "answer": "B",
+        "explanation": "Widget là mô tả cấu hình bất biến; resource và state thường do đối tượng khác quản lý, widget không trực tiếp tự render.",
+        "ambiguous": false
+      },
+      {
+        "id": "37",
+        "question": "Why should state be kept as local as possible?",
+        "options": [
+          "Better animations",
+          "Reduce unnecessary rebuilds",
+          "Simplify UI",
+          "Improve navigation"
+        ],
+        "answer": "B",
+        "explanation": "State cục bộ giới hạn phạm vi cập nhật và có thể giảm rebuild; hoạt ảnh, giao diện và điều hướng không phải lý do chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "38",
+        "question": "Which Flutter test focuses on UI components?",
+        "options": [
+          "Unit test",
+          "Widget test",
+          "Integration test",
+          "Load test"
+        ],
+        "answer": "B",
+        "explanation": "Widget test kiểm tra thành phần UI; unit test kiểm tra đơn vị logic, integration test kiểm tra luồng tổng thể, load test kiểm tra tải.",
+        "ambiguous": false
+      },
+      {
+        "id": "39",
+        "question": "Which input type improves user experience for emails?",
+        "options": [
+          "TextInputType.number",
+          "TextInputType.emailAddress",
+          "TextInputType.text",
+          "TextInputType.url"
+        ],
+        "answer": "B",
+        "explanation": "emailAddress gợi ý bàn phím email; number, text và url dành cho kiểu nhập khác.",
+        "ambiguous": false
+      },
+      {
+        "id": "40",
+        "question": "Why are forms important in mobile applications?",
+        "options": [
+          "UI decoration",
+          "User data collection",
+          "State management",
+          "Navigation"
+        ],
+        "answer": "B",
+        "explanation": "Form thu thập và xác thực dữ liệu người dùng; trang trí, state và navigation không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "41",
+        "question": "What problem does state hoisting address?",
+        "options": [
+          "API delay",
+          "State duplication",
+          "Theme conflict",
+          "Navigation error"
+        ],
+        "answer": "B",
+        "explanation": "Hoisting đưa state lên tổ tiên chung để tránh bản sao khó đồng bộ; không trực tiếp xử lý API, theme hay navigation.",
+        "ambiguous": false
+      },
+      {
+        "id": "42",
+        "question": "Which widget rebuilds automatically during animation?",
+        "options": [
+          "AnimatedBuilder",
+          "FutureBuilder",
+          "StreamBuilder",
+          "LayoutBuilder"
+        ],
+        "answer": "A",
+        "explanation": "AnimatedBuilder theo dõi animation và rebuild; FutureBuilder/StreamBuilder theo dõi dữ liệu async, LayoutBuilder theo ràng buộc.",
+        "ambiguous": false
+      },
+      {
+        "id": "43",
+        "question": "What does the build() method return in a widget?",
+        "options": [
+          "A screen",
+          "A widget tree describing the UI",
+          "Application state",
+          "Rendered pixels"
+        ],
+        "answer": "B",
+        "explanation": "build trả widget mô tả UI; không trực tiếp trả màn hình hoàn chỉnh, state hay pixel.",
+        "ambiguous": false
+      },
+      {
+        "id": "44",
+        "question": "What is Flutter primarily used for?",
+        "options": [
+          "Designing databases for mobile apps",
+          "Creating native applications from a single codebase",
+          "Developing server-side applications only",
+          "Building operating systems for mobile devices"
+        ],
+        "answer": "B",
+        "explanation": "Flutter xây dựng ứng dụng đa nền tảng từ một codebase; A, C, D mô tả các mục đích khác, không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "45",
+        "question": "Which HTTP header is commonly used for authorization?",
+        "options": [
+          "Content-Type",
+          "Accept",
+          "Authorization",
+          "Cache-Control"
+        ],
+        "answer": "C",
+        "explanation": "Authorization thường mang Bearer token; Content-Type mô tả body, Accept định dạng mong muốn, Cache-Control điều khiển cache.",
+        "ambiguous": false
+      },
+      {
+        "id": "46",
+        "question": "Why is clean architecture beneficial?",
+        "options": [
+          "Fewer files",
+          "Easier maintenance and testing",
+          "Better UI",
+          "Faster builds"
+        ],
+        "answer": "B",
+        "explanation": "Tách trách nhiệm giúp bảo trì và kiểm thử; ít file, UI đẹp hay build nhanh không được đảm bảo.",
+        "ambiguous": false
+      },
+      {
+        "id": "47",
+        "question": "What does the final keyword indicate in Dart?",
+        "options": [
+          "The variable can be reassigned later",
+          "The variable value is fixed after assignment",
+          "The variable is global",
+          "The variable is private"
+        ],
+        "answer": "B",
+        "explanation": "final cho phép gán một lần; không có nghĩa global, private hoặc có thể gán lại. Object vẫn có thể mutable.",
+        "ambiguous": false
+      },
+      {
+        "id": "48",
+        "question": "Which Flutter widget reacts to authentication state changes?",
+        "options": [
+          "FutureBuilder",
+          "StreamBuilder",
+          "ListView",
+          "Form"
+        ],
+        "answer": "B",
+        "explanation": "StreamBuilder theo dõi stream thay đổi trạng thái xác thực; FutureBuilder xử lý một Future, ListView hiển thị danh sách, Form nhập liệu.",
+        "ambiguous": false
+      },
+      {
+        "id": "49",
+        "question": "Which Flutter plugin provides SQLite support?",
+        "options": [
+          "hive",
+          "moor",
+          "sqflite",
+          "shared_preferences"
+        ],
+        "answer": "C",
+        "explanation": "Nếu C là sqflite, đó là plugin SQLite phổ biến; Hive là kho khác, moor là ORM trên SQLite, shared_preferences lưu key-value. Nếu C ghi sqlite thì tên không phải sqflite và moor cũng hỗ trợ SQLite, nên câu không có đáp án duy nhất rõ ràng.",
+        "ambiguous": false
+      },
+      {
+        "id": "50",
+        "question": "Why is passing context important in navigation?",
+        "options": [
+          "Access theme",
+          "Access Navigator",
+          "Access state",
+          "Access layout"
+        ],
+        "answer": "B",
+        "explanation": "BuildContext giúp Navigator.of(context) tìm Navigator; context cũng truy cập theme và state nhưng không phải lý do navigation trong câu này.",
+        "ambiguous": false
+      }
+    ]
+  },
+  {
+    "id": "PRM393_SU26_FE_887674",
+    "title": "SU26 · 887674",
+    "questions": [
+      {
+        "id": "1",
+        "question": "Which Flutter widget reacts to authentication state changes?",
+        "options": [
+          "FutureBuilder",
+          "StreamBuilder",
+          "ListView",
+          "Form"
+        ],
+        "answer": "B",
+        "explanation": "StreamBuilder theo dõi stream thay đổi trạng thái xác thực; FutureBuilder xử lý một Future, ListView hiển thị danh sách, Form nhập liệu.",
+        "ambiguous": false
+      },
+      {
+        "id": "2",
+        "question": "Why is separating UI and state logic recommended?",
+        "options": [
+          "Reduce code size",
+          "Improve maintainability",
+          "Faster execution",
+          "Better animations"
+        ],
+        "answer": "B",
+        "explanation": "Tách UI và logic state giúp bảo trì, kiểm thử; không bảo đảm ít mã, chạy nhanh hay animation đẹp.",
+        "ambiguous": false
+      },
+      {
+        "id": "3",
+        "question": "What does crossAxisAlignment control?",
+        "options": [
+          "Vertical alignment in Column",
+          "Horizontal alignment in Column",
+          "Child order",
+          "Widget size"
+        ],
+        "answer": "B",
+        "explanation": "Trong Column cross axis là ngang; căn dọc thuộc main axis, không quyết định thứ tự hay kích thước trực tiếp.",
+        "ambiguous": false
+      },
+      {
+        "id": "4",
+        "question": "What causes unnecessary widget rebuilds?",
+        "options": [
+          "State changes",
+          "Overusing setState()",
+          "Using Provider",
+          "Using const widgets"
+        ],
+        "answer": "B",
+        "explanation": "Lạm dụng setState có thể rebuild không cần thiết; thay đổi state đôi khi cần rebuild, Provider và const không mặc nhiên gây lỗi.",
+        "ambiguous": false
+      },
+      {
+        "id": "5",
+        "question": "What happens after successful login?",
+        "options": [
+          "App closes",
+          "User session starts",
+          "Theme changes",
+          "Navigation resets"
+        ],
+        "answer": "B",
+        "explanation": "Đăng nhập thành công thường tạo phiên người dùng; đóng app, đổi theme hay reset điều hướng không mặc nhiên xảy ra.",
+        "ambiguous": false
+      },
+      {
+        "id": "6",
+        "question": "Why is passing context important in navigation?",
+        "options": [
+          "Access theme",
+          "Access Navigator",
+          "Access state",
+          "Access layout"
+        ],
+        "answer": "B",
+        "explanation": "BuildContext giúp Navigator.of(context) tìm Navigator; context cũng truy cập theme và state nhưng không phải lý do navigation trong câu này.",
+        "ambiguous": false
+      },
+      {
+        "id": "7",
+        "question": "What is Dart primarily designed for in the Flutter ecosystem?",
+        "options": [
+          "Database management",
+          "User interface development",
+          "General-purpose programming with UI focus",
+          "Network security"
+        ],
+        "answer": "C",
+        "explanation": "Dart là ngôn ngữ đa dụng được dùng để xây dựng UI Flutter; A và D không mô tả mục đích chính, B quá hẹp vì Dart không chỉ dành cho UI.",
+        "ambiguous": false
+      },
+      {
+        "id": "8",
+        "question": "What does the build() method return in a widget?",
+        "options": [
+          "A screen",
+          "A widget tree describing the UI",
+          "Application state",
+          "Rendered pixels"
+        ],
+        "answer": "B",
+        "explanation": "build trả widget mô tả UI; không trực tiếp trả màn hình hoàn chỉnh, state hay pixel.",
+        "ambiguous": false
+      },
+      {
+        "id": "9",
+        "question": "Why is understanding the widget lifecycle important?",
+        "options": [
+          "Improve API performance",
+          "Manage UI updates correctly",
+          "Deploy apps faster",
+          "Reduce file size"
+        ],
+        "answer": "B",
+        "explanation": "Lifecycle giúp quản lý khởi tạo, cập nhật và giải phóng tài nguyên; không trực tiếp tăng API, deploy hay giảm kích thước.",
+        "ambiguous": false
+      },
+      {
+        "id": "10",
+        "question": "What is the main goal of testing in Flutter apps?",
+        "options": [
+          "Improve UI design",
+          "Ensure app quality and correctness",
+          "Speed up builds",
+          "Manage state"
+        ],
+        "answer": "B",
+        "explanation": "Testing xác minh hành vi và phát hiện lỗi; thiết kế UI, tốc độ build, quản lý state không phải mục tiêu tổng quát.",
+        "ambiguous": false
+      },
+      {
+        "id": "11",
+        "question": "Which Dart feature supports object-oriented programming?",
+        "options": [
+          "Widgets",
+          "Classes and objects",
+          "Hot reload",
+          "Layout builders"
+        ],
+        "answer": "B",
+        "explanation": "Class và object là nền tảng hướng đối tượng; widget là phần tử UI, hot reload là công cụ, LayoutBuilder là widget bố cục.",
+        "ambiguous": false
+      },
+      {
+        "id": "12",
+        "question": "When is it most appropriate to customize themes in a Flutter app?",
+        "options": [
+          "After API integration",
+          "During UI/UX design phase",
+          "Only at deployment",
+          "Only for testing"
+        ],
+        "answer": "B",
+        "explanation": "Giai đoạn thiết kế UI/UX phù hợp xác định theme; không cần đợi API, deployment hay testing, và vẫn có thể chỉnh sau.",
+        "ambiguous": false
+      },
+      {
+        "id": "13",
+        "question": "Which input type improves user experience for emails?",
+        "options": [
+          "TextInputType.number",
+          "TextInputType.emailAddress",
+          "TextInputType.text",
+          "TextInputType.url"
+        ],
+        "answer": "B",
+        "explanation": "emailAddress gợi ý bàn phím email; number, text và url dành cho kiểu nhập khác.",
+        "ambiguous": false
+      },
+      {
+        "id": "14",
+        "question": "Why should architecture be decided early?",
+        "options": [
+          "Avoid UI work",
+          "Reduce refactoring cost",
+          "Improve animations",
+          "Change theme"
+        ],
+        "answer": "B",
+        "explanation": "Quyết định kiến trúc sớm giảm chi phí tái cấu trúc; không loại bỏ UI hay tự cải thiện animation/theme.",
+        "ambiguous": false
+      },
+      {
+        "id": "15",
+        "question": "Which step is required before running a Flutter app for the first time?",
+        "options": [
+          "Publishing the app",
+          "Setting up the Flutter SDK",
+          "Configuring a database",
+          "Writing backend APIs"
+        ],
+        "answer": "B",
+        "explanation": "Cần cài Flutter SDK để chạy ứng dụng Flutter; publish, database và backend không bắt buộc cho app đầu tiên.",
+        "ambiguous": false
+      },
+      {
+        "id": "16",
+        "question": "Why is immutability important in BLoC states?",
+        "options": [
+          "UI speed",
+          "Predictable state changes",
+          "Memory usage",
+          "Theme control"
+        ],
+        "answer": "B",
+        "explanation": "State bất biến giúp theo dõi và so sánh thay đổi dễ dự đoán; tốc độ UI, bộ nhớ và theme không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "17",
+        "question": "Which HTTP header is commonly used for authorization?",
+        "options": [
+          "Content-Type",
+          "Accept",
+          "Authorization",
+          "Cache-Control"
+        ],
+        "answer": "C",
+        "explanation": "Authorization thường mang Bearer token; Content-Type mô tả body, Accept định dạng mong muốn, Cache-Control điều khiển cache.",
+        "ambiguous": false
+      },
+      {
+        "id": "18",
+        "question": "Which method retrieves data from SharedPreferences?",
+        "options": [
+          "get()",
+          "read()",
+          "fetch()",
+          "load()"
+        ],
+        "answer": "A",
+        "explanation": "API SharedPreferences cũ có get(key); read, fetch, load không phải tên getter của API đó. Các getter có kiểu như getString cũng thường được dùng.",
+        "ambiguous": false
+      },
+      {
+        "id": "19",
+        "question": "What problem does state hoisting address?",
+        "options": [
+          "API delay",
+          "State duplication",
+          "Theme conflict",
+          "Navigation error"
+        ],
+        "answer": "B",
+        "explanation": "Hoisting đưa state lên tổ tiên chung để tránh bản sao khó đồng bộ; không trực tiếp xử lý API, theme hay navigation.",
+        "ambiguous": false
+      },
+      {
+        "id": "20",
+        "question": "Why should state be kept as local as possible?",
+        "options": [
+          "Better animations",
+          "Reduce unnecessary rebuilds",
+          "Simplify UI",
+          "Improve navigation"
+        ],
+        "answer": "B",
+        "explanation": "State cục bộ giới hạn phạm vi cập nhật và có thể giảm rebuild; hoạt ảnh, giao diện và điều hướng không phải lý do chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "21",
+        "question": "What is the primary responsibility of the setState() method?",
+        "options": [
+          "Persist data",
+          "Trigger widget rebuild",
+          "Navigate screens",
+          "Handle async tasks"
+        ],
+        "answer": "B",
+        "explanation": "setState thông báo thay đổi và lên lịch rebuild; không tự lưu, điều hướng hay xử lý async.",
+        "ambiguous": false
+      },
+      {
+        "id": "22",
+        "question": "Which HTTP method is used to send new data to a server?",
+        "options": [
+          "GET",
+          "DELETE",
+          "POST",
+          "HEAD"
+        ],
+        "answer": "C",
+        "explanation": "POST thường gửi dữ liệu mới; GET đọc, DELETE xóa, HEAD lấy metadata.",
+        "ambiguous": false
+      },
+      {
+        "id": "23",
+        "question": "Which widget is an example of implicit animation?",
+        "options": [
+          "AnimatedContainer",
+          "AnimationController",
+          "Tween",
+          "Ticker"
+        ],
+        "answer": "A",
+        "explanation": "AnimatedContainer tự animate khi thuộc tính thay đổi; Controller điều khiển tường minh, Tween nội suy, Ticker phát nhịp.",
+        "ambiguous": false
+      },
+      {
+        "id": "24",
+        "question": "What does the final keyword indicate in Dart?",
+        "options": [
+          "The variable can be reassigned later",
+          "The variable value is fixed after assignment",
+          "The variable is global",
+          "The variable is private"
+        ],
+        "answer": "B",
+        "explanation": "final cho phép gán một lần; không có nghĩa global, private hoặc có thể gán lại. Object vẫn có thể mutable.",
+        "ambiguous": false
+      },
+      {
+        "id": "25",
+        "question": "Why are forms important in mobile applications?",
+        "options": [
+          "UI decoration",
+          "User data collection",
+          "State management",
+          "Navigation"
+        ],
+        "answer": "B",
+        "explanation": "Form thu thập và xác thực dữ liệu người dùng; trang trí, state và navigation không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "26",
+        "question": "What does golden testing verify?",
+        "options": [
+          "API responses",
+          "UI appearance consistency",
+          "Database state",
+          "Authentication"
+        ],
+        "answer": "B",
+        "explanation": "Golden test so sánh hình ảnh UI với mẫu chuẩn; không trực tiếp kiểm tra API, database hay xác thực.",
+        "ambiguous": false
+      },
+      {
+        "id": "27",
+        "question": "Which Flutter tool helps debug network requests?",
+        "options": [
+          "DevTools",
+          "Inspector",
+          "Emulator",
+          "Hot reload"
+        ],
+        "answer": "A",
+        "explanation": "Flutter DevTools có công cụ theo dõi mạng; Inspector xem cây widget, emulator chạy app, hot reload cập nhật mã.",
+        "ambiguous": false
+      },
+      {
+        "id": "28",
+        "question": "What is the main goal of performance optimization in Flutter apps?",
+        "options": [
+          "Improve UI colors",
+          "Ensure smooth and responsive UI",
+          "Reduce code size",
+          "Add features"
+        ],
+        "answer": "B",
+        "explanation": "Tối ưu nhằm UI mượt và phản hồi nhanh; màu sắc, ít code hay thêm tính năng không phải mục tiêu chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "29",
+        "question": "What is the main purpose of the Container widget?",
+        "options": [
+          "Navigation",
+          "Layout, styling, and positioning",
+          "State management",
+          "Network requests"
+        ],
+        "answer": "B",
+        "explanation": "Container kết hợp bố cục, trang trí và định vị; không chủ yếu quản lý navigation, state hay mạng.",
+        "ambiguous": false
+      },
+      {
+        "id": "30",
+        "question": "Which Flutter plugin provides SQLite support?",
+        "options": [
+          "hive",
+          "moor",
+          "sqlite",
+          "shared_preferences"
+        ],
+        "answer": "C",
+        "explanation": "Nếu C là sqflite, đó là plugin SQLite phổ biến; Hive là kho khác, moor là ORM trên SQLite, shared_preferences lưu key-value. Nếu C ghi sqlite thì tên không phải sqflite và moor cũng hỗ trợ SQLite, nên câu không có đáp án duy nhất rõ ràng.",
+        "ambiguous": true
+      },
+      {
+        "id": "31",
+        "question": "What is the main benefit of Flutter's widget-based architecture?",
+        "options": [
+          "Widgets are only used for layout design",
+          "Widgets allow code reuse across platforms",
+          "Widgets automatically manage databases",
+          "Widgets replace backend services"
+        ],
+        "answer": "B",
+        "explanation": "Widget có thể kết hợp và tái sử dụng trên các nền tảng; chúng không chỉ dùng bố cục, không tự quản database hay thay backend.",
+        "ambiguous": false
+      },
+      {
+        "id": "32",
+        "question": "Which widget reacts to async data from local storage?",
+        "options": [
+          "FutureBuilder",
+          "StreamBuilder",
+          "ListView",
+          "Provider"
+        ],
+        "answer": "A",
+        "explanation": "FutureBuilder phù hợp kết quả Future đọc dữ liệu một lần; StreamBuilder phù hợp stream, ListView hiển thị danh sách, Provider quản lý/chia sẻ state.",
+        "ambiguous": false
+      },
+      {
+        "id": "33",
+        "question": "What is Flutter primarily used for?",
+        "options": [
+          "Designing databases for mobile apps",
+          "Creating native applications from a single codebase",
+          "Developing server-side applications only",
+          "Building operating systems for mobile devices"
+        ],
+        "answer": "B",
+        "explanation": "Flutter xây dựng ứng dụng đa nền tảng từ một codebase; A, C, D mô tả các mục đích khác, không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "34",
+        "question": "Which practice improves API security?",
+        "options": [
+          "Hardcoding keys",
+          "Using HTTPS",
+          "Ignoring errors",
+          "Using globals"
+        ],
+        "answer": "B",
+        "explanation": "HTTPS mã hóa dữ liệu khi truyền; hardcode key, bỏ qua lỗi và biến global không đảm bảo bảo mật.",
+        "ambiguous": false
+      },
+      {
+        "id": "35",
+        "question": "What happens when setState() is called in a StatefulWidget?",
+        "options": [
+          "The app restarts",
+          "The widget tree is rebuilt",
+          "Data is saved permanently",
+          "Navigation occurs"
+        ],
+        "answer": "B",
+        "explanation": "setState lên lịch build lại State; không khởi động lại, tự lưu hay điều hướng; không phải toàn bộ app luôn rebuild.",
+        "ambiguous": false
+      },
+      {
+        "id": "36",
+        "question": "What does status code 200 indicate?",
+        "options": [
+          "Client error",
+          "Server error",
+          "Success",
+          "Redirect"
+        ],
+        "answer": "C",
+        "explanation": "HTTP 200 là thành công; không phải lỗi client, lỗi server hay chuyển hướng.",
+        "ambiguous": false
+      },
+      {
+        "id": "37",
+        "question": "Which widget rebuilds automatically during animation?",
+        "options": [
+          "AnimatedBuilder",
+          "FutureBuilder",
+          "StreamBuilder",
+          "LayoutBuilder"
+        ],
+        "answer": "A",
+        "explanation": "AnimatedBuilder theo dõi animation và rebuild; FutureBuilder/StreamBuilder theo dõi dữ liệu async, LayoutBuilder theo ràng buộc.",
+        "ambiguous": false
+      },
+      {
+        "id": "38",
+        "question": "Which widget pattern protects authenticated routes?",
+        "options": [
+          "Navigator",
+          "Guard",
+          "Route protection",
+          "Middleware"
+        ],
+        "answer": "B",
+        "explanation": "Route guard kiểm tra điều kiện truy cập; Navigator điều hướng, route protection là mục tiêu chung, middleware là khái niệm rộng hơn. Cách gọi widget pattern chưa chuẩn.",
+        "ambiguous": false
+      },
+      {
+        "id": "39",
+        "question": "Which widget allows both scrolling and app bars to interact?",
+        "options": [
+          "ListView",
+          "CustomScrollView",
+          "GridView",
+          "Stack"
+        ],
+        "answer": "B",
+        "explanation": "CustomScrollView kết hợp sliver như SliverAppBar với nội dung cuộn; ListView/GridView là loại cuộn cụ thể, Stack xếp chồng. NestedScrollView cũng có thể phù hợp nhưng không có trong đề.",
+        "ambiguous": false
+      },
+      {
+        "id": "40",
+        "question": "Which method resets all form fields?",
+        "options": [
+          "clear()",
+          "reset()",
+          "dispose()",
+          "remove()"
+        ],
+        "answer": "B",
+        "explanation": "FormState.reset() đặt các field về giá trị ban đầu; clear, dispose, remove không phải phương thức reset toàn form.",
+        "ambiguous": false
+      },
+      {
+        "id": "41",
+        "question": "What happens if a non-nullable variable is not initialized in Dart?",
+        "options": [
+          "The app runs normally",
+          "A runtime exception occurs",
+          "A compile-time error occurs",
+          "The value becomes null automatically"
+        ],
+        "answer": "C",
+        "explanation": "Thông thường biến non-nullable phải được bảo đảm khởi tạo trước khi dùng, nếu không sẽ lỗi phân tích/biên dịch; không tự thành null. Ngoại lệ: biến late đọc trước khi gán gây lỗi lúc chạy.",
+        "ambiguous": false
+      },
+      {
+        "id": "42",
+        "question": "Which platforms can Flutter applications target using a single codebase?",
+        "options": [
+          "Android only",
+          "iOS only",
+          "Android, iOS, web, and desktop",
+          "Web servers only"
+        ],
+        "answer": "C",
+        "explanation": "Flutter hỗ trợ Android, iOS, web và desktop; A và B quá hẹp, D không phải danh sách nền tảng UI Flutter.",
+        "ambiguous": false
+      },
+      {
+        "id": "43",
+        "question": "What is the role of v-sync in Flutter?",
+        "options": [
+          "Sync data",
+          "Optimize animation resources",
+          "Control layout",
+          "Handle navigation"
+        ],
+        "answer": "B",
+        "explanation": "vsync đồng bộ ticker với frame; không đồng bộ dữ liệu, layout hay navigation.",
+        "ambiguous": false
+      },
+      {
+        "id": "44",
+        "question": "Why is secure authentication critical in mobile apps?",
+        "options": [
+          "UI quality",
+          "Protect user data",
+          "Reduce code",
+          "Improve speed"
+        ],
+        "answer": "B",
+        "explanation": "Xác thực an toàn bảo vệ tài khoản và dữ liệu; UI, số dòng mã hay tốc độ không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "45",
+        "question": "Which command builds a release APK?",
+        "options": [
+          "flutter run",
+          "flutter build apk",
+          "flutter doctor",
+          "flutter clean"
+        ],
+        "answer": "B",
+        "explanation": "flutter build apk tạo APK release mặc định; run chạy app, doctor kiểm tra môi trường, clean xóa dữ liệu build.",
+        "ambiguous": false
+      },
+      {
+        "id": "46",
+        "question": "Why is clean architecture beneficial?",
+        "options": [
+          "Fewer files",
+          "Easier maintenance and testing",
+          "Better UI",
+          "Faster builds"
+        ],
+        "answer": "B",
+        "explanation": "Tách trách nhiệm giúp bảo trì và kiểm thử; ít file, UI đẹp hay build nhanh không được đảm bảo.",
+        "ambiguous": false
+      },
+      {
+        "id": "47",
+        "question": "Which Flutter test focuses on UI components?",
+        "options": [
+          "Unit test",
+          "Widget test",
+          "Integration test",
+          "Load test"
+        ],
+        "answer": "B",
+        "explanation": "Widget test kiểm tra thành phần UI; unit test kiểm tra đơn vị logic, integration test kiểm tra luồng tổng thể, load test kiểm tra tải.",
+        "ambiguous": false
+      },
+      {
+        "id": "48",
+        "question": "Which Dart data structure is best suited for storing an ordered collection of items?",
+        "options": [
+          "Set",
+          "Map",
+          "List",
+          "Queue"
+        ],
+        "answer": "C",
+        "explanation": "List là tập hợp có thứ tự và truy cập theo chỉ số; Set chủ yếu biểu diễn phần tử duy nhất, Map là cặp khóa-giá trị, Queue tối ưu thao tác hàng đợi.",
+        "ambiguous": false
+      },
+      {
+        "id": "49",
+        "question": "Why are widgets lightweight in Flutter?",
+        "options": [
+          "They manage system resources",
+          "They are immutable descriptions",
+          "They store UI state",
+          "They handle rendering directly"
+        ],
+        "answer": "B",
+        "explanation": "Widget là mô tả cấu hình bất biến; resource và state thường do đối tượng khác quản lý, widget không trực tiếp tự render.",
+        "ambiguous": false
+      },
+      {
+        "id": "50",
+        "question": "Which pattern is commonly used for scalable state management?",
+        "options": [
+          "MVC",
+          "BLoC",
+          "Singleton",
+          "Factory"
+        ],
+        "answer": "B",
+        "explanation": "BLoC hỗ trợ quản lý state có thể mở rộng; MVC tổng quát, Singleton quản lý instance, Factory tạo object.",
+        "ambiguous": false
+      }
+    ]
+  }
+]
