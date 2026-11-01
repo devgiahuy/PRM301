@@ -2622,5 +2622,2617 @@
         "ambiguous": false
       }
     ]
+  },
+  {
+    "id": "quizlet-david",
+    "title": "quizlet-david",
+    "questions": [
+      {
+        "id": "1",
+        "question": "Which layer of the Flutter architecture handles rendering, accessibility, and GPU acceleration using the Skia engine?",
+        "options": [
+          "Framework Layer",
+          "Engine Layer",
+          "Embedder Layer",
+          "Material Layer"
+        ],
+        "answer": "B",
+        "explanation": "A: Framework cung cấp API widget. B: Engine xử lý render và accessibility; Skia là một backend. C: Embedder tích hợp nền tảng. D: Material là thư viện widget.",
+        "ambiguous": false
+      },
+      {
+        "id": "2",
+        "question": "In Dart, what is the primary difference between final and const variables?",
+        "options": [
+          "final is for compile-time constants; const is for runtime constants.",
+          "final is a runtime-constant assigned once; const is a compile-time constant.",
+          "final variables can be reassigned; const variables cannot.",
+          "There is no difference; they are interchangeable."
+        ],
+        "answer": "B",
+        "explanation": "A: Đảo ngược ý nghĩa. B: final gán một lần, const là hằng lúc biên dịch. C: final không thể gán lại. D: Hai từ khóa khác nhau.",
+        "ambiguous": false
+      },
+      {
+        "id": "3",
+        "question": "Which of the following is a key reason to use a \"factory\" constructor in Dart?",
+        "options": [
+          "To prevent a class from being instantiated.",
+          "To gain control over instance creation, such as returning a cached instance or a subtype.",
+          "To ensure a function always returns a Future.",
+          "To implement an interface implicitly."
+        ],
+        "answer": "B",
+        "explanation": "A: factory vẫn có thể tạo đối tượng. B: factory có thể trả instance đã lưu hoặc subtype. C: Không quyết định Future. D: Interface không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "4",
+        "question": "What widget serves as the \"backbone\" of a Material screen, providing structural elements like the AppBar and FloatingActionButton?",
+        "options": [
+          "Container",
+          "SizedBox",
+          "Scaffold",
+          "MaterialBody"
+        ],
+        "answer": "C",
+        "explanation": "A: Container bố trí và trang trí. B: SizedBox tạo kích thước. C: Scaffold cung cấp cấu trúc màn hình Material. D: MaterialBody không phải widget chuẩn.",
+        "ambiguous": false
+      },
+      {
+        "id": "5",
+        "question": "In Flutter Navigation 1.0, which method is used to remove the current top-level page from the stack and return to the previous screen?",
+        "options": [
+          "push()",
+          "pop()",
+          "pushNamed()",
+          "replace()`"
+        ],
+        "answer": "B",
+        "explanation": "A: push thêm route. B: pop loại route trên cùng. C: pushNamed thêm route theo tên. D: replace thay route.",
+        "ambiguous": false
+      },
+      {
+        "id": "6",
+        "question": "When building a responsive UI, which widget should you use if you need to make layout decisions based on the constraints of the parent widget rather than the full screen size?",
+        "options": [
+          "MediaQuery",
+          "LayoutBuilder",
+          "OrientationBuilder",
+          "Expanded"
+        ],
+        "answer": "B",
+        "explanation": "A: MediaQuery cung cấp thông tin môi trường. B: LayoutBuilder nhận constraints của cha. C: OrientationBuilder phản ứng theo hướng bố cục. D: Expanded chia không gian trong Flex.",
+        "ambiguous": false
+      },
+      {
+        "id": "7",
+        "question": "To validate all fields in a form simultaneously and save their values, which object must be assigned to the key property of the Form widget?",
+        "options": [
+          "FocusNode",
+          "TextEditingController",
+          "GlobalKey<FormState>",
+          "ValidatorKey"
+        ],
+        "answer": "C",
+        "explanation": "A: FocusNode quản lý focus. B: Controller quản lý văn bản. C: GlobalKey truy cập FormState để validate và save. D: ValidatorKey không phải API chuẩn.",
+        "ambiguous": false
+      },
+      {
+        "id": "8",
+        "question": "According to RESTful API standards, what does an HTTP status code in the 400-499 range typically indicate?",
+        "options": [
+          "Success",
+          "Client error",
+          "Server error",
+          "Redirection"
+        ],
+        "answer": "B",
+        "explanation": "A: 2xx chỉ thành công. B: 4xx thường là lỗi phía client. C: 5xx là lỗi server. D: 3xx là chuyển hướng.",
+        "ambiguous": false
+      },
+      {
+        "id": "9",
+        "question": "Which local storage method is most appropriate for storing simple, lightweight data like a \"Dark Mode\" toggle or a user's login state?",
+        "options": [
+          "SharedPreferences",
+          "SQLite (sqflite)",
+          "Local JSON Files",
+          "Firebase Cloud Storage"
+        ],
+        "answer": "A",
+        "explanation": "A: SharedPreferences phù hợp tùy chọn nhỏ, không dành cho token bí mật. B: SQLite phù hợp dữ liệu có cấu trúc. C: JSON file không cần thiết cho một cờ nhỏ. D: Firebase Cloud Storage là lưu trữ từ xa.",
+        "ambiguous": false
+      },
+      {
+        "id": "10",
+        "question": "What are the three structural components of a JSON Web Token (JWT)?",
+        "options": [
+          "Header, Payload, and Signature",
+          "Username, Password, and Token",
+          "Access Key, Refresh Key, and Expiry",
+          "Algorithm, Data, and Encoding"
+        ],
+        "answer": "A",
+        "explanation": "A: JWT dạng ký gồm header, payload và signature. B: Thông tin đăng nhập không phải cấu trúc JWT. C: Đây không phải ba phần JWT. D: Algorithm thường nằm trong header.",
+        "ambiguous": false
+      },
+      {
+        "id": "11",
+        "question": "According to the Flutter Testing Pyramid, which type of test is described as being \"fast, stable, and cheap\" and should make up the majority of your test suite?",
+        "options": [
+          "Unit Tests",
+          "Widget Tests",
+          "Integration Tests",
+          "Manual Tests"
+        ],
+        "answer": "A",
+        "explanation": "A: Unit test nhanh và kiểm tra logic nhỏ. B: Widget test kiểm tra widget. C: Integration test kiểm tra luồng hoàn chỉnh. D: Manual test cần người thao tác.",
+        "ambiguous": false
+      },
+      {
+        "id": "12",
+        "question": "When diagnosing performance issues or \"jank\" in a Flutter application, which execution mode is recommended to get accurate data?",
+        "options": [
+          "Debug Mode",
+          "Profile Mode",
+          "Release Mode",
+          "Emulator Mode"
+        ],
+        "answer": "B",
+        "explanation": "A: Debug thêm nhiều kiểm tra làm sai lệch hiệu năng. B: Profile dành cho phân tích hiệu năng. C: Release tối ưu nhưng không có đủ công cụ profiling. D: Emulator là môi trường, không phải chế độ build.",
+        "ambiguous": false
+      },
+      {
+        "id": "13",
+        "question": "What is the primary definition of Flutter according to the sources?",
+        "options": [
+          "A backend database management system.",
+          "A UI toolkit for building natively compiled apps from a single codebase.",
+          "A programming language specifically for web development.",
+          "An operating system for mobile devices."
+        ],
+        "answer": "B",
+        "explanation": "A: Flutter không phải database. B: Flutter là toolkit UI đa nền tảng. C: Dart mới là ngôn ngữ. D: Flutter không phải hệ điều hành.",
+        "ambiguous": false
+      },
+      {
+        "id": "14",
+        "question": "Which rendering engine does Flutter use to enable rapid UI development?",
+        "options": [
+          "Blink",
+          "WebKit",
+          "Skia.",
+          "Gecko"
+        ],
+        "answer": "C",
+        "explanation": "A: Blink thuộc hệ trình duyệt. B: WebKit là engine web. C: Skia từng là backend render chính; Flutter hiện còn dùng Impeller tùy nền tảng. D: Gecko là engine trình duyệt.",
+        "ambiguous": false
+      },
+      {
+        "id": "15",
+        "question": "Flutter's architecture is composed of which three layers?",
+        "options": [
+          "Framework, Engine, and Embedder.",
+          "UI, Logic, and Data.",
+          "Material, Cupertino, and Widgets.",
+          "Dart, C++, and Java."
+        ],
+        "answer": "A",
+        "explanation": "A: Ba tầng là framework, engine, embedder. B: Đây là cách chia ứng dụng khác. C: Đây là các thư viện widget. D: Đây là các ngôn ngữ.",
+        "ambiguous": false
+      },
+      {
+        "id": "16",
+        "question": "In which scenario is native development considered preferable over using Flutter?",
+        "options": [
+          "Building cross-platform applications with shared logic.",
+          "Rapid prototyping and MVPs.",
+          "Applications requiring very low-level hardware access or high-performance games.",
+          "Standard business applications like e-commerce."
+        ],
+        "answer": "C",
+        "explanation": "A: Flutter phù hợp chia sẻ mã. B: Flutter phù hợp tạo prototype. C: Native có thể thuận lợi hơn cho truy cập rất thấp hoặc game hiệu năng cao. D: Ứng dụng kinh doanh thường phù hợp Flutter.",
+        "ambiguous": false
+      },
+      {
+        "id": "17",
+        "question": "How does Flutter communicate with native code for platform-specific features like Bluetooth or NFC?",
+        "options": [
+          "Through a JavaScript bridge.",
+          "Using the Skia engine directly.",
+          "Via Platform Channels.",
+          "By rewriting the entire app in Kotlin or Swift."
+        ],
+        "answer": "C",
+        "explanation": "A: Flutter không phụ thuộc cầu JavaScript này. B: Skia xử lý đồ họa. C: Platform Channels trao đổi với mã native. D: Không cần viết lại toàn app.",
+        "ambiguous": false
+      },
+      {
+        "id": "18",
+        "question": "What are the key compilation features of Dart, Flutter's programming language?",
+        "options": [
+          "It combines Ahead-of-Time (AOT) and Just-in-Time (JIT) compilation.",
+          "It is strictly an interpreted language.",
+          "It only supports manual memory management.",
+          "It does not support null safety."
+        ],
+        "answer": "A",
+        "explanation": "A: Dart hỗ trợ JIT và AOT tùy môi trường. B: Dart không chỉ thông dịch. C: Dart có garbage collection. D: Dart hỗ trợ null safety.",
+        "ambiguous": false
+      },
+      {
+        "id": "19",
+        "question": "Which development environment is described as an online editor ideal for quick demos and learning syntax without installation?",
+        "options": [
+          "VS Code",
+          "Android Studio",
+          "DartPad.",
+          "Xcode"
+        ],
+        "answer": "C",
+        "explanation": "A: VS Code là editor cài đặt. B: Android Studio là IDE. C: DartPad chạy trực tuyến. D: Xcode là IDE của Apple.",
+        "ambiguous": false
+      },
+      {
+        "id": "20",
+        "question": "Which command should a developer use to verify the Flutter installation and see a summary of the environment status?",
+        "options": [
+          "flutter run",
+          "flutter create",
+          "flutter doctor.",
+          "flutter build"
+        ],
+        "answer": "C",
+        "explanation": "A: run chạy app. B: create tạo dự án. C: doctor kiểm tra môi trường. D: build tạo bản dựng.",
+        "ambiguous": false
+      },
+      {
+        "id": "21",
+        "question": "In a standard Flutter project structure, which file is designated as the application entry point?",
+        "options": [
+          "pubspec.yaml",
+          "lib/main.dart.",
+          "test/unit_test.dart",
+          "android/app/build.gradle"
+        ],
+        "answer": "B",
+        "explanation": "A: pubspec cấu hình dự án. B: lib/main.dart thường chứa điểm vào. C: Đây là file kiểm thử. D: Đây là cấu hình Android.",
+        "ambiguous": false
+      },
+      {
+        "id": "22",
+        "question": "Which file in a Flutter project is used to manage dependencies and asset configurations?",
+        "options": [
+          "main.dart",
+          "index.html",
+          "pubspec.yaml.",
+          "settings.gradle"
+        ],
+        "answer": "C",
+        "explanation": "A: main.dart chứa mã ứng dụng. B: index.html là trang web. C: pubspec.yaml khai báo package và asset. D: settings.gradle cấu hình Gradle.",
+        "ambiguous": false
+      },
+      {
+        "id": "23",
+        "question": "Every Dart program must begin execution from which specific function?",
+        "options": [
+          "start()",
+          "init()",
+          "main()",
+          "runApp()"
+        ],
+        "answer": "C",
+        "explanation": "A: start không phải điểm vào chuẩn. B: init không phải điểm vào chuẩn. C: main là điểm bắt đầu chương trình. D: runApp gắn widget gốc và thường được gọi từ main.",
+        "ambiguous": false
+      },
+      {
+        "id": "24",
+        "question": "Which variable keyword should be used for a value that is a \"compile-time\" constant?",
+        "options": [
+          "var",
+          "final",
+          "const",
+          "dynamic"
+        ],
+        "answer": "C",
+        "explanation": "A: var suy luận kiểu. B: final gán một lần, có thể lúc chạy. C: const tạo hằng lúc biên dịch. D: dynamic bỏ kiểm tra kiểu tĩnh một phần.",
+        "ambiguous": false
+      },
+      {
+        "id": "25",
+        "question": "In Dart collections, what is the primary characteristic of a Set?",
+        "options": [
+          "It is an ordered collection of elements.",
+          "It is an unordered collection of unique elements.",
+          "It stores data in key-value pairs.",
+          "It allows for duplicate values but remains sorted."
+        ],
+        "answer": "B",
+        "explanation": "A: Một số Set giữ thứ tự chèn nhưng đây không phải đặc trưng chính. B: Set chứa phần tử duy nhất; thứ tự tùy implementation. C: Map lưu cặp khóa giá trị. D: Set không cho phần tử trùng.",
+        "ambiguous": false
+      },
+      {
+        "id": "26",
+        "question": "What does the arrow syntax (=>) represent in Dart functions?",
+        "options": [
+          "It is used to declare a variable type.",
+          "It is a short-form syntax for single-expression functions.",
+          "It indicates a multi-line loop.",
+          "It is used exclusively for asynchronous streams."
+        ],
+        "answer": "B",
+        "explanation": "A: Kiểu được khai báo riêng. B: => viết gọn hàm một biểu thức. C: Không phải vòng lặp. D: Không chỉ dành cho stream.",
+        "ambiguous": false
+      },
+      {
+        "id": "27",
+        "question": "Which operator is used as a \"default fallback\" if a variable is null?",
+        "options": [
+          "?",
+          "??",
+          "!",
+          "=="
+        ],
+        "answer": "B",
+        "explanation": "A: ? dùng trong cú pháp nullable và điều kiện. B: ?? dùng giá trị bên phải khi bên trái null. C: ! khẳng định không null. D: == so sánh bằng.",
+        "ambiguous": false
+      },
+      {
+        "id": "28",
+        "question": "When working with functional operations on collections, which method is used to keep only the elements that satisfy a specific condition (predicate)?",
+        "options": [
+          "map",
+          "where",
+          "forEach",
+          "toList"
+        ],
+        "answer": "B",
+        "explanation": "A: map biến đổi phần tử. B: where lọc theo điều kiện. C: forEach thực hiện thao tác. D: toList tạo List.",
+        "ambiguous": false
+      },
+      {
+        "id": "29",
+        "question": "In Object-Oriented Programming (OOP) within Dart, which keyword is used to change the behavior of an inherited method?",
+        "options": [
+          "extends",
+          "class",
+          "@override",
+          "this"
+        ],
+        "answer": "C",
+        "explanation": "A: extends khai báo kế thừa. B: class khai báo lớp. C: @override là annotation đánh dấu ghi đè, không phải keyword; việc khai báo lại phương thức mới thực hiện ghi đè. D: this trỏ đến đối tượng hiện tại. Câu hỏi hoặc đáp án trong tài liệu chưa đủ chính xác để chấm chắc chắn.",
+        "ambiguous": true
+      },
+      {
+        "id": "30",
+        "question": "In a try-catch block, which section is guaranteed to run regardless of whether an exception was thrown or caught?",
+        "options": [
+          "try",
+          "catch",
+          "rethrow",
+          "finally"
+        ],
+        "answer": "D",
+        "explanation": "A: try chứa mã cần thử. B: catch chỉ chạy khi bắt lỗi phù hợp. C: rethrow ném lại lỗi. D: finally thường chạy khi thoát try/catch, kể cả khi có return hoặc lỗi.",
+        "ambiguous": false
+      },
+      {
+        "id": "31",
+        "question": "Which keyword is used to mark a function that returns a Future and allows the use of the await keyword?",
+        "options": [
+          "sync",
+          "async",
+          "stream",
+          "yield"
+        ],
+        "answer": "B",
+        "explanation": "A: sync không cho phép await theo cách này. B: async cho phép await và trả Future. C: stream là kiểu dữ liệu, không phải từ khóa này. D: yield phát phần tử từ generator.",
+        "ambiguous": false
+      },
+      {
+        "id": "32",
+        "question": "What is the main difference between a single-subscription stream and a broadcast stream?",
+        "options": [
+          "Single-subscription streams are faster than broadcast streams.",
+          "Broadcast streams allow multiple listeners, while single-subscription streams allow only one.",
+          "Only broadcast streams can be transformed with map or where.",
+          "Single-subscription streams are for UI only, while broadcast streams are for data."
+        ],
+        "answer": "B",
+        "explanation": "A: Không có đảm bảo tốc độ này. B: Broadcast hỗ trợ nhiều listener, single-subscription chỉ một. C: Cả hai đều có thể transform. D: Cả hai không bị giới hạn theo UI hay dữ liệu.",
+        "ambiguous": false
+      },
+      {
+        "id": "33",
+        "question": "What is the primary purpose of an abstract class in Dart?",
+        "options": [
+          "To create a class that can be instantiated directly.",
+          "To define a structure and force subclasses to implement specific functions.",
+          "To allow a class to inherit from multiple parent classes.",
+          "To prevent any other class from extending it."
+        ],
+        "answer": "B",
+        "explanation": "A: Abstract class không khởi tạo trực tiếp. B: Có thể khai báo phương thức trừu tượng để lớp con cụ thể triển khai. C: Dart không hỗ trợ đa kế thừa lớp. D: Abstract class vẫn có thể được mở rộng.",
+        "ambiguous": false
+      },
+      {
+        "id": "34",
+        "question": "Which keyword should be used if you want to implement a class's signature (interface) but not inherit its actual behavior?",
+        "options": [
+          "extends",
+          "with",
+          "implements",
+          "mixin"
+        ],
+        "answer": "C",
+        "explanation": "A: extends kế thừa hành vi. B: with áp dụng mixin. C: implements yêu cầu thực hiện interface mà không kế thừa implementation. D: mixin khai báo mixin.",
+        "ambiguous": false
+      },
+      {
+        "id": "35",
+        "question": "In Dart, what is a \"Mixin\" used for?",
+        "options": [
+          "To create a private constructor.",
+          "To share code units across classes without using a traditional inheritance chain.",
+          "To define a constant value that is calculated at runtime.",
+          "To convert a JSON map into a class object."
+        ],
+        "answer": "B",
+        "explanation": "A: Constructor riêng dùng cú pháp tên riêng. B: Mixin chia sẻ implementation giữa các lớp. C: Không dùng để khai báo hằng. D: Không tự chuyển JSON.",
+        "ambiguous": false
+      },
+      {
+        "id": "36",
+        "question": "Why would a developer choose to use a factory constructor instead of a generative constructor?",
+        "options": [
+          "To ensure a new object is created every single time the class is called.",
+          "To prevent the use of private variables within the class.",
+          "To gain control over instance creation, such as returning a cached instance or a singleton.",
+          "To make the class compatible with the const keyword."
+        ],
+        "answer": "C",
+        "explanation": "A: factory có thể trả đối tượng cũ. B: Không ngăn private. C: factory có thể trả cache hoặc singleton. D: const không phải mục đích chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "37",
+        "question": "What is the main benefit of using Generics (e.g., List<T>) in Dart development?",
+        "options": [
+          "It allows the program to run faster by bypassing the event loop.",
+          "It provides compile-time type safety and allows for reusable components.",
+          "It automatically converts data types during JSON parsing.",
+          "It is the only way to create asynchronous functions."
+        ],
+        "answer": "B",
+        "explanation": "A: Generics không bỏ qua event loop. B: Generics giúp an toàn kiểu và tái sử dụng. C: Không tự parse JSON. D: Hàm bất đồng bộ không bắt buộc generics.",
+        "ambiguous": false
+      },
+      {
+        "id": "38",
+        "question": "Which operator is used to include all elements of one collection into another?",
+        "options": [
+          "??",
+          "=>",
+          "... (spread operator)",
+          "async*"
+        ],
+        "answer": "C",
+        "explanation": "A: ?? là toán tử fallback null. B: => là cú pháp hàm ngắn. C: ... trải phần tử collection. D: async* khai báo async generator.",
+        "ambiguous": false
+      },
+      {
+        "id": "39",
+        "question": "When the Dart execution engine runs, which of the following has the highest priority?",
+        "options": [
+          "Microtask queue",
+          "Event queue",
+          "UI Rendering events",
+          "Timer events"
+        ],
+        "answer": "A",
+        "explanation": "A: Microtask được xử lý trước sự kiện tiếp theo. B: Event queue chạy sau các microtask đang chờ. C: Render là công việc event loop, không ưu tiên hơn microtask. D: Timer đưa callback vào event queue.",
+        "ambiguous": false
+      },
+      {
+        "id": "40",
+        "question": "When creating a Stream generator function, which combination of keywords is required?",
+        "options": [
+          "async and return",
+          "sync* and yield",
+          "async* and yield",
+          "await and then"
+        ],
+        "answer": "C",
+        "explanation": "A: async và return tạo Future thông thường. B: sync* tạo Iterable đồng bộ. C: async* và yield tạo Stream. D: await và then không khai báo generator.",
+        "ambiguous": false
+      },
+      {
+        "id": "41",
+        "question": "What is the core goal of the Repository Pattern in a Flutter application?",
+        "options": [
+          "To separate data fetching logic from the presentation and UI layer.",
+          "To manage the state of a single widget.",
+          "To increase the speed of the Skia rendering engine.",
+          "To handle low-level hardware access like Bluetooth."
+        ],
+        "answer": "A",
+        "explanation": "A: Repository tách truy cập dữ liệu khỏi phần trình bày. B: Không chỉ quản lý state một widget. C: Không tăng tốc Skia. D: Không xử lý trực tiếp hardware.",
+        "ambiguous": false
+      },
+      {
+        "id": "42",
+        "question": "According to performance best practices, what should be used to handle heavy CPU tasks to avoid blocking the main isolate?",
+        "options": [
+          "const widgets",
+          "Future.delayed",
+          "Isolates",
+          "Microtasks"
+        ],
+        "answer": "C",
+        "explanation": "A: const giảm công việc widget nhưng không chuyển CPU nặng. B: Future.delayed chỉ trì hoãn. C: Isolate chạy công việc CPU ở isolate riêng. D: Microtask vẫn chạy trên isolate hiện tại.",
+        "ambiguous": false
+      },
+      {
+        "id": "43",
+        "question": "What is the fundamental concept of UI construction in Flutter?",
+        "options": [
+          "The UI is built using external CSS files.",
+          "Everything in the UI is built by composing widgets.",
+          "Only the buttons and text are considered widgets.",
+          "The UI is managed entirely by a backend database"
+        ],
+        "answer": "B",
+        "explanation": "A: Flutter không dựa vào CSS ngoài để dựng UI. B: UI được tạo bằng cách ghép widget. C: Bố cục và nhiều yếu tố khác cũng là widget. D: Backend không trực tiếp quản lý toàn bộ UI.",
+        "ambiguous": false
+      },
+      {
+        "id": "44",
+        "question": "Which widget is considered the \"backbone\" of a Material screen, providing structural elements like the AppBar and Body?",
+        "options": [
+          "Container",
+          "Scaffold",
+          "Column",
+          "SizedBox"
+        ],
+        "answer": "B",
+        "explanation": "A: Container không cung cấp cấu trúc màn hình Material. B: Scaffold cung cấp appBar và body. C: Column xếp theo chiều dọc. D: SizedBox đặt kích thước.",
+        "ambiguous": false
+      },
+      {
+        "id": "45",
+        "question": "When a developer needs to toggle a boolean value (ON/OFF) for settings like \"Dark Mode,\" which widget is most appropriate?",
+        "options": [
+          "Slider",
+          "Switch",
+          "RadioListTile",
+          "DatePicker"
+        ],
+        "answer": "B",
+        "explanation": "A: Slider chọn giá trị trên khoảng. B: Switch biểu diễn bật hoặc tắt. C: Radio chọn một trong nhóm. D: DatePicker chọn ngày.",
+        "ambiguous": false
+      },
+      {
+        "id": "46",
+        "question": "Which widget allows a user to select exactly one option from a group?",
+        "options": [
+          "Checkbox",
+          "Slider",
+          "RadioListTile",
+          "ListView"
+        ],
+        "answer": "C",
+        "explanation": "A: Checkbox chọn độc lập. B: Slider chọn trong khoảng. C: RadioListTile đại diện một lựa chọn trong nhóm. D: ListView chỉ bố trí danh sách.",
+        "ambiguous": false
+      },
+      {
+        "id": "47",
+        "question": "What is the primary use of the ThemeData class in a Flutter application?",
+        "options": [
+          "To define global colors, typography, and shapes across the entire app.",
+          "To handle the logic for fetching data from an API.",
+          "To create a scrollable list of movie titles.",
+          "To wrap widgets with padding automatically."
+        ],
+        "answer": "A",
+        "explanation": "A: ThemeData cấu hình màu, kiểu chữ và hình dạng. B: API thuộc tầng dữ liệu. C: ListView dùng để tạo danh sách. D: Padding cần widget hoặc cấu hình riêng.",
+        "ambiguous": false
+      },
+      {
+        "id": "48",
+        "question": "To display an image from a URL with specific scaling (e.g., covering a specific area), which combination is used?",
+        "options": [
+          "Image.asset with MainAxisAlignment",
+          "Image.network with BoxFit",
+          "CircleAvatar with Padding",
+          "Icon with ThemeMode"
+        ],
+        "answer": "B",
+        "explanation": "A: Image.asset đọc asset. B: Image.network tải URL và BoxFit kiểm soát cách vừa khung. C: CircleAvatar và Padding không phải cách chính. D: Icon và ThemeMode không tải ảnh URL.",
+        "ambiguous": false
+      },
+      {
+        "id": "49",
+        "question": "According to the \"Common Errors & Fixes\" checklist, what should you do if a ListView is placed inside a Column and causing layout issues?",
+        "options": [
+          "Remove the ListView.",
+          "Use a SizedBox with a height of 0.",
+          "Wrap the ListView with an Expanded widget.",
+          "Change the Column into a Row."
+        ],
+        "answer": "C",
+        "explanation": "A: Không cần bỏ ListView. B: Chiều cao 0 làm danh sách vô hình. C: Expanded cấp chiều cao hữu hạn trong Column khi phù hợp. D: Row không tự giải quyết vấn đề ràng buộc.",
+        "ambiguous": false
+      },
+      {
+        "id": "50",
+        "question": "Which widget provides a standard row layout often used for contact lists, featuring a leading visual, a title, and a subtitle?",
+        "options": [
+          "Card",
+          "ListTile",
+          "Padding",
+          "Stack"
+        ],
+        "answer": "B",
+        "explanation": "A: Card tạo bề mặt. B: ListTile cung cấp leading, title và subtitle. C: Padding tạo khoảng cách. D: Stack xếp chồng.",
+        "ambiguous": false
+      },
+      {
+        "id": "51",
+        "question": "In VS Code, which editor-assisted refactor tool is used to quickly add spacing or centering to an existing widget?",
+        "options": [
+          "\"Add const modifier\"",
+          "\"Wrap with Widget\"",
+          "\"Format Document\"",
+          "\"Go to Definition\""
+        ],
+        "answer": "B",
+        "explanation": "A: Thao tác này thêm const. B: Wrap with Widget bọc widget bằng Padding hoặc Center. C: Format chỉ định dạng mã. D: Go to Definition mở định nghĩa.",
+        "ambiguous": false
+      },
+      {
+        "id": "52",
+        "question": "If the UI is not updating after a user interaction, what is the most likely cause according to the sources?",
+        "options": [
+          "The device has run out of memory.",
+          "The developer forgot to call setState().",
+          "The AppBar is missing a title.",
+          "The BoxFit property is set to cover."
+        ],
+        "answer": "B",
+        "explanation": "A: Hết bộ nhớ không phải nguyên nhân điển hình trong ngữ cảnh. B: Quên setState có thể khiến StatefulWidget không rebuild. C: Thiếu tiêu đề AppBar không ngăn rebuild. D: BoxFit điều khiển cách ảnh vừa khung.",
+        "ambiguous": false
+      },
+      {
+        "id": "53",
+        "question": "In Navigator 1.0, which method is used to remove the current, top-level page from the stack and return to the previous screen?",
+        "options": [
+          "push()",
+          "pop()",
+          "pushReplacement()",
+          "maybePop()"
+        ],
+        "answer": "B",
+        "explanation": "A: push thêm route. B: pop lấy route trên cùng ra. C: pushReplacement thay route. D: maybePop chỉ pop khi điều kiện cho phép.",
+        "ambiguous": false
+      },
+      {
+        "id": "54",
+        "question": "What is the primary difference between Navigator 1.0 and Navigator 2.0?",
+        "options": [
+          "Navigator 1.0 is declarative, while Navigator 2.0 is imperative.",
+          "Navigator 1.0 is imperative (manual push/pop), while Navigator 2.0 is declarative (describing the stack).",
+          "Navigator 2.0 can only be used for web applications.",
+          "Navigator 1.0 does not support named routes."
+        ],
+        "answer": "B",
+        "explanation": "A: Hai cách mô tả bị đảo. B: Navigator 1 thường dùng push/pop; Navigator 2 hỗ trợ stack khai báo. C: Navigator 2 không chỉ dành cho web. D: Navigator 1 hỗ trợ named routes.",
+        "ambiguous": false
+      },
+      {
+        "id": "55",
+        "question": "Which file must be modified to set up deep links for an Android application?",
+        "options": [
+          "pubspec.yaml",
+          "main.dart",
+          "AndroidManifest.xml",
+          "Info.plist"
+        ],
+        "answer": "C",
+        "explanation": "A: pubspec quản lý dependencies. B: main.dart chứa mã Dart. C: AndroidManifest khai báo intent filter cho Android deep link. D: Info.plist thuộc iOS.",
+        "ambiguous": false
+      },
+      {
+        "id": "56",
+        "question": "When setting up deep links on iOS, where should a developer navigate to enable the \"Associated Domains\" capability?",
+        "options": [
+          "Runner target → Signing & Capabilities tab",
+          "Info.plist → URL Types",
+          "AppDelegate.swift → URL Schemes",
+          "Build Settings → Linking"
+        ],
+        "answer": "A",
+        "explanation": "A: Signing & Capabilities cấu hình Associated Domains. B: URL Types dùng cho custom scheme. C: AppDelegate không phải nơi bật capability. D: Build Settings không phải tab capability.",
+        "ambiguous": false
+      },
+      {
+        "id": "57",
+        "question": "What is the purpose of the setState() method in a StatefulWidget?",
+        "options": [
+          "To initialize the state of the widget for the first time.",
+          "To signal that the internal state has changed and trigger a UI rebuild.",
+          "To pass data to a parent widget in the tree.",
+          "To navigate to a new route using a named route"
+        ],
+        "answer": "B",
+        "explanation": "A: initState khởi tạo State. B: setState thông báo thay đổi và lên lịch build. C: Không tự truyền dữ liệu lên cha. D: Không thực hiện navigation.",
+        "ambiguous": false
+      },
+      {
+        "id": "58",
+        "question": "Which state management concept involves sharing state between child widgets by moving that state to a common ancestor?",
+        "options": [
+          "Deep Linking",
+          "Imperative Navigation",
+          "Lifting State Up",
+          "URL Routing"
+        ],
+        "answer": "C",
+        "explanation": "A: Deep link mở nội dung qua URL. B: Navigation quản lý route. C: Lifting state up đưa state lên tổ tiên chung. D: URL routing ánh xạ đường dẫn.",
+        "ambiguous": false
+      },
+      {
+        "id": "59",
+        "question": "In the context of InheritedWidget, what is the purpose of the of(context) static method?",
+        "options": [
+          "To allow descendant widgets to efficiently access the data passed down the tree.",
+          "To create a new instance of a StatefulWidget.",
+          "To validate the URL scheme for a deep link.",
+          "To define the builder for a MaterialPageRoute."
+        ],
+        "answer": "A",
+        "explanation": "A: of(context) thường truy cập dữ liệu inherited từ tổ tiên. B: Không tạo StatefulWidget. C: Không xác thực URL. D: Không định nghĩa route builder.",
+        "ambiguous": false
+      },
+      {
+        "id": "60",
+        "question": "When using the Provider package, which method is called within a ChangeNotifier class to signal listeners that the UI needs to update?",
+        "options": [
+          "rebuild()",
+          "setState()",
+          "notifyListeners()",
+          "createState()"
+        ],
+        "answer": "C",
+        "explanation": "A: rebuild không phải phương thức ChangeNotifier này. B: setState thuộc State. C: notifyListeners thông báo listener. D: createState tạo State.",
+        "ambiguous": false
+      },
+      {
+        "id": "61",
+        "question": "Which widget from the Provider package is specifically designed to listen for changes and rebuild only the necessary parts of the UI?",
+        "options": [
+          "ChangeNotifierProvider",
+          "Consumer",
+          "InheritedWidget",
+          "MaterialApp"
+        ],
+        "answer": "B",
+        "explanation": "A: ChangeNotifierProvider cung cấp notifier. B: Consumer lắng nghe và rebuild phần builder. C: InheritedWidget là cơ chế nền tảng. D: MaterialApp cấu hình ứng dụng.",
+        "ambiguous": false
+      },
+      {
+        "id": "62",
+        "question": "In a deep link URL (e.g., https://website/moviedetails/?id=1234), what is the segment \"moviedetails\" considered?",
+        "options": [
+          "Scheme",
+          "Host",
+          "Path",
+          "Query Parameter"
+        ],
+        "answer": "C",
+        "explanation": "A: Scheme là https. B: Host là website. C: moviedetails thuộc path. D: id=1234 là query parameter.",
+        "ambiguous": false
+      },
+      {
+        "id": "63",
+        "question": "What is the primary difference between \"Responsive UI\" and \"Adaptive UI\"?",
+        "options": [
+          "Responsive UI only works on mobile, while Adaptive UI is for desktop.",
+          "Responsive UI changes based on available space, while Adaptive UI changes based on the device type (e.g., phone vs. tablet).",
+          "Responsive UI requires manual coding, while Adaptive UI is automatic.",
+          "There is no difference; the terms are used interchangeably in Flutter."
+        ],
+        "answer": "B",
+        "explanation": "A: Hai cách đều dùng trên nhiều loại thiết bị. B: Responsive điều chỉnh bố cục theo không gian; adaptive chọn trải nghiệm phù hợp thiết bị và ngữ cảnh, không chỉ loại thiết bị. C: Cả hai đều cần thiết kế và triển khai. D: Hai khái niệm có liên hệ nhưng không đồng nghĩa.",
+        "ambiguous": false
+      },
+      {
+        "id": "64",
+        "question": "Which tool should a developer use to access full screen information, such as total width, height, and pixel density?",
+        "options": [
+          "LayoutBuilder",
+          "MediaQuery",
+          "OrientationBuilder",
+          "SafeArea"
+        ],
+        "answer": "B",
+        "explanation": "A: LayoutBuilder cung cấp constraints cục bộ. B: MediaQuery cung cấp kích thước và đặc tính môi trường. C: OrientationBuilder cung cấp hướng bố cục. D: SafeArea thêm khoảng tránh vùng hệ thống.",
+        "ambiguous": false
+      },
+      {
+        "id": "65",
+        "question": "What is the main advantage of using LayoutBuilder over MediaQuery?",
+        "options": [
+          "It provides the orientation of the device.",
+          "It automatically adds padding for notches.",
+          "It provides the constraints (maxWidth/maxHeight) of the parent widget rather than the full screen.",
+          "It is the only widget that can handle GridView scaling."
+        ],
+        "answer": "C",
+        "explanation": "A: OrientationBuilder chuyên cho hướng bố cục. B: SafeArea xử lý vùng an toàn. C: LayoutBuilder nhận constraints của cha. D: GridView có nhiều cách cấu hình.",
+        "ambiguous": false
+      },
+      {
+        "id": "66",
+        "question": "When building a screen with many \"Genre Chips,\" which widget is recommended to ensure they automatically flow to the next line when horizontal space is full?",
+        "options": [
+          "Row",
+          "Column",
+          "Wrap",
+          "ListView"
+        ],
+        "answer": "C",
+        "explanation": "A: Row không tự xuống dòng. B: Column xếp dọc. C: Wrap tự chuyển sang dòng mới. D: ListView cuộn một chiều.",
+        "ambiguous": false
+      },
+      {
+        "id": "67",
+        "question": "Which widget is essential for ensuring that UI elements are not obscured by hardware features like the \"Dynamic Island,\" notches, or curved screen edges?",
+        "options": [
+          "Expanded",
+          "AspectRatio",
+          "SafeArea",
+          "FractionallySizedBox"
+        ],
+        "answer": "C",
+        "explanation": "A: Expanded chia không gian. B: AspectRatio giữ tỷ lệ. C: SafeArea tránh phần bị hệ thống che. D: FractionallySizedBox định kích thước theo tỷ lệ.",
+        "ambiguous": false
+      },
+      {
+        "id": "68",
+        "question": "If you want a GridView to display 2 columns on a mobile device and 4 columns on a tablet, which property should be updated based on screen width?",
+        "options": [
+          "mainAxisSpacing",
+          "crossAxisCount",
+          "aspectRatio",
+          "pixelDensity"
+        ],
+        "answer": "B",
+        "explanation": "A: mainAxisSpacing là khoảng cách theo trục chính. B: crossAxisCount đặt số cột trong grid dọc. C: aspectRatio là tỷ lệ ô. D: pixelDensity là thông số màn hình.",
+        "ambiguous": false
+      },
+      {
+        "id": "69",
+        "question": "Which widget should be used specifically to detect and respond to device rotation (Portrait vs. Landscape)?",
+        "options": [
+          "LayoutBuilder",
+          "MediaQuery",
+          "OrientationBuilder",
+          "Flexible"
+        ],
+        "answer": "C",
+        "explanation": "A: LayoutBuilder đọc constraints. B: MediaQuery cũng cung cấp orientation. C: OrientationBuilder xây lại theo hướng bố cục. D: Flexible chia không gian.",
+        "ambiguous": false
+      },
+      {
+        "id": "70",
+        "question": "According to the source, what is a \"Breakpoint\"?",
+        "options": [
+          "A point where the application code stops for debugging.",
+          "A specific pixel width (e.g., 600px) used to define when layout logic should change.",
+          "The maximum height a ListView can reach before it scrolls.",
+          "A crash that occurs when a widget overflows its boundaries."
+        ],
+        "answer": "B",
+        "explanation": "A: Đây là breakpoint khi debug. B: Trong responsive, breakpoint là ngưỡng thay đổi bố cục. C: Không phải chiều cao tối đa của ListView. D: Không phải crash.",
+        "ambiguous": false
+      },
+      {
+        "id": "71",
+        "question": "What happens if a developer does NOT use responsive design techniques on different screen sizes?",
+        "options": [
+          "The app will automatically scale everything like a photo.",
+          "The app will refuse to run on tablets.",
+          "The UI may experience overflow errors, text clipping, and misaligned widgets.",
+          "Flutter will ignore the pubspec.yaml configuration."
+        ],
+        "answer": "C",
+        "explanation": "A: Không tự co mọi thứ như ảnh. B: Ứng dụng vẫn có thể chạy. C: Có thể tràn, cắt chữ hoặc lệch bố cục. D: pubspec vẫn được sử dụng.",
+        "ambiguous": false
+      },
+      {
+        "id": "72",
+        "question": "Which of the following is listed as a \"Best Practice\" for creating responsive layouts in Flutter?",
+        "options": [
+          "Avoid using fixed values (like hardcoded widths) and prefer constraint-aware components.",
+          "Always use Row instead of Wrap for long lists of small items.",
+          "Only test the UI on the latest iPhone simulator.",
+          "Use MediaQuery for every single widget's sizing logic."
+        ],
+        "answer": "A",
+        "explanation": "A: Ưu tiên bố cục theo constraints và dùng kích thước cố định hợp lý. B: Row có thể tràn thay vì xuống dòng. C: Cần kiểm tra nhiều kích thước. D: Không cần MediaQuery cho mọi widget.",
+        "ambiguous": false
+      },
+      {
+        "id": "73",
+        "question": "When should a developer choose TextFormField over a standard TextField?",
+        "options": [
+          "For simple, one-off inputs without complex requirements.",
+          "When the input is placed inside a Form and requires validation.",
+          "Only when using a \"Dark Mode\" toggle.",
+          "When building a search bar that does not require a submit button."
+        ],
+        "answer": "B",
+        "explanation": "A: TextField thường đủ cho input đơn giản. B: TextFormField tích hợp Form và validator. C: Không chỉ liên quan dark mode. D: Search đơn giản thường dùng TextField.",
+        "ambiguous": false
+      },
+      {
+        "id": "74",
+        "question": "Which object is required to programmatically validate, save, or reset all fields within a Form widget simultaneously?",
+        "options": [
+          "FocusNode.",
+          "TextEditingController.",
+          "GlobalKey<FormState>.",
+          "AutovalidateMode."
+        ],
+        "answer": "C",
+        "explanation": "A: FocusNode quản lý focus. B: Controller quản lý nội dung text. C: GlobalKey<FormState> là cách phổ biến để truy cập FormState; Form.of cũng có thể dùng từ descendant. D: AutovalidateMode điều khiển thời điểm kiểm tra.",
+        "ambiguous": false
+      },
+      {
+        "id": "75",
+        "question": "In a Flutter validator function, what must be returned if the user input is considered valid?",
+        "options": [
+          "An empty String ''.",
+          "null.",
+          "A success message String like \"Valid Input\".",
+          "A boolean value of true."
+        ],
+        "answer": "B",
+        "explanation": "A: Chuỗi rỗng vẫn là thông báo lỗi. B: null báo hợp lệ. C: Chuỗi bất kỳ là thông báo lỗi. D: Validator trả String? chứ không phải boolean.",
+        "ambiguous": false
+      },
+      {
+        "id": "76",
+        "question": "Which AutovalidateMode is recommended to provide a good user experience by avoiding premature error messages while still validating as the user types?",
+        "options": [
+          "AutovalidateMode.disabled.",
+          "AutovalidateMode.always.",
+          "AutovalidateMode.onUserInteraction.",
+          "AutovalidateMode.onHover."
+        ],
+        "answer": "C",
+        "explanation": "A: disabled tắt tự kiểm tra. B: always có thể báo lỗi quá sớm. C: onUserInteraction kiểm tra sau tương tác. D: onHover không phải chế độ này.",
+        "ambiguous": false
+      },
+      {
+        "id": "77",
+        "question": "Which tool is specifically used to manage and programmatically move the cursor focus between different input fields?",
+        "options": [
+          "textInputAction.",
+          "FocusNode.",
+          "GestureDetector.",
+          "SnackBar."
+        ],
+        "answer": "B",
+        "explanation": "A: textInputAction cấu hình nút bàn phím. B: FocusNode quản lý và chuyển focus. C: GestureDetector nhận cử chỉ. D: SnackBar hiển thị thông báo.",
+        "ambiguous": false
+      },
+      {
+        "id": "78",
+        "question": "What is the standard pattern for dismissing the mobile keyboard when a user taps an empty area outside of the form?",
+        "options": [
+          "Set the textInputAction to done.",
+          "Wrap the UI with a GestureDetector and call unfocus() on the onTap property.",
+          "Use a Scaffold with an AppBar.",
+          "Validation automatically hides the keyboard."
+        ],
+        "answer": "B",
+        "explanation": "A: Nút done không xử lý mọi lần chạm ngoài. B: GestureDetector và unfocus bỏ focus khi chạm vùng trống. C: Scaffold và AppBar không tự xử lý. D: Validation không tự ẩn bàn phím.",
+        "ambiguous": false
+      },
+      {
+        "id": "79",
+        "question": "Why is it a best practice to wrap a Form with a ListView or SingleChildScrollView?",
+        "options": [
+          "To prevent overflow errors when the mobile keyboard appears and takes up screen space.",
+          "To ensure that the GlobalKey is initialized correctly.",
+          "To allow the Form to use custom validation rules.",
+          "To automatically display SnackBar notifications."
+        ],
+        "answer": "A",
+        "explanation": "A: Nội dung cuộn được khi bàn phím chiếm chỗ. B: Không liên quan khởi tạo key. C: Validator không phụ thuộc widget cuộn. D: Không tự hiện SnackBar.",
+        "ambiguous": false
+      },
+      {
+        "id": "80",
+        "question": "What is a primary reason to implement an \"Async Check\" (asynchronous validation) after the local form validation is successful?",
+        "options": [
+          "To check if a field is empty.",
+          "To ensure a password contains at least one number.",
+          "To verify server-side data, such as checking if an email is already taken.",
+          "To change the color of the submit button."
+        ],
+        "answer": "C",
+        "explanation": "A: Kiểm tra rỗng có thể làm cục bộ. B: Quy tắc mật khẩu có thể làm cục bộ. C: Async check có thể kiểm tra email trên server. D: Không nhằm đổi màu nút.",
+        "ambiguous": false
+      },
+      {
+        "id": "81",
+        "question": "Which method must be called to trigger the onSaved callback for every field within a Form?",
+        "options": [
+          "validate().",
+          "save().",
+          "reset().",
+          "requestFocus()."
+        ],
+        "answer": "B",
+        "explanation": "A: validate gọi validator. B: save gọi onSaved các field. C: reset đưa field về trạng thái đầu. D: requestFocus thay đổi focus.",
+        "ambiguous": false
+      },
+      {
+        "id": "82",
+        "question": "According to UX best practices in the source, what characterizes a \"good\" error message?",
+        "options": [
+          "Using technical codes like \"ERROR_400\" to be precise.",
+          "Being short, clear, specific to the field, and helpful (e.g., \"Enter a valid email\").",
+          "Using \"blaming language\" to ensure the user knows they made a mistake.",
+          "Appearing in a popup dialog that interrupts the user's flow."
+        ],
+        "answer": "B",
+        "explanation": "A: Mã lỗi kỹ thuật khó hiểu. B: Thông báo ngắn, rõ và chỉ cách sửa giúp người dùng. C: Đổ lỗi làm trải nghiệm kém. D: Popup gián đoạn không phải yêu cầu.",
+        "ambiguous": false
+      },
+      {
+        "id": "83",
+        "question": "According to HTTP fundamentals, what does a status code in the 400-499 range indicate?",
+        "options": [
+          "Success",
+          "Client error",
+          "Server error",
+          "Redirection"
+        ],
+        "answer": "B",
+        "explanation": "A: 2xx là thành công. B: 4xx thường là lỗi client. C: 5xx là lỗi server. D: 3xx là chuyển hướng.",
+        "ambiguous": false
+      },
+      {
+        "id": "84",
+        "question": "Which Dart data structure does a standard JSON object map to naturally?",
+        "options": [
+          "List<dynamic>",
+          "Map<String, dynamic>",
+          "String",
+          "Iterable<int>"
+        ],
+        "answer": "B",
+        "explanation": "A: JSON array thường thành List. B: JSON object thành Map với khóa chuỗi. C: String là giá trị chuỗi. D: Iterable<int> không biểu diễn object.",
+        "ambiguous": false
+      },
+      {
+        "id": "85",
+        "question": "What is the primary function of the await keyword in an asynchronous Flutter operation?",
+        "options": [
+          "It blocks the main UI thread until the data is fetched.",
+          "It restarts the build() method immediately.",
+          "It pauses execution until a Future completes without blocking the UI thread.",
+          "It cancels any pending network requests"
+        ],
+        "answer": "C",
+        "explanation": "A: await không chặn UI thread trong lúc chờ I/O. B: Không tự khởi động build. C: await tạm dừng hàm async đến khi Future hoàn tất. D: Không tự hủy request.",
+        "ambiguous": false
+      },
+      {
+        "id": "86",
+        "question": "When using a FutureBuilder, which UI element is typically displayed when the snapshot.connectionState is waiting?",
+        "options": [
+          "An error message",
+          "A loading spinner (e.g., CircularProgressIndicator)",
+          "A \"No data\" message",
+          "The final list of results"
+        ],
+        "answer": "B",
+        "explanation": "A: Lỗi phù hợp khi snapshot có error. B: Trạng thái waiting thường hiện spinner. C: No data dành cho kết quả rỗng. D: Kết quả chưa sẵn sàng khi đang chờ.",
+        "ambiguous": false
+      },
+      {
+        "id": "87",
+        "question": "To convert a JSON array (list of objects) into a typed Dart list (e.g., List<Post>), which method sequence is used?",
+        "options": [
+          "jsonDecode() → .map() → .toList()",
+          "json.encode() → .sort()",
+          "Uri.parse() → http.get()",
+          "initState() → setState()"
+        ],
+        "answer": "A",
+        "explanation": "A: Decode JSON, map sang model rồi toList. B: encode tạo JSON và sort sắp xếp. C: parse URL và gửi request không chuyển model. D: initState và setState là lifecycle và cập nhật UI.",
+        "ambiguous": false
+      },
+      {
+        "id": "88",
+        "question": "In the provided POST request example, which specific HTTP status code is checked to confirm a post was successfully created?",
+        "options": [
+          "200",
+          "201",
+          "404",
+          "500"
+        ],
+        "answer": "B",
+        "explanation": "A: 200 báo thành công chung. B: 201 Created thường báo tạo tài nguyên thành công. C: 404 là không tìm thấy. D: 500 là lỗi server.",
+        "ambiguous": false
+      },
+      {
+        "id": "89",
+        "question": "Why is it considered a UX best practice to disable the submit button while a network request is in progress?",
+        "options": [
+          "To save battery life on the device.",
+          "To prevent \"double-submit\" and show a loading indicator.",
+          "To allow the Skia engine to render faster.",
+          "Because Flutter cannot handle multiple simultaneous POST requests."
+        ],
+        "answer": "B",
+        "explanation": "A: Tiết kiệm pin không phải mục đích chính. B: Vô hiệu nút tránh gửi trùng và có thể kèm chỉ báo tải. C: Không liên quan tăng tốc Skia. D: Flutter có thể xử lý nhiều request.",
+        "ambiguous": false
+      },
+      {
+        "id": "90",
+        "question": "What is a primary reason for using the \"Service Layer\" pattern in networking code?",
+        "options": [
+          "To encapsulate API logic and keep widget code clean and focused on UI.",
+          "To allow the app to work without an internet connection.",
+          "To automatically parse JSON without a model class.",
+          "To replace the need for the http package."
+        ],
+        "answer": "A",
+        "explanation": "A: Service đóng gói logic API, giúp widget tập trung vào UI. B: Không tự cung cấp offline. C: Không tự tạo model. D: Không bắt buộc thay thế package HTTP.",
+        "ambiguous": false
+      },
+      {
+        "id": "91",
+        "question": "According to common pitfalls, where should you avoid calling APIs to prevent them from firing every time the UI refreshes?",
+        "options": [
+          "initState()",
+          "build()",
+          "onPressed()",
+          "A separate Service class"
+        ],
+        "answer": "B",
+        "explanation": "A: initState thường dùng để khởi tạo request một lần. B: build có thể được gọi nhiều lần nên không nên tạo request trực tiếp mỗi lần. C: onPressed phù hợp request theo thao tác. D: Service là nơi có thể đóng gói API.",
+        "ambiguous": false
+      },
+      {
+        "id": "92",
+        "question": "What are the three main benefits of using Model Classes instead of raw JSON Maps?",
+        "options": [
+          "Type safety, clear structure, and easier maintenance/reuse.",
+          "Faster network speeds, lower memory usage, and encryption.",
+          "Automatic UI generation, state management, and deep linking.",
+          "CSS compatibility, hardware access, and offline storage."
+        ],
+        "answer": "A",
+        "explanation": "A: Model giúp an toàn kiểu, cấu trúc rõ và dễ bảo trì. B: Không tự cải thiện mạng hoặc mã hóa. C: Không tự tạo UI hay quản lý state. D: Không cung cấp CSS hay lưu trữ.",
+        "ambiguous": false
+      },
+      {
+        "id": "93",
+        "question": "Which local storage method is best suited for storing simple key-value pairs, such as an \"onboarding completed\" flag?",
+        "options": [
+          "SQLite (sqflite)",
+          "SharedPreferences",
+          "Local JSON Files",
+          "Remote Firebase Storage"
+        ],
+        "answer": "B",
+        "explanation": "A: SQLite phù hợp dữ liệu cấu trúc phức tạp. B: SharedPreferences phù hợp cặp khóa giá trị nhỏ. C: File JSON có thể dùng nhưng thường không cần thiết. D: Firebase Storage là lưu trữ từ xa.",
+        "ambiguous": false
+      },
+      {
+        "id": "94",
+        "question": "What is a primary advantage of using local storage as described in the sources?",
+        "options": [
+          "It requires a constant API connection to function.",
+          "It is available offline and persistent across app restarts.",
+          "It is only accessible while the app is in the foreground.",
+          "It automatically encrypts all data for the web."
+        ],
+        "answer": "B",
+        "explanation": "A: Lưu local có thể dùng offline. B: Dữ liệu local có thể tồn tại qua lần mở app. C: Không chỉ tồn tại khi app foreground. D: Không mặc định mã hóa tất cả dữ liệu.",
+        "ambiguous": false
+      },
+      {
+        "id": "95",
+        "question": "In the SharedPreferences workflow, what is the final step after a value has been saved to the storage?",
+        "options": [
+          "Load the instance again",
+          "Read the key",
+          "Refresh the UI to reflect the updated data",
+          "Close the database file"
+        ],
+        "answer": "C",
+        "explanation": "A: Không nhất thiết tải lại instance. B: Có thể đọc lại nhưng không phải bước UI cuối. C: Cập nhật UI để phản ánh giá trị mới khi cần. D: SharedPreferences không yêu cầu đóng database.",
+        "ambiguous": false
+      },
+      {
+        "id": "96",
+        "question": "When should a developer choose to use local JSON files (dart:io) instead of SharedPreferences?",
+        "options": [
+          "When storing a single boolean for dark mode.",
+          "When the data is larger than simple key-value pairs or needs to be exported/imported.",
+          "When the app requires complex relational data with sorting and filtering.",
+          "Only when the app is running in a DartPad environment."
+        ],
+        "answer": "B",
+        "explanation": "A: Một boolean phù hợp SharedPreferences. B: JSON file hữu ích cho dữ liệu cấu trúc lớn hơn hoặc xuất nhập. C: Dữ liệu quan hệ và truy vấn phù hợp SQLite. D: dart:io không chạy như vậy trong DartPad web.",
+        "ambiguous": false
+      },
+      {
+        "id": "97",
+        "question": "What does the \"F\" in \"SQFlite\" stand for, according to the architecture overview?",
+        "options": [
+          "Fast",
+          "File",
+          "Flutter (SQLite for Flutter)",
+          "Functional"
+        ],
+        "answer": "C",
+        "explanation": "A: Tên không biểu thị Fast. B: Tên không biểu thị File. C: sqflite thường được hiểu là SQLite cho Flutter; đề không cung cấp nguồn xác nhận ý nghĩa chữ F. D: Tên không biểu thị Functional. Câu hỏi hoặc đáp án trong tài liệu chưa đủ chính xác để chấm chắc chắn.",
+        "ambiguous": true
+      },
+      {
+        "id": "98",
+        "question": "Which storage method is recommended for a complex inventory tracking app that requires data relationships and filtering?",
+        "options": [
+          "SharedPreferences",
+          "Local JSON Files",
+          "SQLite (sqflite)",
+          "In-memory Map"
+        ],
+        "answer": "C",
+        "explanation": "A: SharedPreferences không phù hợp truy vấn quan hệ phức tạp. B: JSON khó truy vấn quan hệ hơn. C: SQLite hỗ trợ quan hệ và lọc. D: Map trong bộ nhớ không bền qua khởi động lại.",
+        "ambiguous": false
+      },
+      {
+        "id": "99",
+        "question": "Why is a mock class (like FakePrefs) required when developing local storage features in DartPad?",
+        "options": [
+          "DartPad only supports SQL-based storage.",
+          "DartPad does not support native plugins or persistent device storage.",
+          "To increase the speed of the browser's localStorage.",
+          "To prevent the app from restarting after every code change."
+        ],
+        "answer": "B",
+        "explanation": "A: DartPad không chỉ hỗ trợ SQL. B: DartPad không có native plugin như app Flutter trên thiết bị; mock giúp mô phỏng. C: Mock không nhằm tăng tốc localStorage. D: Không nhằm ngăn app restart.",
+        "ambiguous": false
+      },
+      {
+        "id": "100",
+        "question": "According to the \"Offline-First\" concept, how should an app handle data fetching?",
+        "options": [
+          "Load local data first and sync with the server when a connection is available.",
+          "Only allow the user to see data when they are connected to the internet.",
+          "Store all data in a local JSON file and ignore the server entirely.",
+          "Delete local data every time the app closes to ensure the server is the single source of truth."
+        ],
+        "answer": "A",
+        "explanation": "A: Offline-first thường đọc local và đồng bộ khi có mạng. B: Không nên bắt buộc mạng để xem dữ liệu local. C: Offline-first vẫn có thể đồng bộ server. D: Xóa dữ liệu local trái mục tiêu offline. Tài liệu gốc không ghi đáp án; A được suy ra từ nội dung câu hỏi.",
+        "ambiguous": false
+      }
+    ]
+  },
+  {
+    "id": "quizlet-pygesho",
+    "title": "quizlet-pygesho",
+    "questions": [
+      {
+        "id": "1",
+        "question": "What is Flutter?",
+        "options": [
+          "A JavaScript library for web UIs",
+          "A database framework for mobile apps",
+          "A UI toolkit by Google for building natively compiled apps from a single codebase",
+          "A backend framework by Apple"
+        ],
+        "answer": "C",
+        "explanation": "A: JavaScript là ngôn ngữ khác. B: Flutter không phải database. C: Flutter là toolkit UI đa nền tảng. D: Flutter không phải backend của Apple.",
+        "ambiguous": false
+      },
+      {
+        "id": "2",
+        "question": "Which rendering engine does Flutter use?",
+        "options": [
+          "OpenGL",
+          "V8",
+          "Skia",
+          "WebKit"
+        ],
+        "answer": "C",
+        "explanation": "A: OpenGL là API đồ họa. B: V8 là engine JavaScript. C: Skia là backend render truyền thống; Flutter hiện còn dùng Impeller tùy nền tảng. D: WebKit là engine trình duyệt.",
+        "ambiguous": false
+      },
+      {
+        "id": "3",
+        "question": "Which language is used to write Flutter apps?",
+        "options": [
+          "Swift",
+          "Dart",
+          "JavaScript",
+          "Kotlin"
+        ],
+        "answer": "B",
+        "explanation": "A: Swift chủ yếu dùng cho Apple. B: Dart là ngôn ngữ phát triển Flutter. C: JavaScript không phải ngôn ngữ chính của Flutter. D: Kotlin thường dùng cho Android native.",
+        "ambiguous": false
+      },
+      {
+        "id": "4",
+        "question": "Which of the following are true about Flutter? (Select all that apply) Các nhận định: A. Requires separate codebases for iOS and Android; B. Only works on mobile devices; C. Uses its own rendering engine (Skia); D. Supports Android iOS Web macOS Linux Windows from a single codebase. Chọn tổ hợp đúng.",
+        "options": [
+          "Chỉ C",
+          "Chỉ D",
+          "A và B",
+          "C và D"
+        ],
+        "answer": "D",
+        "explanation": "Nhận định A: Flutter hỗ trợ chia sẻ codebase. B: Flutter còn hỗ trợ web và desktop. C: Skia là một backend render; Impeller cũng được dùng tùy nền tảng. D: Flutter hỗ trợ các nền tảng được liệt kê. Vì vậy tổ hợp đúng là C và D.",
+        "ambiguous": false
+      },
+      {
+        "id": "5",
+        "question": "What are the three architectural layers of Flutter?",
+        "options": [
+          "UI, Logic, Data",
+          "View, Controller, Model",
+          "Framework (Dart), Engine (C++), Embedder",
+          "Widget, Screen, App"
+        ],
+        "answer": "C",
+        "explanation": "A: Đây là cách phân tầng ứng dụng. B: Đây là MVC. C: Framework, Engine và Embedder là ba tầng Flutter. D: Đây không phải ba tầng kiến trúc.",
+        "ambiguous": false
+      },
+      {
+        "id": "6",
+        "question": "What does the Flutter Engine layer handle?",
+        "options": [
+          "Processing user authentication",
+          "Managing app routes and navigation",
+          "Storing local data on the device",
+          "Rendering, accessibility, text layout, and GPU acceleration via Skia"
+        ],
+        "answer": "D",
+        "explanation": "A: Xác thực do logic ứng dụng xử lý. B: Navigation chủ yếu thuộc framework và app. C: Lưu dữ liệu thuộc plugin hoặc app. D: Engine xử lý render, text và accessibility; backend có thể là Skia hoặc Impeller.",
+        "ambiguous": false
+      },
+      {
+        "id": "7",
+        "question": "What does the Embedder layer do in Flutter?",
+        "options": [
+          "Manages Dart business logic",
+          "Handles HTTP network requests",
+          "Handles platform-specific integration, input, lifecycle, and window management",
+          "Renders widgets onto the screen"
+        ],
+        "answer": "C",
+        "explanation": "A: Business logic thường viết bằng Dart. B: HTTP thường do package hoặc app xử lý. C: Embedder tích hợp vòng đời, cửa sổ và input với nền tảng. D: Render do engine xử lý.",
+        "ambiguous": false
+      },
+      {
+        "id": "8",
+        "question": "What is the correct Flutter render pipeline order?",
+        "options": [
+          "GPU → Widget → Screen → User",
+          "Widget Tree → Render Tree → Composited Scene → GPU Rendering",
+          "Data → State → Widget → Screen",
+          "Model → View → Controller → Render"
+        ],
+        "answer": "B",
+        "explanation": "A: Thứ tự bị đảo. B: Widget tạo element và render tree, sau đó compositing và GPU render. C: Quá tổng quát để mô tả render pipeline. D: MVC không phải Flutter render pipeline.",
+        "ambiguous": false
+      },
+      {
+        "id": "9",
+        "question": "In which year was Flutter 1.0 officially released?",
+        "options": [
+          "2023",
+          "2018",
+          "2015",
+          "2021"
+        ],
+        "answer": "B",
+        "explanation": "A: 2023 quá muộn. B: Flutter 1.0 ra mắt tháng 12 năm 2018. C: 2015 không phải năm phát hành 1.0. D: 2021 không phải năm phát hành 1.0.",
+        "ambiguous": false
+      },
+      {
+        "id": "10",
+        "question": "What does `flutter doctor` do?",
+        "options": [
+          "Generates documentation for the project",
+          "Compiles the Flutter app for release",
+          "Runs automated unit tests",
+          "Verifies the Flutter installation and checks all required tools and dependencies"
+        ],
+        "answer": "D",
+        "explanation": "A: Không tạo tài liệu. B: Không build release. C: Không chạy test. D: doctor kiểm tra môi trường và công cụ Flutter.",
+        "ambiguous": false
+      },
+      {
+        "id": "11",
+        "question": "What is the entry point file for a Flutter application?",
+        "options": [
+          "lib/app.dart",
+          "android/main.dart",
+          "pubspec.yaml",
+          "lib/main.dart"
+        ],
+        "answer": "D",
+        "explanation": "A: Đây không phải điểm vào mặc định. B: Không phải đường dẫn Dart chuẩn. C: pubspec cấu hình dự án. D: lib/main.dart thường chứa hàm main.",
+        "ambiguous": false
+      },
+      {
+        "id": "12",
+        "question": "What does the `pubspec.yaml` file contain?",
+        "options": [
+          "Dependencies, assets configuration, and project metadata",
+          "The app's main widget tree",
+          "Network API endpoints",
+          "Database schema definitions"
+        ],
+        "answer": "A",
+        "explanation": "A: pubspec chứa metadata, dependencies và asset. B: Widget tree nằm trong mã Dart. C: Endpoint thường do app cấu hình. D: Schema không phải mục đích chính của pubspec.",
+        "ambiguous": false
+      },
+      {
+        "id": "13",
+        "question": "Which statement about Flutter performance is correct?",
+        "options": [
+          "Flutter compiles to ARM code for near-native performance",
+          "Flutter uses JavaScript for all business logic",
+          "Flutter runs slower than React Native because it uses a bridge",
+          "Flutter always requires internet to render UI"
+        ],
+        "answer": "A",
+        "explanation": "A: Flutter biên dịch native code cho thiết bị phù hợp, bao gồm ARM. B: Logic Flutter thường viết bằng Dart. C: Không thể kết luận như vậy từ bridge. D: Flutter có thể render offline.",
+        "ambiguous": false
+      },
+      {
+        "id": "14",
+        "question": "What is Platform Channels in Flutter?",
+        "options": [
+          "A way to style widgets differently per platform",
+          "A routing system for named routes",
+          "A system for handling push notifications",
+          "A mechanism for Flutter to call native Android/iOS code for platform-specific features"
+        ],
+        "answer": "D",
+        "explanation": "A: Không phải cơ chế tạo style. B: Không phải hệ thống route. C: Không chuyên xử lý notification. D: Platform Channels cho phép Dart trao đổi với mã native.",
+        "ambiguous": false
+      },
+      {
+        "id": "15",
+        "question": "What does `Hot Reload` do in Flutter?",
+        "options": [
+          "Injects updated code into the running app without restarting, preserving state",
+          "Deploys the app to the Play Store",
+          "Builds the release APK",
+          "Completely restarts the app and clears all state"
+        ],
+        "answer": "A",
+        "explanation": "A: Hot reload nạp thay đổi và thường giữ state; một số thay đổi cần restart. B: Không phát hành store. C: Không tạo APK release. D: Hot restart mới khởi động lại và mất state.",
+        "ambiguous": false
+      },
+      {
+        "id": "16",
+        "question": "What is Dart primarily designed for?",
+        "options": [
+          "Machine learning and data science",
+          "Client-optimized UI framework development",
+          "Database query language",
+          "Server-side backend services"
+        ],
+        "answer": "B",
+        "explanation": "A: Dart có thể dùng ngoài UI nhưng không chủ yếu cho data science. B: Dart tối ưu cho phát triển client và UI. C: Dart không phải ngôn ngữ truy vấn database. D: Dart hỗ trợ server nhưng không chỉ dành cho backend.",
+        "ambiguous": false
+      },
+      {
+        "id": "17",
+        "question": "What does AOT compilation mean in Dart?",
+        "options": [
+          "Always-On-Thread: code runs continuously",
+          "Application Output Timing: measures frame rate",
+          "Async Operation Threading: handles async code",
+          "Ahead-of-Time: code compiled before execution for fast production performance"
+        ],
+        "answer": "D",
+        "explanation": "A: Không có nghĩa này. B: Không phải chỉ số frame. C: Không phải cơ chế thread. D: AOT biên dịch trước khi chạy, hữu ích cho bản production.",
+        "ambiguous": false
+      },
+      {
+        "id": "18",
+        "question": "Which of the following are valid Dart variable declarations?",
+        "options": [
+          "const pi = 3.14159",
+          "var name = \"FPT\"",
+          "final year = 2024",
+          "All of the above"
+        ],
+        "answer": "D",
+        "explanation": "A: const khai báo hằng compile-time. B: var suy luận kiểu. C: final gán một lần. D: Cả ba cách khai báo hợp lệ khi thêm dấu chấm phẩy.",
+        "ambiguous": false
+      },
+      {
+        "id": "19",
+        "question": "What is the difference between `final` and `const` in Dart?",
+        "options": [
+          "`final` and `const` are identical",
+          "`const` can be reassigned; `final` cannot",
+          "`final` is for numbers only; `const` is for strings",
+          "`final` is a runtime constant assigned once; `const` is a compile-time constant"
+        ],
+        "answer": "D",
+        "explanation": "A: final và const khác nhau. B: const không thể gán lại. C: Cả hai dùng cho nhiều kiểu. D: final gán một lần; const yêu cầu giá trị compile-time.",
+        "ambiguous": false
+      },
+      {
+        "id": "20",
+        "question": "What does the `??` operator do in Dart?",
+        "options": [
+          "Returns the right-hand value if the left-hand value is null",
+          "Declares a nullable variable",
+          "Checks if two values are equal",
+          "Performs integer division"
+        ],
+        "answer": "A",
+        "explanation": "A: ?? dùng giá trị phải nếu trái là null. B: Kiểu nullable dùng dấu ?. C: == so sánh bằng. D: ~/ chia lấy phần nguyên.",
+        "ambiguous": false
+      },
+      {
+        "id": "21",
+        "question": "What is null safety in Dart?",
+        "options": [
+          "A way to disable null values globally",
+          "A compile-time feature preventing null reference errors by enforcing explicit nullable types",
+          "A performance optimization technique",
+          "A runtime check that crashes the app on null"
+        ],
+        "answer": "B",
+        "explanation": "A: Null safety không cấm mọi giá trị null. B: Kiểu nullable được khai báo rõ, giúp ngăn nhiều lỗi null lúc phân tích. C: Không chủ yếu là tối ưu hiệu năng. D: Có kiểm tra runtime trong một số trường hợp, không chỉ crash khi null.",
+        "ambiguous": false
+      },
+      {
+        "id": "22",
+        "question": "Which collection types does Dart support?",
+        "options": [
+          "List (ordered), Set (unique), Map (key-value)",
+          "Stack, Heap, Tree",
+          "Array, Dictionary, Queue",
+          "Vector, HashMap, LinkedList"
+        ],
+        "answer": "A",
+        "explanation": "A: List có thứ tự, Set chứa phần tử duy nhất, Map lưu cặp khóa giá trị. B: Không phải ba collection cơ bản được hỏi. C: Dart dùng List và Map thay cho tên này. D: Không phải bộ ba collection cơ bản.",
+        "ambiguous": false
+      },
+      {
+        "id": "23",
+        "question": "What does `async` and `await` do in Dart?",
+        "options": [
+          "They are only used for database operations",
+          "`async` is required for all functions; `await` is optional",
+          "`async` marks a function as asynchronous; `await` pauses until a Future completes",
+          "`async` runs code in a separate thread; `await` blocks the main thread forever"
+        ],
+        "answer": "C",
+        "explanation": "A: Không giới hạn trong database. B: Không phải mọi hàm đều cần async. C: async cho phép await và Future biểu diễn kết quả bất đồng bộ. D: async không tự tạo thread riêng và await không chặn UI trong khi chờ I/O.",
+        "ambiguous": false
+      },
+      {
+        "id": "24",
+        "question": "What is a Future in Dart?",
+        "options": [
+          "A callback function",
+          "A collection that stores past values",
+          "A value that will be available at some point in the future (async result)",
+          "A type of animation controller"
+        ],
+        "answer": "C",
+        "explanation": "A: Callback là hàm được gọi sau. B: Future không lưu lịch sử. C: Future biểu diễn kết quả hoặc lỗi sẽ hoàn tất. D: Không phải animation controller.",
+        "ambiguous": false
+      },
+      {
+        "id": "25",
+        "question": "What does `extends` mean in Dart OOP?",
+        "options": [
+          "Declare an interface contract",
+          "Inherit behavior from a parent class",
+          "Only inherit the method signatures without behavior",
+          "Mix in code blocks from another class"
+        ],
+        "answer": "B",
+        "explanation": "A: implements dùng cho interface. B: extends kế thừa lớp và hành vi. C: Mô tả gần với implements. D: with áp dụng mixin.",
+        "ambiguous": false
+      },
+      {
+        "id": "26",
+        "question": "What does `implements` mean in Dart OOP?",
+        "options": [
+          "Inherit full behavior including method bodies",
+          "Import an external package",
+          "Share code blocks without full inheritance",
+          "Only inherit the signature/contract requiring full override of all methods"
+        ],
+        "answer": "D",
+        "explanation": "A: extends kế thừa implementation. B: import dùng để nhập thư viện. C: with áp dụng mixin. D: implements yêu cầu thực hiện interface, kể cả các thành viên cần thiết.",
+        "ambiguous": false
+      },
+      {
+        "id": "27",
+        "question": "What is a mixin in Dart?",
+        "options": [
+          "A way to share reusable behavior across classes without inheritance chains, using `with`",
+          "A type of abstract class that cannot be instantiated",
+          "A design pattern for dependency injection",
+          "A special constructor type"
+        ],
+        "answer": "A",
+        "explanation": "A: Mixin chia sẻ implementation và được áp dụng bằng with. B: Mixin không chỉ đơn giản là abstract class. C: Không đồng nghĩa dependency injection. D: Không phải constructor.",
+        "ambiguous": false
+      },
+      {
+        "id": "28",
+        "question": "What is a factory constructor in Dart?",
+        "options": [
+          "A constructor that takes no arguments",
+          "A private constructor used for singletons only",
+          "A constructor that always creates a new object",
+          "A constructor that controls instance creation, can return cached instances or parse from JSON"
+        ],
+        "answer": "D",
+        "explanation": "A: factory vẫn có thể nhận tham số. B: Không chỉ dùng cho singleton. C: factory có thể trả instance có sẵn. D: factory kiểm soát tạo hoặc trả instance, ví dụ từ cache hoặc JSON.",
+        "ambiguous": false
+      },
+      {
+        "id": "29",
+        "question": "What does generics provide in Dart?",
+        "options": [
+          "Automatic code generation",
+          "Runtime type checking only",
+          "Compile-time type safety — write once, reuse safely with typed parameters like `List<String>`",
+          "A way to bypass type checking"
+        ],
+        "answer": "C",
+        "explanation": "A: Không tự sinh code. B: Generics cũng được kiểm tra tĩnh. C: Generics cho phép tái sử dụng với kiểu cụ thể và an toàn hơn. D: Không nhằm bỏ qua kiểm tra kiểu.",
+        "ambiguous": false
+      },
+      {
+        "id": "30",
+        "question": "What is the correct order of Dart's async event queues by priority?",
+        "options": [
+          "There is only one queue in Dart",
+          "Event queue then Microtask queue",
+          "Both queues have equal priority",
+          "Microtask queue (highest) then Event queue (normal)"
+        ],
+        "answer": "D",
+        "explanation": "A: Event loop có microtask và event queue. B: Thứ tự bị đảo. C: Microtask được ưu tiên trước event tiếp theo. D: Microtask queue được xử lý trước event queue.",
+        "ambiguous": false
+      },
+      {
+        "id": "31",
+        "question": "What does `yield` do in a Dart `async*` function?",
+        "options": [
+          "Throws an exception",
+          "Returns the final value and ends the function",
+          "Emits a single value to the Stream without ending the function",
+          "Pauses execution permanently"
+        ],
+        "answer": "C",
+        "explanation": "A: throw ném lỗi. B: return kết thúc hàm. C: yield phát một giá trị vào stream và generator có thể tiếp tục. D: Không dừng vĩnh viễn.",
+        "ambiguous": false
+      },
+      {
+        "id": "32",
+        "question": "What is the Repository pattern?",
+        "options": [
+          "A navigation pattern for multi-screen apps",
+          "Separates data fetching from UI: UI → Repository → Data (API/DB)",
+          "A design for organizing widget trees",
+          "A caching strategy for images"
+        ],
+        "answer": "B",
+        "explanation": "A: Không phải navigation. B: Repository tách dữ liệu khỏi UI, có thể truy cập API và database. C: Không phải cách tổ chức widget tree. D: Không chỉ là cache ảnh.",
+        "ambiguous": false
+      },
+      {
+        "id": "33",
+        "question": "Which is correct about `StatelessWidget` vs `StatefulWidget`?",
+        "options": [
+          "StatefulWidget is always preferred over StatelessWidget",
+          "Both rebuild identically on every frame",
+          "StatelessWidget doesn't rebuild on state changes; StatefulWidget rebuilds using setState()",
+          "StatelessWidget is faster but cannot show text"
+        ],
+        "answer": "C",
+        "explanation": "A: Không phải lúc nào StatefulWidget cũng tốt hơn. B: Widget không mặc nhiên rebuild mỗi frame. C: StatelessWidget cũng có thể rebuild khi cha hoặc dependency đổi; StatefulWidget dùng State và setState. D: StatelessWidget vẫn hiển thị text. Cách diễn đạt hoặc đáp án của đề chưa đủ chính xác để chấm chắc chắn.",
+        "ambiguous": true
+      },
+      {
+        "id": "34",
+        "question": "What does `setState()` do in Flutter?",
+        "options": [
+          "Navigates to a new screen",
+          "Resets all form fields",
+          "Saves the current widget state to disk",
+          "Notifies the framework that state has changed, triggering a UI rebuild"
+        ],
+        "answer": "D",
+        "explanation": "A: Navigation dùng Navigator hoặc Router. B: FormState.reset đặt lại form. C: Không tự lưu đĩa. D: setState thông báo thay đổi và lên lịch build lại.",
+        "ambiguous": false
+      },
+      {
+        "id": "35",
+        "question": "What is Scaffold in Flutter?",
+        "options": [
+          "A testing utility for widget tests",
+          "The backbone of a Material screen providing AppBar, Body, FAB, and other structural elements",
+          "A routing class for named navigation",
+          "A debugging tool for layout inspection"
+        ],
+        "answer": "B",
+        "explanation": "A: Không phải công cụ test. B: Scaffold cung cấp cấu trúc màn hình Material. C: Không phải lớp route. D: Không phải công cụ debug.",
+        "ambiguous": false
+      },
+      {
+        "id": "36",
+        "question": "What is the purpose of `Key` in Flutter widgets?",
+        "options": [
+          "Helps Flutter identify widgets uniquely for correct state preservation and list diffing",
+          "Controls animation timing",
+          "Provides authentication for API calls",
+          "Manages keyboard focus between fields"
+        ],
+        "answer": "A",
+        "explanation": "A: Key giúp Flutter nhận diện widget trong phạm vi phù hợp và giữ state khi cây thay đổi. B: Không điều khiển animation. C: Không xác thực API. D: FocusNode quản lý focus.",
+        "ambiguous": false
+      },
+      {
+        "id": "37",
+        "question": "What widget creates a scrollable column of widgets in Flutter?",
+        "options": [
+          "Column",
+          "ListView",
+          "ScrollView",
+          "Stack"
+        ],
+        "answer": "B",
+        "explanation": "A: Column không tự cuộn. B: ListView tạo danh sách cuộn. C: ScrollView là lớp cơ sở, không phải lựa chọn cụ thể nhất. D: Stack xếp chồng.",
+        "ambiguous": false
+      },
+      {
+        "id": "38",
+        "question": "What does `ListView.builder` do that `ListView` does not?",
+        "options": [
+          "Supports horizontal scrolling only",
+          "Requires a fixed item count",
+          "Lazily builds only visible items on demand, improving performance with large datasets",
+          "Automatically adds separators between items"
+        ],
+        "answer": "C",
+        "explanation": "A: ListView.builder hỗ trợ nhiều hướng. B: itemCount có thể để null. C: builder tạo item theo nhu cầu, phù hợp danh sách lớn. D: ListView.separated thêm separator.",
+        "ambiguous": false
+      },
+      {
+        "id": "39",
+        "question": "What does `GridView.count` do?",
+        "options": [
+          "Displays items in a single row",
+          "Creates a grid that adapts columns based on screen width",
+          "Creates a paginated list view",
+          "Creates a scrollable grid with a fixed number of columns"
+        ],
+        "answer": "D",
+        "explanation": "A: Đây không phải grid. B: Số cột count cố định trừ khi code thay đổi. C: Không tự phân trang. D: GridView.count tạo grid cuộn với crossAxisCount cố định.",
+        "ambiguous": false
+      },
+      {
+        "id": "40",
+        "question": "What widget is used for a circular image or initial letter display?",
+        "options": [
+          "ProfilePicture",
+          "CircleAvatar",
+          "AvatarWidget",
+          "RoundedImage"
+        ],
+        "answer": "B",
+        "explanation": "A: Không phải widget chuẩn. B: CircleAvatar hiển thị ảnh hoặc chữ trong hình tròn. C: Không phải widget chuẩn. D: Không phải widget chuẩn.",
+        "ambiguous": false
+      },
+      {
+        "id": "41",
+        "question": "What does `ThemeData` control in Flutter?",
+        "options": [
+          "Individual widget colors only",
+          "Navigation transitions",
+          "Global color scheme, typography, shapes, and appearance settings across the entire app",
+          "Animation speeds"
+        ],
+        "answer": "C",
+        "explanation": "A: ThemeData có thể áp dụng rộng hơn một widget. B: Navigation có cấu hình riêng. C: ThemeData cấu hình màu, typography, shape và các theme thành phần. D: Không chủ yếu điều khiển tốc độ animation.",
+        "ambiguous": false
+      },
+      {
+        "id": "42",
+        "question": "What does `BoxFit.cover` do when applied to an image?",
+        "options": [
+          "Scales the image to fit within the container without cropping",
+          "Displays the image at its original size",
+          "Scales the image to fill the container, cropping if necessary",
+          "Stretches the image to exact container dimensions"
+        ],
+        "answer": "C",
+        "explanation": "A: Mô tả gần với contain. B: Không giữ nguyên kích thước. C: cover lấp đầy khung, có thể cắt ảnh. D: fill mới kéo giãn theo cả hai chiều.",
+        "ambiguous": false
+      },
+      {
+        "id": "43",
+        "question": "What is `FloatingActionButton`?",
+        "options": [
+          "A circular button that floats above the body content for primary screen actions",
+          "A dialog trigger button",
+          "A full-width button at the bottom of the screen",
+          "A button that appears in the AppBar"
+        ],
+        "answer": "A",
+        "explanation": "A: FAB là nút hành động chính nổi trên nội dung, hình dạng có thể tùy theme. B: Có thể mở dialog nhưng không bị giới hạn như vậy. C: Không phải nút full-width mặc định. D: Không phải định nghĩa của FAB.",
+        "ambiguous": false
+      },
+      {
+        "id": "44",
+        "question": "What does `Wrap` widget do?",
+        "options": [
+          "Centers children vertically",
+          "Automatically flows children to the next line when horizontal space runs out",
+          "Forces all children into a single row",
+          "Animates children into view"
+        ],
+        "answer": "B",
+        "explanation": "A: Center dùng để căn giữa. B: Wrap chuyển children sang run mới khi thiếu chỗ. C: Row giữ một hàng. D: Không tự tạo animation.",
+        "ambiguous": false
+      },
+      {
+        "id": "45",
+        "question": "What is `SafeArea` used for?",
+        "options": [
+          "Adding padding to avoid UI elements being hidden under notches, status bars, and curved screen edges",
+          "Making text safe from overflow",
+          "Validating form input safety",
+          "Securing network requests with HTTPS"
+        ],
+        "answer": "A",
+        "explanation": "A: SafeArea thêm padding theo vùng an toàn của hệ thống. B: Không tự xử lý text overflow. C: Không validate form. D: Không mã hóa mạng.",
+        "ambiguous": false
+      },
+      {
+        "id": "46",
+        "question": "What does `Expanded` do inside a Row or Column?",
+        "options": [
+          "Limits the child to its natural size",
+          "Forces the child to fill all remaining available space in the main axis",
+          "Centers the child within the parent",
+          "Adds fixed padding around the child"
+        ],
+        "answer": "B",
+        "explanation": "A: Flexible loose có thể giữ kích thước nhỏ hơn. B: Expanded chia phần còn lại theo flex giữa các Expanded hoặc Flexible. C: Center dùng để căn giữa. D: Padding thêm khoảng cách cố định.",
+        "ambiguous": false
+      },
+      {
+        "id": "47",
+        "question": "What is the difference between `push()` and `pushReplacement()` in Navigator?",
+        "options": [
+          "`pushReplacement()` creates a new stack; `push()` clears the stack",
+          "`push()` adds a route on top (back button works); `pushReplacement()` replaces current route (no back)",
+          "`push()` is for named routes; `pushReplacement()` is for anonymous routes",
+          "They are functionally identical"
+        ],
+        "answer": "B",
+        "explanation": "A: pushReplacement không tạo stack mới hoặc xóa toàn bộ stack. B: push thêm route; pushReplacement thay route hiện tại, vẫn có thể quay về route trước đó nếu còn. C: Cả hai đều có biến thể phù hợp. D: Hai thao tác khác nhau.",
+        "ambiguous": false
+      },
+      {
+        "id": "48",
+        "question": "What is a MaterialPageRoute?",
+        "options": [
+          "A Route implementation that defines the next screen UI with a Material page transition",
+          "A route for modal/dialog screens",
+          "A named route registered in MaterialApp",
+          "A route that only works on Android"
+        ],
+        "answer": "A",
+        "explanation": "A: MaterialPageRoute tạo route cho màn hình với chuyển cảnh phù hợp nền tảng. B: Dialog dùng route chuyên biệt. C: Named route là cơ chế đặt tên khác. D: MaterialPageRoute không chỉ chạy Android.",
+        "ambiguous": false
+      },
+      {
+        "id": "49",
+        "question": "What does `Navigator.pop(context)` do?",
+        "options": [
+          "Removes the current route from the stack, returning to the previous screen",
+          "Closes the entire app",
+          "Clears all routes and returns to root",
+          "Navigates forward to the next screen"
+        ],
+        "answer": "A",
+        "explanation": "A: pop thường xóa route trên cùng và quay về route trước. B: Không mặc nhiên đóng app. C: Không xóa toàn bộ stack. D: push dùng để đi tiếp.",
+        "ambiguous": false
+      },
+      {
+        "id": "50",
+        "question": "What are Named Routes in Flutter?",
+        "options": [
+          "Routes that only work with deep linking",
+          "A Flutter 2.0 only feature",
+          "Routes that automatically generate names from class names",
+          "A map of string names to widget screens in MaterialApp, used with `Navigator.pushNamed()`"
+        ],
+        "answer": "D",
+        "explanation": "A: Named routes không chỉ dành cho deep link. B: Không chỉ có trong Flutter 2. C: Tên được cấu hình, không tự sinh từ tên lớp. D: Có thể đăng ký map tên và dùng pushNamed; còn có onGenerateRoute.",
+        "ambiguous": false
+      },
+      {
+        "id": "51",
+        "question": "What is Navigator 2.0's main difference from Navigator 1.0?",
+        "options": [
+          "Navigator 2.0 is declarative (describe desired stack); Navigator 1.0 is imperative (call push/pop manually)",
+          "Navigator 2.0 removes the back button behavior",
+          "Navigator 2.0 only works on web",
+          "Navigator 1.0 supports deep links; 2.0 does not"
+        ],
+        "answer": "A",
+        "explanation": "A: Navigator 2 hỗ trợ mô tả stack khai báo; Navigator 1 thường push/pop. B: Không loại bỏ nút back. C: Không chỉ dành cho web. D: Cả hai có thể hỗ trợ deep link theo cách khác nhau.",
+        "ambiguous": false
+      },
+      {
+        "id": "52",
+        "question": "What is Deep Linking in Flutter?",
+        "options": [
+          "A technique for sharing data between apps",
+          "A way to connect to external databases",
+          "Allowing users to open a specific screen via a URL or external source (e.g., `myapp://products?id=5`)",
+          "A navigation pattern for tab-based apps"
+        ],
+        "answer": "C",
+        "explanation": "A: Không chỉ là chia sẻ dữ liệu. B: Không phải kết nối database. C: Deep link mở nội dung cụ thể qua URL hoặc liên kết. D: Không riêng cho tab.",
+        "ambiguous": false
+      },
+      {
+        "id": "53",
+        "question": "What is InheritedWidget used for?",
+        "options": [
+          "Handling user gestures",
+          "Efficiently passing data down the widget tree, rebuilding dependent widgets when data changes",
+          "Routing between screens",
+          "Managing HTTP connections"
+        ],
+        "answer": "B",
+        "explanation": "A: GestureDetector xử lý cử chỉ. B: InheritedWidget chia sẻ dữ liệu và thông báo dependent khi phù hợp. C: Navigator quản lý route. D: HTTP do client xử lý.",
+        "ambiguous": false
+      },
+      {
+        "id": "54",
+        "question": "What does `ChangeNotifier.notifyListeners()` do?",
+        "options": [
+          "Sends a push notification to the user",
+          "Notifies all listening widgets to rebuild with the updated state",
+          "Logs a debug message to the console",
+          "Saves data to local storage"
+        ],
+        "answer": "B",
+        "explanation": "A: Không gửi push notification. B: notifyListeners gọi các listener; widget nghe qua Provider có thể rebuild. C: Không mặc định ghi log. D: Không tự lưu local.",
+        "ambiguous": false
+      },
+      {
+        "id": "55",
+        "question": "How does `Consumer<T>` work in Provider?",
+        "options": [
+          "Rebuilds only its subtree when the specified model T calls notifyListeners()",
+          "Rebuilds the entire app on every change",
+          "Replaces the need for StatefulWidget entirely",
+          "Provides data without ever rebuilding"
+        ],
+        "answer": "A",
+        "explanation": "A: Consumer rebuild builder khi giá trị được lắng nghe thay đổi; child cố định có thể tái sử dụng. B: Không bắt buộc rebuild cả app. C: Không thay thế hoàn toàn StatefulWidget. D: Có thể rebuild khi dữ liệu đổi.",
+        "ambiguous": false
+      },
+      {
+        "id": "56",
+        "question": "What is Responsive UI in Flutter?",
+        "options": [
+          "UI that adapts its layout based on available screen space (e.g., Column → Row, 2 → 4 grid columns)",
+          "UI that loads faster on faster devices",
+          "UI that responds to user touch events",
+          "UI that automatically translates to different languages"
+        ],
+        "answer": "A",
+        "explanation": "A: Responsive điều chỉnh bố cục theo không gian. B: Không định nghĩa bởi tốc độ tải. C: Phản hồi chạm là tương tác. D: Dịch ngôn ngữ là localization.",
+        "ambiguous": false
+      },
+      {
+        "id": "57",
+        "question": "What is Adaptive UI in Flutter?",
+        "options": [
+          "UI that loads different assets per screen resolution",
+          "UI that adapts to user preferences",
+          "UI that changes based on device type (e.g., Bottom Nav on phone → NavigationRail on tablet)",
+          "UI that changes font size based on accessibility settings"
+        ],
+        "answer": "C",
+        "explanation": "A: Asset độ phân giải khác là một phần hỗ trợ thiết bị. B: Preference có thể ảnh hưởng adaptive nhưng chưa mô tả đầy đủ. C: Adaptive chọn giao diện phù hợp thiết bị và ngữ cảnh, ví dụ navigation khác nhau. D: Accessibility cũng có thể là một phần thích ứng.",
+        "ambiguous": false
+      },
+      {
+        "id": "58",
+        "question": "What does `MediaQuery.of(context).size.width` return?",
+        "options": [
+          "The current width of the screen in logical pixels",
+          "The width of the current widget",
+          "The physical pixel width of the device screen",
+          "The maximum width supported by the device"
+        ],
+        "answer": "A",
+        "explanation": "A: MediaQuery size là kích thước vùng view theo logical pixel, không nhất thiết là toàn màn hình vật lý. B: Không nhất thiết là chiều rộng widget hiện tại. C: Không phải physical pixel. D: Không phải chiều rộng tối đa thiết bị hỗ trợ.",
+        "ambiguous": false
+      },
+      {
+        "id": "59",
+        "question": "What is `LayoutBuilder` used for?",
+        "options": [
+          "Measuring the height of a text widget",
+          "Building animations based on scroll position",
+          "Detecting device orientation changes",
+          "Providing parent widget constraints (maxWidth/maxHeight) for building responsive components"
+        ],
+        "answer": "D",
+        "explanation": "A: Không chuyên đo text. B: Không chuyên theo dõi scroll. C: OrientationBuilder chuyên theo hướng bố cục. D: LayoutBuilder cung cấp constraints từ cha.",
+        "ambiguous": false
+      },
+      {
+        "id": "60",
+        "question": "What is `OrientationBuilder` used for?",
+        "options": [
+          "Detecting device tilt angle",
+          "Locking screen orientation",
+          "Detecting device rotation and providing current Orientation (portrait/landscape) to build different UIs",
+          "Building orientation-specific animations"
+        ],
+        "answer": "C",
+        "explanation": "A: Không đo góc nghiêng. B: Không khóa orientation. C: OrientationBuilder dựa vào tỷ lệ constraints của parent; có thể khác hướng thiết bị. D: Không chuyên animation.",
+        "ambiguous": false
+      },
+      {
+        "id": "61",
+        "question": "What is the recommended way to display chips that may overflow horizontally?",
+        "options": [
+          "Use `Wrap` widget which automatically flows children to the next line",
+          "Use `ListView.horizontal`",
+          "Use `Flex` with `direction: Axis.horizontal`",
+          "Use `Row` with `overflow: hidden`"
+        ],
+        "answer": "A",
+        "explanation": "A: Wrap cho children xuống dòng khi thiếu chỗ. B: ListView ngang cuộn thay vì xuống dòng. C: Flex ngang không tự wrap. D: Row không có thuộc tính overflow như mô tả.",
+        "ambiguous": false
+      },
+      {
+        "id": "62",
+        "question": "What is a `Form` widget in Flutter?",
+        "options": [
+          "A layout widget for arranging fields vertically",
+          "A database interface for storing form data",
+          "A network request builder for POST submissions",
+          "A widget grouping multiple TextFormField inputs for batch validation, saving, and resetting"
+        ],
+        "answer": "D",
+        "explanation": "A: Form có thể chứa layout bất kỳ. B: Không phải database. C: Không dựng request. D: Form nhóm FormField để validate, save và reset.",
+        "ambiguous": false
+      },
+      {
+        "id": "63",
+        "question": "What are the three core FormState methods?",
+        "options": [
+          "test(), write(), refresh()",
+          "verify(), submit(), undo()",
+          "validate(), save(), reset()",
+          "check(), store(), clear()"
+        ],
+        "answer": "C",
+        "explanation": "A: Không phải API FormState. B: Không phải API FormState. C: validate, save và reset là các thao tác chính. D: Không phải API FormState.",
+        "ambiguous": false
+      },
+      {
+        "id": "64",
+        "question": "What does the validator function return when a field is valid?",
+        "options": [
+          "null (no error)",
+          "0 (zero)",
+          "an empty string \"\"",
+          "true"
+        ],
+        "answer": "A",
+        "explanation": "A: null nghĩa là không có lỗi. B: Kiểu trả về là String?. C: Chuỗi rỗng vẫn là thông báo lỗi. D: Không trả boolean.",
+        "ambiguous": false
+      },
+      {
+        "id": "65",
+        "question": "What does `AutovalidateMode.onUserInteraction` do?",
+        "options": [
+          "Disables all validation",
+          "Shows errors immediately when the form loads",
+          "Only validates on form submit button tap",
+          "Shows validation errors only after the user has interacted with each field"
+        ],
+        "answer": "D",
+        "explanation": "A: disabled tắt tự validation. B: always có thể validate ngay. C: onUserInteraction có thể validate trước submit. D: Hành vi phụ thuộc Form hay FormField; Form có thể validate tất cả field sau khi một field tương tác. Cách diễn đạt hoặc đáp án của đề chưa đủ chính xác để chấm chắc chắn.",
+        "ambiguous": true
+      },
+      {
+        "id": "66",
+        "question": "What is `FocusNode` used for in Flutter forms?",
+        "options": [
+          "Handling camera focus in photo apps",
+          "Detecting device focus/unfocus events",
+          "Managing network connection state",
+          "Managing keyboard focus — moving focus between fields programmatically"
+        ],
+        "answer": "D",
+        "explanation": "A: FocusNode không điều khiển focus của camera. B: Không chuyên theo dõi trạng thái foreground của thiết bị. C: Không quản lý kết nối mạng. D: FocusNode quản lý focus của widget và hỗ trợ chuyển focus giữa các trường nhập.",
+        "ambiguous": false
+      },
+      {
+        "id": "67",
+        "question": "What does `obscureText: true` do in a TextField?",
+        "options": [
+          "Changes the text color to transparent",
+          "Disables the keyboard",
+          "Makes the text field read-only",
+          "Hides the input text (shows dots), used for password fields"
+        ],
+        "answer": "D",
+        "explanation": "A: Không chỉ đổi màu text. B: Không tắt bàn phím. C: Không làm read-only. D: obscureText che ký tự, thường dùng cho mật khẩu.",
+        "ambiguous": false
+      },
+      {
+        "id": "68",
+        "question": "What does `textInputAction: TextInputAction.next` do?",
+        "options": [
+          "Dismisses the keyboard",
+          "Moves to the previous field",
+          "Changes the keyboard action button to \"Next\" for moving to the next input field",
+          "Submits the form automatically"
+        ],
+        "answer": "C",
+        "explanation": "A: done thường dùng để kết thúc nhập. B: Không mặc định chuyển về field trước. C: next hiển thị hành động Next; xử lý chuyển focus phụ thuộc cấu hình và callback. D: Không mặc định submit form.",
+        "ambiguous": false
+      },
+      {
+        "id": "69",
+        "question": "What is an API?",
+        "options": [
+          "A type of database",
+          "A security protocol for authentication",
+          "A contract allowing clients to communicate with a server via URL endpoints",
+          "A mobile app framework"
+        ],
+        "answer": "C",
+        "explanation": "A: API không phải một loại database. B: API không đồng nghĩa giao thức bảo mật. C: API là hợp đồng giao tiếp giữa phần mềm; API web có thể dùng URL endpoint. D: Không phải mobile framework.",
+        "ambiguous": false
+      },
+      {
+        "id": "70",
+        "question": "What do HTTP status codes 400-499 indicate?",
+        "options": [
+          "Server-side errors",
+          "Client-side errors (e.g., bad request, unauthorized, not found)",
+          "Successful responses",
+          "Redirects"
+        ],
+        "answer": "B",
+        "explanation": "A: 5xx là lỗi server. B: 4xx thường là lỗi client. C: 2xx là thành công. D: 3xx là chuyển hướng.",
+        "ambiguous": false
+      },
+      {
+        "id": "71",
+        "question": "What is JSON in the context of APIs?",
+        "options": [
+          "A compiled binary data format",
+          "A network protocol like HTTP",
+          "A type of database query language",
+          "A lightweight text format using key-value pairs that maps to Dart's Map and List types"
+        ],
+        "answer": "D",
+        "explanation": "A: JSON là định dạng văn bản. B: HTTP là giao thức riêng. C: JSON không phải ngôn ngữ truy vấn. D: JSON biểu diễn object, array và giá trị; object và array thường thành Map và List trong Dart.",
+        "ambiguous": false
+      },
+      {
+        "id": "72",
+        "question": "What Flutter package is commonly used for HTTP requests?",
+        "options": [
+          "The `api` package",
+          "The `http` package added via pubspec.yaml",
+          "The `requests` package",
+          "The `network` package"
+        ],
+        "answer": "B",
+        "explanation": "A: api không phải lựa chọn phổ biến được hỏi. B: http là package phổ biến được khai báo trong pubspec. C: requests thường gắn với Python. D: network không phải package tiêu chuẩn được hỏi.",
+        "ambiguous": false
+      },
+      {
+        "id": "73",
+        "question": "What is `FutureBuilder` used for?",
+        "options": [
+          "Building widgets that never change",
+          "Scheduling future widget updates",
+          "Binding async Future data to the widget tree, handling loading, error, and success states automatically",
+          "Caching API responses locally"
+        ],
+        "answer": "C",
+        "explanation": "A: FutureBuilder có thể rebuild theo snapshot. B: Không phải bộ lập lịch chung. C: FutureBuilder cung cấp snapshot; developer tự xây UI loading, lỗi và kết quả. D: Không tự cache API.",
+        "ambiguous": false
+      },
+      {
+        "id": "74",
+        "question": "Which states does `FutureBuilder` handle automatically?",
+        "options": [
+          "Only success states",
+          "Only error states",
+          "Loading and success only",
+          "ConnectionState.waiting (loading), snapshot.hasError (error), snapshot.hasData (success)"
+        ],
+        "answer": "D",
+        "explanation": "A: Có thể biểu diễn trạng thái khác. B: Không chỉ có lỗi. C: Có thể chứa lỗi. D: snapshot cung cấp waiting, error và data; builder phải tự quyết định UI và hasData có thể false với kết quả null.",
+        "ambiguous": false
+      },
+      {
+        "id": "75",
+        "question": "How do you parse a JSON array response into a `List<Model>` in Dart?",
+        "options": [
+          "json.decode(response.body) → List<dynamic> → .map((e) => Model.fromJson(e)).toList()",
+          "Directly cast response.body to List<Model>",
+          "Use response.body.toList()",
+          "Call Model.parseAll(response.body)"
+        ],
+        "answer": "A",
+        "explanation": "A: Decode array rồi map từng object sang model. B: response.body là chuỗi, không cast trực tiếp thành model list. C: String không có cách chuyển này thành model. D: Không có Model.parseAll mặc định.",
+        "ambiguous": false
+      },
+      {
+        "id": "76",
+        "question": "Why should API calls be made in `initState()` and NOT in `build()`?",
+        "options": [
+          "build() runs on every rebuild causing multiple unnecessary network requests; initState() runs once",
+          "API calls are not allowed in build()",
+          "initState() is faster than build()",
+          "build() doesn't support async operations"
+        ],
+        "answer": "A",
+        "explanation": "A: build có thể chạy nhiều lần; initState chạy một lần cho mỗi State, trừ khi cần xử lý dependency hoặc cập nhật widget. B: Không bị cấm gọi API trong build. C: Không phải lý do tốc độ. D: Vấn đề chính là side effect lặp lại.",
+        "ambiguous": false
+      },
+      {
+        "id": "77",
+        "question": "What is the Service Layer pattern in Flutter networking?",
+        "options": [
+          "Layering multiple HTTP clients on top of each other",
+          "Using platform channels for HTTP requests",
+          "A caching strategy for network responses",
+          "Encapsulating all HTTP/API logic in a dedicated class (e.g., ApiService), keeping widget code clean"
+        ],
+        "answer": "D",
+        "explanation": "A: Không có nghĩa phải chồng HTTP client. B: Platform channel không bắt buộc cho HTTP. C: Có thể có cache nhưng đây không phải định nghĩa. D: Service đóng gói logic API, giúp widget tập trung UI.",
+        "ambiguous": false
+      },
+      {
+        "id": "78",
+        "question": "What HTTP header is required when sending JSON in a POST request body?",
+        "options": [
+          "Authorization: Bearer token",
+          "Accept: text/plain",
+          "Content-Type: multipart/form-data",
+          "Content-Type: application/json; charset=UTF-8"
+        ],
+        "answer": "D",
+        "explanation": "A: Authorization chỉ cần khi API yêu cầu xác thực. B: Accept mô tả định dạng response mong muốn. C: multipart dùng cho nội dung multipart. D: Content-Type application/json phù hợp JSON body; charset tùy API.",
+        "ambiguous": false
+      },
+      {
+        "id": "79",
+        "question": "What are the three main local storage methods in Flutter?",
+        "options": [
+          "Cache, Database, Cloud",
+          "Cookies, Sessions, Tokens",
+          "RAM, ROM, Flash",
+          "SharedPreferences (key-value), JSON files (dart:io), SQLite via SQFlite (relational)"
+        ],
+        "answer": "D",
+        "explanation": "A: Cloud không phải local storage. B: Sessions và tokens không phải ba phương pháp local. C: Đây là loại bộ nhớ phần cứng. D: SharedPreferences, JSON file và SQLite là các lựa chọn thường gặp.",
+        "ambiguous": false
+      },
+      {
+        "id": "80",
+        "question": "What is SharedPreferences best suited for?",
+        "options": [
+          "Managing user authentication sessions",
+          "Storing large structured datasets",
+          "Saving binary files like images",
+          "Simple key-value data like settings flags (dark mode, onboarding) that persists across restarts"
+        ],
+        "answer": "D",
+        "explanation": "A: Không nên lưu token nhạy cảm bằng SharedPreferences thông thường. B: Dữ liệu lớn có cấu trúc phù hợp database. C: Ảnh nên lưu file hoặc storage phù hợp. D: SharedPreferences phù hợp cài đặt nhỏ dạng key-value.",
+        "ambiguous": false
+      },
+      {
+        "id": "81",
+        "question": "Does SQFlite work on Flutter Web?",
+        "options": [
+          "No — SQFlite only works on Android and iOS, not Flutter Web",
+          "Yes — but only in debug mode",
+          "Yes — it works on all platforms",
+          "No — it requires a separate web plugin"
+        ],
+        "answer": "A",
+        "explanation": "A: sqflite không chỉ có Android và iOS; hỗ trợ tùy package và nền tảng. B: Không có hỗ trợ web mặc định chỉ riêng debug. C: Không hoạt động mặc định trên mọi nền tảng. D: Web cần giải pháp hoặc implementation khác; đề không có lựa chọn diễn đạt hoàn toàn chính xác. Cách diễn đạt hoặc đáp án của đề chưa đủ chính xác để chấm chắc chắn.",
+        "ambiguous": true
+      },
+      {
+        "id": "82",
+        "question": "What does `openDatabase()` require in SQFlite?",
+        "options": [
+          "Only a database name string",
+          "A pre-existing .db file on the device",
+          "A file path and an onCreate callback that runs CREATE TABLE SQL to set up the schema",
+          "A connection URL like JDBC"
+        ],
+        "answer": "C",
+        "explanation": "A: Path là cần thiết nhưng callback onCreate không bắt buộc. B: Có thể tạo database mới. C: onCreate thường dùng tạo schema nhưng là callback tùy chọn. D: SQLite local không dùng JDBC URL. Cách diễn đạt hoặc đáp án của đề chưa đủ chính xác để chấm chắc chắn.",
+        "ambiguous": true
+      },
+      {
+        "id": "83",
+        "question": "What does `query()` return in SQFlite?",
+        "options": [
+          "A single Model object",
+          "A Stream of database updates",
+          "A List<Map<String, dynamic>> where each map represents one database row",
+          "A JSON string of all rows"
+        ],
+        "answer": "C",
+        "explanation": "A: query trả danh sách dòng, không tự tạo Model. B: query thông thường trả Future, không phải Stream. C: Mỗi dòng là Map<String, Object?> trong List. D: Không trực tiếp trả JSON string.",
+        "ambiguous": false
+      },
+      {
+        "id": "84",
+        "question": "What is the Offline-First strategy?",
+        "options": [
+          "Disabling network requests entirely",
+          "Always using server data, ignoring local cache",
+          "Loading local data first and syncing with the server when online to improve UX and reliability",
+          "Storing all data only in memory"
+        ],
+        "answer": "C",
+        "explanation": "A: Offline-first vẫn có thể đồng bộ mạng. B: Cần tận dụng dữ liệu local. C: Đọc local trước và đồng bộ khi có mạng là mẫu offline-first phổ biến. D: Bộ nhớ tạm không đảm bảo dữ liệu tồn tại.",
+        "ambiguous": false
+      },
+      {
+        "id": "85",
+        "question": "When should you use SQLite over SharedPreferences?",
+        "options": [
+          "When data is structured (rows/columns), requires SQL queries, or involves relational data",
+          "For simple boolean flags and settings",
+          "For storing authentication tokens",
+          "For caching small text values"
+        ],
+        "answer": "A",
+        "explanation": "A: SQLite hữu ích cho dữ liệu có cấu trúc và truy vấn. B: Boolean đơn giản phù hợp SharedPreferences. C: Token nhạy cảm cần secure storage. D: Giá trị nhỏ phù hợp key-value.",
+        "ambiguous": false
+      },
+      {
+        "id": "86",
+        "question": "What is Authentication in mobile apps?",
+        "options": [
+          "Encrypting all network traffic",
+          "Managing push notification subscriptions",
+          "Storing user preferences locally",
+          "Verifying who the user is (\"Who are you?\") — distinct from Authorization (\"What can you do?\")"
+        ],
+        "answer": "D",
+        "explanation": "A: HTTPS mã hóa truyền tải. B: Không phải quản lý subscription. C: Không phải lưu preference. D: Authentication xác minh danh tính; authorization xác định quyền.",
+        "ambiguous": false
+      },
+      {
+        "id": "87",
+        "question": "What are the three parts of a JWT (JSON Web Token)?",
+        "options": [
+          "Username, Password, Token",
+          "Access, Refresh, Session",
+          "Header (algorithm/type), Payload (user claims), Signature (verification)",
+          "Header, Body, Footer"
+        ],
+        "answer": "C",
+        "explanation": "A: Không phải cấu trúc JWT. B: Không phải cấu trúc JWT. C: JWT dạng ký thường gồm header, payload và signature. D: Không có footer trong cấu trúc JWT thông dụng.",
+        "ambiguous": false
+      },
+      {
+        "id": "88",
+        "question": "What is the difference between Access Token and Refresh Token?",
+        "options": [
+          "Access Token is short-lived for API requests; Refresh Token is long-lived for obtaining new Access Tokens",
+          "They are identical in purpose and lifespan",
+          "Access Token is stored in the database; Refresh Token is in memory",
+          "Refresh Token is sent with every request; Access Token is only used once"
+        ],
+        "answer": "A",
+        "explanation": "A: Access token thường ngắn hạn cho API; refresh token thường sống lâu hơn để cấp access token mới. B: Mục đích và thời hạn khác nhau. C: Nơi lưu phụ thuộc kiến trúc. D: Không gửi refresh token với mọi API request.",
+        "ambiguous": false
+      },
+      {
+        "id": "89",
+        "question": "How should a session be persisted between app restarts in Flutter?",
+        "options": [
+          "Save the auth token to SharedPreferences; SplashScreen checks for token and navigates accordingly",
+          "Keep the token only in memory (it will be cleared)",
+          "Store the password in plain text in a file",
+          "Use cookies like a web browser"
+        ],
+        "answer": "A",
+        "explanation": "A: Token nhạy cảm nên lưu bằng secure storage; SharedPreferences không bảo vệ bí mật phù hợp. B: Chỉ giữ trong RAM không tồn tại qua restart. C: Không lưu mật khẩu dạng plain text. D: Cookie có thể dùng tùy nền tảng và thiết kế; đề thiếu lựa chọn secure storage. Cách diễn đạt hoặc đáp án của đề chưa đủ chính xác để chấm chắc chắn.",
+        "ambiguous": true
+      },
+      {
+        "id": "90",
+        "question": "What is Auto-Login flow?",
+        "options": [
+          "Logging in automatically with biometrics",
+          "Saving username/password in the app and replaying on every launch",
+          "Using Firebase to auto-authenticate without credentials",
+          "SplashScreen loads → reads token from SharedPreferences → if found go to Home, else go to Login"
+        ],
+        "answer": "D",
+        "explanation": "A: Biometrics có thể hỗ trợ nhưng không định nghĩa toàn bộ auto-login. B: Không nên lưu và gửi lại mật khẩu. C: Firebase vẫn cần xác thực hợp lệ. D: Có thể khôi phục phiên qua token; nên lưu an toàn và xác thực hạn hoặc refresh trước khi vào Home.",
+        "ambiguous": false
+      },
+      {
+        "id": "91",
+        "question": "What is Firebase Authentication?",
+        "options": [
+          "A local database for storing user credentials",
+          "A Flutter plugin for custom authentication servers",
+          "A cloud-based identity platform providing secure login (email, Google, Apple, Facebook) with auto session persistence",
+          "An Android-only authentication system"
+        ],
+        "answer": "C",
+        "explanation": "A: Không phải database cục bộ. B: Firebase Auth là dịch vụ identity, không chỉ plugin cho server tự viết. C: Firebase Authentication cung cấp nhiều phương thức đăng nhập và hỗ trợ duy trì phiên. D: Hỗ trợ nhiều nền tảng.",
+        "ambiguous": false
+      },
+      {
+        "id": "92",
+        "question": "What is a Local Notification?",
+        "options": [
+          "A system-level message triggered by the app itself requiring no internet or backend",
+          "An in-app banner that only shows while the app is open",
+          "A push notification from a server",
+          "A silent background data sync"
+        ],
+        "answer": "A",
+        "explanation": "A: Local notification do app lên lịch hoặc kích hoạt, không cần backend để gửi. B: Banner trong app là cơ chế khác. C: Push notification thường đến qua dịch vụ từ xa. D: Không phải đồng bộ dữ liệu im lặng.",
+        "ambiguous": false
+      },
+      {
+        "id": "93",
+        "question": "What are the three types of tests in the Flutter testing pyramid?",
+        "options": [
+          "Speed Tests, UI Tests, Backend Tests",
+          "Smoke Tests, Regression Tests, Load Tests",
+          "Manual Tests, Automated Tests, Performance Tests",
+          "Unit Tests (logic), Widget Tests (UI rendering), Integration Tests (full user flows)"
+        ],
+        "answer": "D",
+        "explanation": "A: Không phải ba tầng Flutter testing pyramid. B: Đây là các loại test khác. C: Không phải ba tầng được hỏi. D: Unit, widget và integration là ba loại chính.",
+        "ambiguous": false
+      },
+      {
+        "id": "94",
+        "question": "Which test type should you use most frequently (many) according to the testing pyramid?",
+        "options": [
+          "End-to-end Tests — most comprehensive",
+          "Integration Tests — they test the most realistic scenarios",
+          "Unit Tests — fast, stable, cheap, catch logic bugs early",
+          "Widget Tests — they cover both logic and UI"
+        ],
+        "answer": "C",
+        "explanation": "A: End-to-end thường tốn thời gian hơn. B: Integration cần thiết nhưng thường ít hơn unit test. C: Unit test nhanh và phù hợp kiểm tra logic. D: Widget test quan trọng nhưng thường không nhiều bằng unit test.",
+        "ambiguous": false
+      },
+      {
+        "id": "95",
+        "question": "What does `testWidgets()` do in Flutter?",
+        "options": [
+          "Generates test screenshots for visual comparison",
+          "Runs a widget test with a WidgetTester parameter for interacting with and inspecting widgets",
+          "Deploys the app to a test device",
+          "Runs a unit test for Dart logic only"
+        ],
+        "answer": "B",
+        "explanation": "A: Không tự tạo screenshot. B: testWidgets chạy widget test với WidgetTester. C: Không triển khai app. D: Không chỉ là unit test logic Dart.",
+        "ambiguous": false
+      },
+      {
+        "id": "96",
+        "question": "What does `tester.pump()` do in a widget test?",
+        "options": [
+          "Simulates a device screen rotation",
+          "Triggers a single frame rebuild after state changes to update the widget tree",
+          "Sends a network request in tests",
+          "Resets all widget state to initial values"
+        ],
+        "answer": "B",
+        "explanation": "A: Không mô phỏng xoay mặc định. B: pump lên lịch và xử lý một frame, tùy tham số có thể tiến thời gian. C: Không tự gửi request. D: Không reset toàn bộ state.",
+        "ambiguous": false
+      },
+      {
+        "id": "97",
+        "question": "What does `tester.pumpAndSettle()` do?",
+        "options": [
+          "Clears the widget tree and starts fresh",
+          "Pumps data from a test database",
+          "Waits for all animations and async operations to complete before assertions",
+          "Same as pump() but runs synchronously"
+        ],
+        "answer": "C",
+        "explanation": "A: Không xóa cây widget. B: Không đọc database. C: pumpAndSettle pump đến khi không còn frame được lên lịch, không đảm bảo mọi async hoặc network hoàn tất. D: Khác pump đơn vì có thể pump nhiều lần.",
+        "ambiguous": false
+      },
+      {
+        "id": "98",
+        "question": "What does `find.byKey(Key('name'))` do?",
+        "options": [
+          "Searches for a widget by its class type",
+          "Finds a widget by its text content",
+          "Locates a widget by its position on screen",
+          "Finds a widget with the specified Key — the recommended way to locate specific widgets in tests"
+        ],
+        "answer": "D",
+        "explanation": "A: find.byType tìm theo kiểu. B: find.text tìm theo chữ. C: Không tìm theo vị trí. D: find.byKey tìm widget có key tương ứng.",
+        "ambiguous": false
+      },
+      {
+        "id": "99",
+        "question": "What is `findsOneWidget` matcher used for in expect()?",
+        "options": [
+          "Asserts at least one widget exists",
+          "Asserts the widget is visible on screen",
+          "Asserts the widget has been tapped",
+          "Asserts exactly one widget matching the finder exists in the widget tree"
+        ],
+        "answer": "D",
+        "explanation": "A: findsWidgets kiểm tra ít nhất một. B: Không đảm bảo widget hiển thị trên màn hình. C: Không chứng minh widget đã được nhấn. D: findsOneWidget xác nhận đúng một kết quả phù hợp.",
+        "ambiguous": false
+      },
+      {
+        "id": "100",
+        "question": "What is Flutter's target frame rate for smooth UI on standard devices?",
+        "options": [
+          "120 FPS",
+          "60 FPS (16.6ms per frame budget)",
+          "30 FPS",
+          "24 FPS"
+        ],
+        "answer": "B",
+        "explanation": "A: 120 FPS áp dụng thiết bị tần số cao hơn. B: 60 FPS tương ứng khoảng 16,7 ms mỗi frame trên màn hình 60 Hz. C: 30 FPS có ngân sách khoảng 33 ms. D: 24 FPS thấp hơn mục tiêu 60 Hz thông thường. Tài liệu gốc thiếu đáp án; B được suy ra cho màn hình 60 Hz.",
+        "ambiguous": false
+      }
+    ]
   }
 ]
