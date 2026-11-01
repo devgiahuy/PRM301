@@ -3,6 +3,7 @@ import exams from './data.json'
 import './App.css'
 
 const KEY = 'prm-review-v1'
+const THEME_KEY = 'prm-review-theme'
 const letters = ['A', 'B', 'C', 'D']
 function Icon({ name, size = 18, fill = 'none' }) {
  const paths = { grid: <><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></>, star: <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z"/>, wrong: <><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6m0-6-6 6"/></>, check: <path d="m5 12 4 4L19 6"/>, arrow: <path d="m9 18 6-6-6-6"/>, book: <><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 1 4 17.5z"/><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20M8 7h8M8 10h6"/></>, search: <><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></>, reset: <><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></> }
@@ -11,6 +12,7 @@ function Icon({ name, size = 18, fill = 'none' }) {
 function load() { try { const data = JSON.parse(localStorage.getItem(KEY)); return data && typeof data === 'object' ? data : {} } catch { return {} } }
 export default function App() {
  const [saved, setSaved] = useState(load)
+ const [dark, setDark] = useState(() => { try { return localStorage.getItem(THEME_KEY) === 'dark' } catch { return false } })
  const [examId, setExamId] = useState(exams[0].id)
  const [view, setView] = useState('all')
  const [query, setQuery] = useState('')
@@ -21,6 +23,7 @@ export default function App() {
  const exam = exams.find(e => e.id === examId)
  const records = saved[examId] || {}
  useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify(saved)); setStorageError(false) } catch { setStorageError(true) } }, [saved])
+ useEffect(() => { try { localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light') } catch { /* Theme still applies for this session. */ } }, [dark])
  const items = useMemo(() => exam.questions.filter(q => { const r = records[q.id] || {}; const matches = view === 'all' || (view === 'unanswered' && !r.choice) || (view === 'star' && r.star) || (view === 'wrong' && r.choice && !q.ambiguous && r.choice !== q.answer); return matches && `${q.id} ${q.question} ${q.options.join(' ')}`.toLowerCase().includes(query.toLowerCase().trim()) }), [exam, records, view, query])
  const active = (held && exam.questions.find(q => q.id === held)) || items.find(q => q.id === current) || items[0]
  const rec = active ? records[active.id] || {} : {}
@@ -31,7 +34,7 @@ export default function App() {
  function update(id, patch) { setSaved(prev => ({ ...prev, [examId]: { ...(prev[examId] || {}), [id]: { ...(prev[examId]?.[id] || {}), ...patch } } })) }
  function changeExam(id) { setHeld(null); setExamId(id); setCurrent(exams.find(e => e.id === id).questions[0].id); setQuery(''); setView('all'); setConfirmReset(false) }
  function changeView(v) { setHeld(null); setView(v); setQuery('') }
- return <div className="app-shell">
+ return <div className={'app-shell' + (dark ? ' dark-theme' : '')}>
   <aside className="sidebar">
    <div className="brand"><div className="brand-icon"><Icon name="book" size={21}/></div><div><strong>ôn tập.</strong><span>PRM393 / Flutter</span></div></div>
    <div className="side-label">KHÔNG GIAN HỌC</div>
@@ -44,7 +47,7 @@ export default function App() {
    <div className="side-bottom"><div className="side-progress"><div><span>Tiến độ bộ đề</span><strong>{answered}/{exam.questions.length}</strong></div><div className="progress-track"><div style={{width:`${answered / exam.questions.length * 100}%`}}/></div><small>Tiến độ được lưu trên trình duyệt này.</small></div><div className="side-foot">HỌC TỪNG CHÚT, NHỚ THẬT LÂU <span>✳</span></div></div>
   </aside>
   <main className="main">
-   <header className="topbar"><div className="breadcrumb">Thư viện đề <span>/</span> <strong>{exam.title}</strong></div><span className={storageError ? "local-badge storage-error" : "local-badge"} role="status"><span/> {storageError ? "Không thể lưu tiến độ" : "Lưu trên thiết bị"}</span></header>
+   <header className="topbar"><div className="breadcrumb">Thư viện đề <span>/</span> <strong>{exam.title}</strong></div><div className="topbar-actions"><span className={storageError ? "local-badge storage-error" : "local-badge"} role="status"><span/> {storageError ? "Không thể lưu tiến độ" : "Lưu trên thiết bị"}</span><button type="button" className="theme-toggle" onClick={() => setDark(value => !value)} aria-pressed={dark} aria-label="Chế độ tối"><span aria-hidden="true">{dark ? '☀' : '☾'}</span><span>{dark ? 'Chế độ sáng' : 'Chế độ tối'}</span></button></div></header>
    <div className="content">
     <div className="heading"><div><h1>Góc ôn tập</h1><p>Mỗi câu hỏi là một bước gần hơn đến ngày thi.</p></div><div className="exam-select"><label htmlFor="exam">BỘ ĐỀ ĐANG HỌC</label><select id="exam" value={examId} onChange={e=>changeExam(e.target.value)}>{exams.map(e=><option key={e.id} value={e.id}>{e.title}</option>)}</select></div></div>
     <div className="summary"><div><span>Tiến độ</span><strong>{answered}<small> / {exam.questions.length} câu</small></strong></div><div><span>Cần xem lại</span><strong>{wrong}<small> câu sai</small></strong></div><div><span>Đã đánh dấu</span><strong>{starred}<small> câu hỏi</small></strong></div><p>Chọn một câu để bắt đầu<br/><b>hoặc tiếp tục nơi bạn muốn.</b></p></div>
